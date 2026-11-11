@@ -1,0 +1,21 @@
+# Virtual environment & Python cache
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Local SQLite database & runtime caches
+*.db
+*.db-journal
+*.sqlite3
+
+# Environment variables & secrets
+.env
+.env.*
+
+# macOS / IDE files
+.DS_Store
+.vscode/
+.idea/
