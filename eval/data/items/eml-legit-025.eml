@@ -1,0 +1,36 @@
+From: Carrick State News <news@carrickstate.edu>
+To: putri.alvarez@carrickstate.edu
+Return-Path: <news@carrickstate.edu>
+Subject: Library hours extended for finals
+Date: Sun, 25 Oct 2026 01:37:00 +0000
+Message-ID: <f4488de7ad6c@carrickstate.edu>
+Authentication-Results: mx.carrickstate.edu; spf=pass
+ smtp.mailfrom=carrickstate.edu; dkim=pass header.d=carrickstate.edu;
+ dmarc=pass header.from=carrickstate.edu
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=carrickstate.edu; s=s1; b=bd29ede9cab4923b
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShieldae5582e160=="
+
+--==ScamShieldae5582e160==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello Carrick State,
+
+Library hours extended for finals. Details are on the university website.
+
+Read more: https://www.carrickstate.edu/library/hours
+
+Have a good week.
+
+--==ScamShieldae5582e160==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello Carrick State,</p><p>Library hours extended for finals. =
+Details are on the university website.</p><p><a href=3D"https://www.carrickst=
+ate.edu/library/hours">Read more</a></p><p>Have a good week.</p></body></html>
+
+--==ScamShieldae5582e160==--

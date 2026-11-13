@@ -1,0 +1,39 @@
+From: Westbrook IT Services <it-help@westbrook-edu.com>
+To: sofia.brennan@westbrook.edu
+Reply-To: helpdesk-verify@secure-mail-center.xyz
+Return-Path: <it-help@westbrook-edu.com>
+Subject: Your grades are on hold
+Date: Mon, 02 Nov 2026 01:44:00 +0000
+Message-ID: <6b658b8148f6@westbrook-edu.com>
+Authentication-Results: mx.westbrook.edu; spf=softfail
+ smtp.mailfrom=westbrook-edu.com; dkim=none header.d=westbrook-edu.com;
+ dmarc=fail header.from=westbrook-edu.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield72386ecbe00=="
+
+--==ScamShield72386ecbe00==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Dear student,
+
+Please sign in to release your financial aid refund before Thursday.
+
+Failure to verify will result in your account being terminated.
+
+Sign in to the student portal: https://westbrook-edu.com/sso/verify?id=28289
+
+Office of the Registrar
+
+--==ScamShield72386ecbe00==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Dear student,</p><p>Please sign in to release your financial a=
+id refund before Thursday.</p><p>Failure to verify will result in your accoun=
+t being terminated.</p><p><a href=3D"https://westbrook-edu.com/sso/verify?id=
+=3D28289">Sign in to the student portal</a></p><p>Office of the Registrar</p>=
+</body></html>
+
+--==ScamShield72386ecbe00==--

@@ -1,0 +1,37 @@
+From: Makerspace Weekly <hello@makerspace-weekly.com>
+To: daniel.castillo@lakesidetech.edu
+Return-Path: <hello@makerspace-weekly.com>
+Subject: Makerspace Weekly: this week's update
+Date: Fri, 16 Oct 2026 06:12:00 +0000
+Message-ID: <9a362c6a6e9a@makerspace-weekly.com>
+Authentication-Results: mx.lakesidetech.edu; spf=pass
+ smtp.mailfrom=makerspace-weekly.com; dkim=pass
+ header.d=makerspace-weekly.com; dmarc=pass header.from=makerspace-weekly.com
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=makerspace-weekly.com; s=s1; b=c29d782b2722796e
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShielda7c257cf730=="
+
+--==ScamShielda7c257cf730==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi everyone,
+
+Here is what's happening this week: workshops, a guest talk, and open lab hou=
+rs.
+
+This week's schedule: https://makerspace-weekly.com/news
+
+See you there!
+
+--==ScamShielda7c257cf730==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hi everyone,</p><p>Here is what's happening this week: worksho=
+ps, a guest talk, and open lab hours.</p><p><a href=3D"https://makerspace-wee=
+kly.com/news">This week's schedule</a></p><p>See you there!</p></body></html>
+
+--==ScamShielda7c257cf730==--

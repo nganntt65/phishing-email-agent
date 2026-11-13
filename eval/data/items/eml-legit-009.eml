@@ -1,0 +1,37 @@
+From: Campus Film Society <hello@campusfilmsociety.org>
+To: putri.okafor@meridian.ac.id
+Return-Path: <hello@campusfilmsociety.org>
+Subject: Campus Film Society: this week's update
+Date: Sat, 31 Oct 2026 07:59:00 +0000
+Message-ID: <d457a867a096@campusfilmsociety.org>
+Authentication-Results: mx.meridian.ac.id; spf=pass
+ smtp.mailfrom=campusfilmsociety.org; dkim=pass
+ header.d=campusfilmsociety.org; dmarc=pass header.from=campusfilmsociety.org
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=campusfilmsociety.org; s=s1; b=44777442b18753e6
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield2e076979d60=="
+
+--==ScamShield2e076979d60==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi everyone,
+
+Here is what's happening this week: workshops, a guest talk, and open lab hou=
+rs.
+
+This week's schedule: https://campusfilmsociety.org/news
+
+See you there!
+
+--==ScamShield2e076979d60==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hi everyone,</p><p>Here is what's happening this week: worksho=
+ps, a guest talk, and open lab hours.</p><p><a href=3D"https://campusfilmsoci=
+ety.org/news">This week's schedule</a></p><p>See you there!</p></body></html>
+
+--==ScamShield2e076979d60==--

@@ -2,543 +2,346 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Phishing Email Agentic AI — Contextual UI & Orchestrator Demo</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body { background-color: #0b0f19; color: #e2e8f0; font-family: Inter, system-ui, -apple-system, sans-serif; }
-    .step-card { transition: all 0.25s ease; }
-    .step-active { border-color: #38bdf8; background-color: rgba(56, 189, 248, 0.08); box-shadow: 0 0 15px rgba(56, 189, 248, 0.15); }
-    .step-done { border-color: #10b981; background-color: rgba(16, 185, 129, 0.06); }
-    ::-webkit-scrollbar { width: 6px; height: 6px; }
-    ::-webkit-scrollbar-track { background: #0f172a; }
-    ::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>CampusGuard AI</title>
+  <meta name="description" content="Analyze suspicious emails, uncover warning signs, and get evidence-based guidance before taking action." />
+  <link rel="stylesheet" href="/static/styles.css" />
 </head>
-<body class="min-h-screen flex flex-col">
-  <!-- Top Header -->
-  <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur px-6 py-4 flex flex-wrap items-center justify-between gap-4">
-    <div class="flex items-center gap-3">
-      <div class="w-9 h-9 rounded-lg bg-sky-500/20 border border-sky-400/40 flex items-center justify-center text-sky-400 font-bold">
-        AI
-      </div>
-      <div>
-        <h1 class="text-lg font-semibold text-white tracking-tight">Phishing Email Agentic AI System</h1>
-        <p class="text-xs text-slate-400">FastAPI + Gemini 3.x Flash + Redis Trusted Domains + Skill Playbooks (.md) + WebSocket Contextual UI</p>
-      </div>
-    </div>
-    <div class="flex items-center gap-3 text-xs">
-      <span id="health-redis" class="px-2.5 py-1 rounded-full bg-slate-800 border border-slate-700 text-slate-300">Redis: Checking...</span>
-      <span id="health-llm" class="px-2.5 py-1 rounded-full bg-slate-800 border border-slate-700 text-slate-300">Engine: Checking...</span>
-      <button onclick="toggleModal('skills-modal')" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 transition">
-        View Skill .md Playbooks
-      </button>
-      <button onclick="toggleModal('redis-modal')" class="px-3 py-1.5 rounded-lg bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 text-amber-300 transition">
-        Trusted Domains Redis DB
-      </button>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#scan" data-view-link="scan">
+        <svg width="26" height="30" viewBox="0 0 26 30" aria-hidden="true">
+          <path d="M13 1 L24 5 V14 C24 21 19 26.5 13 29 C7 26.5 2 21 2 14 V5 Z" fill="#1f3a68"/>
+          <path d="M8 15.2 L11.6 18.6 L18.5 11.4" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>
+          <span class="brand-name">CampusGuard AI</span>
+          <span class="brand-sub" id="brand-sub">AI-Powered Email Security for Students</span>
+        </span>
+      </a>
+      <nav class="tabs" role="tablist" aria-label="Views">
+        <button class="tab" role="tab" data-view="scan" aria-selected="true">Scan</button>
+        <button class="tab" role="tab" data-view="analyst" aria-selected="false">Analyst</button>
+        <button class="tab" role="tab" data-view="eval" aria-selected="false">Evaluation</button>
+      </nav>
+      <span class="status-chip" id="ai-chip" title="Whether Gemini reasoning is available">AI reasoning: checking…</span>
     </div>
   </header>
 
-  <!-- Main Grid -->
-  <main class="flex-1 max-w-[1600px] w-full mx-auto p-6 grid grid-cols-1 lg:grid-cols-12 gap-6">
-    <!-- Left Column: INPUT (.eml Request & Presets) -->
-    <section class="lg:col-span-5 flex flex-col gap-4">
-      <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 flex flex-col gap-3">
-        <div class="flex items-center justify-between">
-          <span class="text-xs font-semibold uppercase tracking-wider text-amber-400">1. INPUT — Email Input Request (.eml)</span>
-          <label class="text-xs text-sky-400 hover:text-sky-300 cursor-pointer">
-            Upload .eml file
-            <input type="file" id="eml-file-input" accept=".eml,.txt" class="hidden" onchange="handleFileUpload(event)" />
-          </label>
-        </div>
+  <main>
+    <!-- =============================================================== SCAN (student view) -->
+    <section id="view-scan" data-view-panel="scan">
+      <div class="scan-wrap">
+        <h1>Not Sure If That University Email Is Real?</h1>
+        <p class="lede">Analyze suspicious emails, uncover warning signs, and get evidence-based guidance before taking action.</p>
 
-        <!-- Sample Selector -->
-        <div>
-          <label class="block text-xs text-slate-400 mb-1.5">Load Demo Scenario Preset:</label>
-          <div id="sample-buttons" class="grid grid-cols-1 gap-1.5"></div>
-        </div>
-
-        <!-- Raw EML Textarea -->
-        <div>
-          <div class="flex items-center justify-between mb-1">
-            <label class="text-xs text-slate-400">Raw RFC 5322 <code class="text-slate-300">.eml</code> Payload:</label>
-            <span class="text-[11px] text-slate-500">Preprocessed &amp; Sanitized before Agent Runtime</span>
+        <form class="card scan-form" id="scan-form" novalidate>
+          <div class="seg" role="tablist" aria-label="What do you want to check?">
+            <button type="button" role="tab" data-mode="link" aria-selected="true">Link<small>Paste a URL</small></button>
+            <button type="button" role="tab" data-mode="pdf" aria-selected="false">Email PDF<small>Print → Save as PDF</small></button>
+            <button type="button" role="tab" data-mode="eml" aria-selected="false">Email file<small>.eml or pasted text</small></button>
           </div>
-          <textarea id="raw-eml-input" rows="13"
-            class="w-full rounded-lg bg-slate-950 border border-slate-800 p-3 font-mono text-xs text-slate-200 focus:outline-none focus:border-sky-500"
-            placeholder="Paste raw .eml headers and body here..."></textarea>
-        </div>
 
-        <!-- Action Buttons -->
-        <div class="flex items-center gap-2 pt-1">
-          <button id="btn-ws-analyze" onclick="runAnalysisWebSocket()"
-            class="flex-1 py-2.5 px-4 rounded-lg bg-sky-500 hover:bg-sky-400 text-slate-950 font-semibold text-sm transition flex items-center justify-center gap-2">
-            <span>Analyze via WebSocket Stream</span>
-          </button>
-          <button id="btn-rest-analyze" onclick="runAnalysisREST()"
-            class="py-2.5 px-4 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 font-medium text-sm transition">
-            HTTPS POST
-          </button>
-        </div>
+          <div data-mode-panel="link">
+            <div class="field">
+              <label for="url-input">Link</label>
+              <input class="input" id="url-input" name="url" type="text" inputmode="url" autocomplete="off"
+                     autocapitalize="off" spellcheck="false" placeholder="Paste the link you were sent"
+                     aria-describedby="url-error" />
+              <p class="field-error" id="url-error" role="alert"></p>
+            </div>
+            <div class="example-row">
+              <span class="label">Try an example</span>
+              <div class="chips" id="link-examples">
+                <button type="button" class="chip" data-example-url="https://ntpu.edu.tw-login.com/sso">Fake university login</button>
+                <button type="button" class="chip" data-example-url="https://paypa1-secure.com/signin">Fake PayPal</button>
+                <button type="button" class="chip" data-example-url="https://www.ntpu.edu.tw/">Real university website</button>
+                <button type="button" class="chip" data-example-url="https://ssa.ntpu.edu.tw/">Misspelled sign-in page</button>
+                <button type="button" class="chip" data-example-url="https://ntpu.com/login">Same name, wrong ending</button>
+                <button type="button" class="chip" data-example-url="https://example.org/">Unknown site</button>
+              </div>
+            </div>
+          </div>
+
+          <div data-mode-panel="pdf" hidden>
+            <div class="example-row">
+              <label class="label" for="pdf-example">Try an example</label>
+              <select class="select" id="pdf-example">
+                <option value="">Choose a sample PDF…</option>
+                <option value="example-likely-scam.pdf">Scam that hides instructions for scanners</option>
+                <option value="example-suspicious.pdf">Scholarship that needs a fee first</option>
+                <option value="example-legit.pdf">Ordinary email</option>
+              </select>
+            </div>
+            <div class="field">
+              <span class="label" id="pdf-label">Email saved as PDF</span>
+              <label class="drop" id="pdf-drop" aria-labelledby="pdf-label">
+                <input type="file" id="pdf-input" accept="application/pdf,.pdf" aria-describedby="pdf-hint pdf-error" />
+                <span class="btn btn-secondary btn-small">Choose PDF</span>
+                <span class="file-name" id="pdf-name">or drop it here</span>
+              </label>
+              <p class="hint" id="pdf-hint">Open the email, choose <strong>Print</strong>, and set the destination to <strong>Save as PDF</strong> (not &ldquo;Microsoft Print to PDF&rdquo;, which saves a picture we can't read). Upload that file (up to 5 MB).</p>
+              <p class="field-error" id="pdf-error" role="alert"></p>
+            </div>
+          </div>
+
+          <div data-mode-panel="eml" hidden>
+            <div class="example-row">
+              <label class="label" for="example-select">Try an example</label>
+              <select class="select" id="example-select"><option value="">Choose a sample email…</option></select>
+            </div>
+            <div class="field">
+              <label for="eml-text">Upload an Email for Analysis</label>
+              <textarea class="textarea" id="eml-text" spellcheck="false"
+                        placeholder="Drop your .eml file here, or paste the email source or message text"></textarea>
+              <p class="hint">Drop your .eml file here or <label class="btn-link" for="eml-file">browse your computer</label>.
+                To paste the source instead: in Gmail, ⋮ → <em>Show original</em>; in Outlook, <em>View message source</em>.
+                <input type="file" id="eml-file" accept=".eml,.txt,message/rfc822" hidden />
+                <span id="eml-file-name" class="muted"></span>
+              </p>
+              <p class="field-error" id="eml-error" role="alert"></p>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary scan-btn" id="scan-btn">Scan</button>
+          <p class="status-line" id="scan-status" aria-live="polite"></p>
+        </form>
+
+        <div id="scan-result" aria-live="polite"></div>
       </div>
+    </section>
 
-      <!-- Architecture Pipeline Live Tracker -->
-      <div class="bg-slate-900 border border-slate-800 rounded-xl p-4">
-        <div class="flex items-center justify-between mb-3">
-          <span class="text-xs font-semibold uppercase tracking-wider text-sky-400">2. AGENT RUNTIME — Live Orchestration Loop</span>
-          <span id="latency-badge" class="text-xs text-slate-400 font-mono">Idle</span>
+    <!-- =============================================================== ANALYST -->
+    <section id="view-analyst" data-view-panel="analyst" hidden>
+      <div class="page">
+        <div class="page-head">
+          <div>
+            <h1>Analyst view</h1>
+            <p>The full agent pipeline: sanitizer, skill playbooks, tools, campaign memory and the reasoning engine.</p>
+          </div>
+          <div class="row">
+            <button class="btn btn-secondary btn-small" data-open-modal="skills-modal">Skill playbooks (.md)</button>
+            <button class="btn btn-secondary btn-small" data-open-modal="redis-modal">Trusted domains</button>
+            <span class="status-chip" id="redis-chip">Trusted list: checking…</span>
+          </div>
         </div>
-        <div class="space-y-2 text-xs">
-          <div id="step-INPUT_SANITIZATION" class="step-card border border-slate-800 rounded-lg p-2.5 flex items-center justify-between">
-            <div>
-              <div class="font-medium text-slate-200">Input Preprocessor &amp; HTML/URL Sanitizer</div>
-              <div class="text-slate-400 text-[11px]" id="msg-INPUT_SANITIZATION">Strips active scripts, extracts headers, URLs &amp; anchor mismatches</div>
+
+        <div class="grid-2">
+          <div class="stack">
+            <div class="card panel">
+              <h2>Input <span class="aside">raw .eml, pasted text, or a PDF</span></h2>
+              <div class="samples" id="a-samples"></div>
+              <div class="field">
+                <label for="a-eml">Raw email (.eml)</label>
+                <textarea class="textarea" id="a-eml" rows="12" spellcheck="false" placeholder="Paste raw .eml headers and body here…"></textarea>
+              </div>
+              <div class="row-between" style="margin-bottom:12px">
+                <label class="btn-link" for="a-file">Upload .eml or .pdf</label>
+                <input type="file" id="a-file" accept=".eml,.txt,.pdf,application/pdf" hidden />
+                <label class="row" style="gap:6px;font-size:0.9rem"><input type="checkbox" id="a-use-llm" checked /> Use Gemini reasoning</label>
+              </div>
+              <p class="field-error" id="a-error" role="alert"></p>
+              <div class="row">
+                <button class="btn btn-primary" id="a-ws" style="flex:1">Analyze (live stream)</button>
+                <button class="btn btn-secondary" id="a-rest">HTTPS POST</button>
+              </div>
             </div>
-            <span class="font-mono text-[11px] text-slate-500" id="state-INPUT_SANITIZATION">WAITING</span>
+
+            <div class="card panel">
+              <h2>Agent runtime <span class="aside mono" id="a-latency">idle</span></h2>
+              <ol class="steps" id="a-steps">
+                <li class="step" data-step="INPUT_SANITIZATION"><div><div class="t">Input preprocessor &amp; sanitizer</div><div class="m">Strips scripts, extracts headers, URLs and anchor mismatches</div></div><span class="s">waiting</span></li>
+                <li class="step" data-step="AGENT_FRAMEWORK"><div><div class="t">Skill playbooks</div><div class="m">base_system_prompt.md + content-analysis.md + scam-scoring.md</div></div><span class="s">waiting</span></li>
+                <li class="step" data-step="TOOLS_EXECUTION"><div><div class="t">Tools: sender integrity + URL scan</div><div class="m">SPF/DKIM/DMARC, trusted domains, link reputation</div></div><span class="s">waiting</span></li>
+                <li class="step" data-step="MEMORY_LOOKUP"><div><div class="t">Campaign memory</div><div class="m">Matches sender/subject/URL fingerprint against earlier waves</div></div><span class="s">waiting</span></li>
+                <li class="step" data-step="LLM_REASONING"><div><div class="t">Reasoning engine (Gemini)</div><div class="m">Psychological cues, evidence quotes, final verdict</div></div><span class="s">waiting</span></li>
+              </ol>
+            </div>
           </div>
-          <div id="step-AGENT_FRAMEWORK" class="step-card border border-slate-800 rounded-lg p-2.5 flex items-center justify-between">
-            <div>
-              <div class="font-medium text-slate-200">Agent Framework (Git Repo Skill Playbooks)</div>
-              <div class="text-slate-400 text-[11px]" id="msg-AGENT_FRAMEWORK">base_system_prompt.md + content-analysis.md + scam-scoring.md</div>
+
+          <div class="stack">
+            <div class="card panel">
+              <h2>Verdict <span class="aside" id="a-engine"></span></h2>
+              <div id="a-banner" class="muted">Pick a sample or paste an email, then run the analysis.</div>
+              <div id="a-llm-note"></div>
+              <div class="tiles" id="a-tiles" hidden style="margin-top:12px">
+                <div class="tile"><div class="k">Sender integrity</div><div class="v" id="t-sender">0/35</div></div>
+                <div class="tile"><div class="k">Links &amp; files</div><div class="v" id="t-url">0/30</div></div>
+                <div class="tile"><div class="k">Wording / pressure</div><div class="v" id="t-psych">0/35</div></div>
+                <div class="tile"><div class="k">Campaign boost</div><div class="v" id="t-campaign">+0/15</div></div>
+                <p class="pattern-note" id="t-pattern" hidden></p>
+              </div>
             </div>
-            <span class="font-mono text-[11px] text-slate-500" id="state-AGENT_FRAMEWORK">WAITING</span>
-          </div>
-          <div id="step-TOOLS_EXECUTION" class="step-card border border-slate-800 rounded-lg p-2.5 flex items-center justify-between">
-            <div>
-              <div class="font-medium text-slate-200">Tools: SPF/DKIM/DMARC + Trusted Redis + URL Scan APIs</div>
-              <div class="text-slate-400 text-[11px]" id="msg-TOOLS_EXECUTION">Verifies sender cryptographic auth, Redis domain trust &amp; URL reputation</div>
+
+            <div class="grid-halves">
+              <div class="card panel">
+                <h2>Sender integrity <span class="aside" id="a-trust"></span></h2>
+                <div class="badges" id="a-auth"></div>
+                <ul class="findings" id="a-sender"><li class="muted">Nothing analysed yet.</li></ul>
+              </div>
+              <div class="card panel">
+                <h2>Links &amp; attachments <span class="aside" id="a-urlcount"></span></h2>
+                <ul class="findings" id="a-urls"><li class="muted">Nothing scanned yet.</li></ul>
+              </div>
             </div>
-            <span class="font-mono text-[11px] text-slate-500" id="state-TOOLS_EXECUTION">WAITING</span>
-          </div>
-          <div id="step-MEMORY_LOOKUP" class="step-card border border-slate-800 rounded-lg p-2.5 flex items-center justify-between">
-            <div>
-              <div class="font-medium text-slate-200">Memory: Campaign History &amp; Historical Outputs</div>
-              <div class="text-slate-400 text-[11px]" id="msg-MEMORY_LOOKUP">Correlates sender/subject/URL fingerprint against active waves</div>
+
+            <div class="card panel">
+              <h2>Evidence <span class="aside" id="a-grounded"></span></h2>
+              <ul class="evidence" id="a-evidence"><li class="muted" style="border:0;background:none;padding:0">Evidence appears here after an analysis.</li></ul>
+              <details style="margin-top:10px">
+                <summary class="btn-link">Show the email text with evidence highlighted</summary>
+                <div class="email-text" id="a-email-text" style="margin-top:8px"></div>
+              </details>
             </div>
-            <span class="font-mono text-[11px] text-slate-500" id="state-MEMORY_LOOKUP">WAITING</span>
-          </div>
-          <div id="step-LLM_REASONING" class="step-card border border-slate-800 rounded-lg p-2.5 flex items-center justify-between">
-            <div>
-              <div class="font-medium text-slate-200">LLM Engine: Gemini 3.x Flash Reasoning</div>
-              <div class="text-slate-400 text-[11px]" id="msg-LLM_REASONING">Evaluates psychological urgency/fear &amp; synthesizes final verdict</div>
+
+            <div class="card panel">
+              <h2>Content analysis &amp; sanitizer notes</h2>
+              <ul class="findings" id="a-psych"><li class="muted">Waiting for analysis.</li></ul>
+              <div id="a-limits" style="margin-top:10px"></div>
             </div>
-            <span class="font-mono text-[11px] text-slate-500" id="state-LLM_REASONING">WAITING</span>
+
+            <div class="card panel">
+              <h2>Campaign memory <button class="btn-link" id="a-refresh" style="font-size:0.85rem">Refresh</button></h2>
+              <div class="table-wrap">
+                <table>
+                  <thead><tr><th>Campaign</th><th>Sender domain</th><th>Subject pattern</th><th class="num">Seen</th><th class="num">Last score</th><th>Action</th></tr></thead>
+                  <tbody id="a-campaigns"></tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Right Column: OUTPUT / Contextual UI + Tool & Memory Telemetry -->
-    <section class="lg:col-span-7 flex flex-col gap-4">
-      <!-- Contextual Email Client UI Banner -->
-      <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
-        <div class="flex items-center justify-between mb-3">
-          <span class="text-xs font-semibold uppercase tracking-wider text-purple-400">3. OUTPUT / Contextual UI — Escalated Action &amp; Short Analysis</span>
-          <span id="engine-used-label" class="text-[11px] text-slate-400"></span>
-        </div>
-
-        <div id="contextual-banner" class="rounded-xl border border-slate-700 bg-slate-950 p-5">
-          <div class="text-sm text-slate-400">Select a sample <code class="text-slate-300">.eml</code> on the left and click <strong>Analyze via WebSocket Stream</strong> to inspect the Contextual UI response.</div>
-        </div>
-
-        <!-- Score Rubric Breakdown Bars -->
-        <div id="score-breakdown-panel" class="hidden mt-4 pt-4 border-t border-slate-800 grid grid-cols-2 sm:grid-cols-4 gap-3">
-          <div class="bg-slate-950 border border-slate-800 rounded-lg p-3">
-            <div class="text-[11px] text-slate-400">Sender Integrity (SPF/DKIM/DMARC)</div>
-            <div id="score-sender" class="text-lg font-bold text-white mt-0.5">0 / 35</div>
-          </div>
-          <div class="bg-slate-950 border border-slate-800 rounded-lg p-3">
-            <div class="text-[11px] text-slate-400">URL &amp; Attachment Scan</div>
-            <div id="score-url" class="text-lg font-bold text-white mt-0.5">0 / 30</div>
-          </div>
-          <div class="bg-slate-950 border border-slate-800 rounded-lg p-3">
-            <div class="text-[11px] text-slate-400">Psychological Urgency/Fear</div>
-            <div id="score-psych" class="text-lg font-bold text-white mt-0.5">0 / 35</div>
-          </div>
-          <div class="bg-slate-950 border border-slate-800 rounded-lg p-3">
-            <div class="text-[11px] text-slate-400">Campaign History Boost</div>
-            <div id="score-campaign" class="text-lg font-bold text-white mt-0.5">+0 / 15</div>
+    <!-- =============================================================== EVALUATION -->
+    <section id="view-eval" data-view-panel="eval" hidden>
+      <div class="page">
+        <div class="page-head">
+          <div>
+            <h1>How well does it work?</h1>
+            <p>Run the app on emails, PDFs and links from our synthetic dataset. Every item has a known answer, so we can count how often the app gets it right.</p>
           </div>
         </div>
-      </div>
+        <div class="stack">
+          <div class="callout warn" id="e-warning">Synthetic data: these numbers describe this dataset, not real-world accuracy.</div>
 
-      <!-- Detailed Tool Outputs Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <!-- Tool 1: Sender/Receiver Integrity + Trusted Domains Redis -->
-        <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 flex flex-col gap-2">
-          <div class="flex items-center justify-between">
-            <h3 class="text-xs font-semibold uppercase tracking-wider text-sky-400">Tool: Sender/Receiver Integrity</h3>
-            <span id="redis-trust-badge" class="text-[11px] px-2 py-0.5 rounded bg-slate-800 text-slate-400">Redis: —</span>
+          <div class="card panel">
+            <h2>Run the app on the dataset <span class="aside" id="e-threshold"></span></h2>
+            <div class="row">
+              <label class="row" style="gap:6px">Items
+                <select class="select" id="e-size" style="width:auto">
+                  <option value="10">10 random</option>
+                  <option value="50">50 random</option>
+                  <option value="100">100 random</option>
+                  <option value="200">200 random</option>
+                  <option value="all">All items</option>
+                </select>
+              </label>
+              <label class="row" style="gap:6px;font-size:0.9rem"><input type="checkbox" id="e-live-llm" /> Use Gemini if available</label>
+              <button class="btn btn-primary btn-small" id="e-live">Run</button>
+              <button class="btn btn-secondary btn-small" id="e-stop" hidden>Stop</button>
+            </div>
+            <p class="hint" id="e-size-note"></p>
+            <p class="status-line" id="e-progress"></p>
           </div>
-          <div id="auth-badges" class="flex flex-wrap gap-1.5 my-1"></div>
-          <ul id="sender-findings" class="text-xs text-slate-300 space-y-1.5 list-disc list-inside">
-            <li class="text-slate-500">No email analyzed yet.</li>
-          </ul>
-        </div>
 
-        <!-- Tool 2: URL Scan APIs & Attachments -->
-        <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 flex flex-col gap-2">
-          <div class="flex items-center justify-between">
-            <h3 class="text-xs font-semibold uppercase tracking-wider text-sky-400">Tool: Scan APIs (URLs &amp; Files)</h3>
-            <span id="url-count-badge" class="text-[11px] px-2 py-0.5 rounded bg-slate-800 text-slate-400">0 URLs</span>
+          <div id="e-results" class="stack" hidden>
+            <div class="grid-halves">
+              <div class="card panel">
+                <h2>Right and wrong <span class="aside" id="e-cm-title"></span></h2>
+                <div class="confusion" id="e-confusion"></div>
+                <p class="hint" id="e-cm-note"></p>
+              </div>
+              <div class="card panel">
+                <h2>What the numbers mean</h2>
+                <dl class="metrics" id="e-metrics"></dl>
+              </div>
+            </div>
+
+            <div class="card panel">
+              <h2>By input type and difficulty <span class="aside">from this run</span></h2>
+              <div class="table-wrap"><table>
+                <thead><tr><th>Group</th><th class="num">Items</th><th class="num">Right</th><th class="num">Wrong</th><th class="num">Scams missed</th><th class="num">False alarms</th></tr></thead>
+                <tbody id="e-groups"></tbody>
+              </table></div>
+            </div>
+
+            <div class="card panel">
+              <div class="row-between">
+                <h2 class="flush">Every item in this run</h2>
+                <label class="row" style="gap:6px;font-size:0.9rem"><input type="checkbox" id="e-only-wrong" /> Only wrong answers</label>
+              </div>
+              <p class="hint">Click a finished row to see what the app said and why.</p>
+              <div class="table-wrap table-scroll"><table>
+                <thead><tr><th>Item</th><th>Kind</th><th>Type</th><th>Truth</th><th>App said</th><th class="num">Score</th><th>Result</th></tr></thead>
+                <tbody id="e-live-rows"></tbody>
+              </table></div>
+              <div id="e-live-result"></div>
+            </div>
           </div>
-          <ul id="url-findings" class="text-xs text-slate-300 space-y-1.5 list-disc list-inside">
-            <li class="text-slate-500">No URLs scanned yet.</li>
-          </ul>
-        </div>
-      </div>
 
-      <!-- Psychological Content Analysis & Sanitizer Notes -->
-      <div class="bg-slate-900 border border-slate-800 rounded-xl p-4">
-        <h3 class="text-xs font-semibold uppercase tracking-wider text-emerald-400 mb-2">Content-Analysis.md Findings &amp; Sanitizer Notes</h3>
-        <ul id="psych-findings" class="text-xs text-slate-300 space-y-1.5 list-disc list-inside">
-          <li class="text-slate-500">Waiting for analysis...</li>
-        </ul>
-      </div>
-
-      <!-- MEMORY: Campaign History / Historical Outputs -->
-      <div class="bg-slate-900 border border-slate-800 rounded-xl p-4">
-        <div class="flex items-center justify-between mb-2">
-          <h3 class="text-xs font-semibold uppercase tracking-wider text-purple-400">MEMORY — Campaign History &amp; Historical Outputs</h3>
-          <button onclick="loadCampaignHistory()" class="text-xs text-slate-400 hover:text-white">Refresh</button>
-        </div>
-        <div class="overflow-x-auto">
-          <table class="w-full text-left text-xs">
-            <thead>
-              <tr class="border-b border-slate-800 text-slate-400">
-                <th class="py-2 pr-3">Campaign ID</th>
-                <th class="py-2 pr-3">Sender Domain</th>
-                <th class="py-2 pr-3">Subject Pattern</th>
-                <th class="py-2 pr-3">Seen</th>
-                <th class="py-2 pr-3">Last Score</th>
-                <th class="py-2">Escalated Action</th>
-              </tr>
-            </thead>
-            <tbody id="campaign-table-body" class="divide-y divide-slate-800/60 text-slate-300"></tbody>
-          </table>
+          <div class="card">
+            <details class="more bench" id="e-add-box">
+              <summary>Add items to the dataset <span class="summary-count" id="e-added-count"></span></summary>
+              <div class="more-body">
+                <form id="e-add-form" novalidate>
+                  <fieldset class="field label-pick">
+                    <legend class="label">These items are</legend>
+                    <label class="row" style="gap:6px"><input type="radio" name="e-add-label" value="phishing" /> Phishing</label>
+                    <label class="row" style="gap:6px"><input type="radio" name="e-add-label" value="legit" /> Legit (safe)</label>
+                  </fieldset>
+                  <div class="field">
+                    <label for="e-add-files">Files: .eml, .pdf or .txt, up to 5 MB each</label>
+                    <input type="file" id="e-add-files" multiple accept=".eml,.pdf,.txt" />
+                  </div>
+                  <div class="field">
+                    <label for="e-add-links">Links, one per line (optional)</label>
+                    <textarea class="textarea short" id="e-add-links" rows="3" placeholder="https://example.com/login"></textarea>
+                  </div>
+                  <div class="row">
+                    <button class="btn btn-primary btn-small" type="submit" id="e-add-btn">Add to dataset</button>
+                  </div>
+                  <p class="field-error" id="e-add-error"></p>
+                  <div id="e-add-result"></div>
+                </form>
+                <p class="hint">Added items are saved on this computer in <code>eval/added/</code>, which is left out of git, so they aren't pushed to GitHub. Only add real emails if the people in them agreed.</p>
+                <div class="table-wrap table-scroll" id="e-added-wrap" hidden><table>
+                  <thead><tr><th>Item</th><th>Kind</th><th>Label</th><th>Title</th><th></th></tr></thead>
+                  <tbody id="e-added-rows"></tbody>
+                </table></div>
+              </div>
+            </details>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Modal: Skill Playbooks (.md) -->
-  <div id="skills-modal" class="hidden fixed inset-0 z-50 bg-black/75 flex items-center justify-center p-4">
-    <div class="bg-slate-900 border border-slate-700 rounded-xl max-w-4xl w-full max-h-[85vh] flex flex-col">
-      <div class="px-5 py-3.5 border-b border-slate-800 flex items-center justify-between">
-        <h2 class="font-semibold text-white text-sm">Agent Framework (Git Repo) — Base System Prompt &amp; Skill Playbooks (.md)</h2>
-        <button onclick="toggleModal('skills-modal')" class="text-slate-400 hover:text-white text-sm">Close</button>
-      </div>
-      <div id="skills-modal-content" class="p-5 overflow-y-auto space-y-4 text-xs font-mono whitespace-pre-wrap text-slate-300"></div>
+  <footer class="foot">CampusGuard AI prototype. Email analysis is advisory, not a guarantee of safety. When in doubt, contact your university's IT help desk.</footer>
+
+  <!-- Modals (analyst) -->
+  <div class="modal" id="skills-modal" hidden role="dialog" aria-modal="true" aria-labelledby="skills-title">
+    <div class="modal-box">
+      <div class="modal-head"><h2 id="skills-title">Agent framework: base prompt and skill playbooks</h2><button class="btn btn-secondary btn-small" data-close-modal>Close</button></div>
+      <div class="modal-body"><pre class="pre" id="skills-content">Loading…</pre></div>
     </div>
   </div>
-
-  <!-- Modal: Trusted Domains Redis DB -->
-  <div id="redis-modal" class="hidden fixed inset-0 z-50 bg-black/75 flex items-center justify-center p-4">
-    <div class="bg-slate-900 border border-slate-700 rounded-xl max-w-xl w-full max-h-[80vh] flex flex-col">
-      <div class="px-5 py-3.5 border-b border-slate-800 flex items-center justify-between">
-        <h2 class="font-semibold text-white text-sm">Trusted Domains Redis DB Manager</h2>
-        <button onclick="toggleModal('redis-modal')" class="text-slate-400 hover:text-white text-sm">Close</button>
-      </div>
-      <div class="p-5 overflow-y-auto space-y-4 text-xs">
-        <div class="flex gap-2">
-          <input id="new-trusted-domain" type="text" placeholder="e.g. partner-bank.com"
-            class="flex-1 rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-slate-200" />
-          <input id="new-trusted-category" type="text" placeholder="Category (e.g. Verified Partner)"
-            class="flex-1 rounded-lg bg-slate-950 border border-slate-700 px-3 py-2 text-slate-200" />
-          <button onclick="addTrustedDomain()" class="px-3 py-2 rounded-lg bg-amber-500 text-slate-950 font-semibold">Add</button>
-        </div>
-        <div id="trusted-domains-list" class="divide-y divide-slate-800 border border-slate-800 rounded-lg"></div>
+  <div class="modal" id="redis-modal" hidden role="dialog" aria-modal="true" aria-labelledby="redis-title">
+    <div class="modal-box" style="max-width:620px">
+      <div class="modal-head"><h2 id="redis-title">Trusted domains</h2><button class="btn btn-secondary btn-small" data-close-modal>Close</button></div>
+      <div class="modal-body">
+        <form class="row" id="domain-form" style="margin-bottom:12px">
+          <input class="input" id="domain-new" placeholder="partner-bank.com" style="flex:1 1 180px;width:auto" />
+          <input class="input" id="domain-cat" placeholder="Category (e.g. Verified partner)" style="flex:1 1 180px;width:auto" />
+          <button class="btn btn-primary btn-small" type="submit">Add</button>
+        </form>
+        <div id="domain-list"></div>
       </div>
     </div>
   </div>
 
-  <script>
-    let samplesCache = [];
-
-    async function initDemo() {
-      await Promise.all([
-        fetchHealth(),
-        fetchSamples(),
-        loadCampaignHistory(),
-        loadTrustedDomains(),
-        loadSkillsModal()
-      ]);
-    }
-
-    async function fetchHealth() {
-      const res = await fetch('/api/v1/health');
-      const data = await res.json();
-      document.getElementById('health-redis').textContent = `Redis: ${data.redis_backend}`;
-      document.getElementById('health-llm').textContent = data.gemini_api_key_configured
-        ? `LLM: ${data.gemini_model} (Active)`
-        : `LLM: Rubric + Gemini Ready (Set GEMINI_API_KEY)`;
-    }
-
-    async function fetchSamples() {
-      const res = await fetch('/api/v1/samples');
-      const data = await res.json();
-      samplesCache = data.samples || [];
-      const container = document.getElementById('sample-buttons');
-      container.innerHTML = samplesCache.map((s, idx) => `
-        <button onclick="selectSample(${idx})"
-          class="text-left px-3 py-2 rounded-lg bg-slate-950 hover:bg-slate-800/80 border border-slate-800 flex items-center justify-between transition">
-          <span class="text-xs font-medium text-slate-200">${s.title}</span>
-          <span class="text-[10px] px-2 py-0.5 rounded bg-slate-800 text-slate-400">${s.category}</span>
-        </button>
-      `).join('');
-      if (samplesCache.length > 0) {
-        selectSample(0);
-      }
-    }
-
-    function selectSample(idx) {
-      const sample = samplesCache[idx];
-      if (!sample) return;
-      document.getElementById('raw-eml-input').value = sample.raw_eml;
-    }
-
-    function handleFileUpload(event) {
-      const file = event.target.files[0];
-      if (!file) return;
-      const reader = new FileReader();
-      reader.onload = (e) => {
-        document.getElementById('raw-eml-input').value = e.target.result;
-      };
-      reader.readAsText(file);
-    }
-
-    function resetSteps() {
-      const stages = ['INPUT_SANITIZATION', 'AGENT_FRAMEWORK', 'TOOLS_EXECUTION', 'MEMORY_LOOKUP', 'LLM_REASONING'];
-      stages.forEach(st => {
-        const el = document.getElementById(`step-${st}`);
-        const stateEl = document.getElementById(`state-${st}`);
-        if (el) el.className = 'step-card border border-slate-800 rounded-lg p-2.5 flex items-center justify-between';
-        if (stateEl) { stateEl.textContent = 'WAITING'; stateEl.className = 'font-mono text-[11px] text-slate-500'; }
-      });
-    }
-
-    function markStep(stage, status, message) {
-      const mapStage = {
-        'INPUT_SANITIZATION': 'INPUT_SANITIZATION',
-        'INPUT_SANITIZED': 'INPUT_SANITIZATION',
-        'AGENT_FRAMEWORK': 'AGENT_FRAMEWORK',
-        'TOOLS_EXECUTION': 'TOOLS_EXECUTION',
-        'TOOLS_COMPLETED': 'TOOLS_EXECUTION',
-        'MEMORY_LOOKUP': 'MEMORY_LOOKUP',
-        'MEMORY_COMPLETED': 'MEMORY_LOOKUP',
-        'LLM_REASONING': 'LLM_REASONING',
-      }[stage];
-      if (!mapStage) return;
-
-      const el = document.getElementById(`step-${mapStage}`);
-      const msgEl = document.getElementById(`msg-${mapStage}`);
-      const stateEl = document.getElementById(`state-${mapStage}`);
-      if (msgEl && message) msgEl.textContent = message;
-      if (status === 'ACTIVE') {
-        el.className = 'step-card step-active border rounded-lg p-2.5 flex items-center justify-between';
-        stateEl.textContent = 'RUNNING...';
-        stateEl.className = 'font-mono text-[11px] text-sky-400';
-      } else if (status === 'DONE') {
-        el.className = 'step-card step-done border rounded-lg p-2.5 flex items-center justify-between';
-        stateEl.textContent = 'DONE';
-        stateEl.className = 'font-mono text-[11px] text-emerald-400';
-      }
-    }
-
-    function runAnalysisWebSocket() {
-      const rawEml = document.getElementById('raw-eml-input').value.trim();
-      if (!rawEml) return;
-      resetSteps();
-      document.getElementById('latency-badge').textContent = 'Streaming via WS...';
-
-      const proto = window.location.protocol === 'https:' ? 'wss' : 'ws';
-      const ws = new WebSocket(`${proto}://${window.location.host}/ws/analyze`);
-
-      ws.onopen = () => {
-        ws.send(JSON.stringify({ raw_eml: rawEml, use_llm: true }));
-      };
-
-      ws.onmessage = (event) => {
-        const msg = JSON.parse(event.data);
-        if (msg.stage === 'INPUT_SANITIZATION') markStep('INPUT_SANITIZATION', 'ACTIVE', msg.message);
-        if (msg.stage === 'INPUT_SANITIZED') markStep('INPUT_SANITIZED', 'DONE', msg.message);
-        if (msg.stage === 'AGENT_FRAMEWORK') markStep('AGENT_FRAMEWORK', 'DONE', msg.message);
-        if (msg.stage === 'TOOLS_EXECUTION') markStep('TOOLS_EXECUTION', 'ACTIVE', msg.message);
-        if (msg.stage === 'TOOLS_COMPLETED') markStep('TOOLS_COMPLETED', 'DONE', msg.message);
-        if (msg.stage === 'MEMORY_LOOKUP') markStep('MEMORY_LOOKUP', 'ACTIVE', msg.message);
-        if (msg.stage === 'MEMORY_COMPLETED') markStep('MEMORY_COMPLETED', 'DONE', msg.message);
-        if (msg.stage === 'LLM_REASONING') markStep('LLM_REASONING', 'ACTIVE', msg.message);
-        if (msg.stage === 'COMPLETED') {
-          markStep('LLM_REASONING', 'DONE', msg.message);
-          renderFinalAnalysis(msg.data);
-          loadCampaignHistory();
-          ws.close();
-        }
-      };
-    }
-
-    async function runAnalysisREST() {
-      const rawEml = document.getElementById('raw-eml-input').value.trim();
-      if (!rawEml) return;
-      resetSteps();
-      document.getElementById('latency-badge').textContent = 'Calling HTTPS POST...';
-      const res = await fetch('/api/v1/analyze', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ raw_eml: rawEml, use_llm: true })
-      });
-      const data = await res.json();
-      ['INPUT_SANITIZATION', 'AGENT_FRAMEWORK', 'TOOLS_EXECUTION', 'MEMORY_LOOKUP', 'LLM_REASONING'].forEach(s => markStep(s, 'DONE'));
-      renderFinalAnalysis(data);
-      loadCampaignHistory();
-    }
-
-    function renderFinalAnalysis(data) {
-      document.getElementById('latency-badge').textContent = `${data.latency_ms} ms`;
-      document.getElementById('engine-used-label').textContent = data.engine_used;
-
-      const colorStyles = {
-        red: 'border-red-500/60 bg-red-950/30 text-red-100',
-        orange: 'border-orange-500/60 bg-orange-950/30 text-orange-100',
-        amber: 'border-amber-500/60 bg-amber-950/30 text-amber-100',
-        green: 'border-emerald-500/60 bg-emerald-950/30 text-emerald-100'
-      };
-      const badgeStyles = {
-        red: 'bg-red-500 text-slate-950',
-        orange: 'bg-orange-500 text-slate-950',
-        amber: 'bg-amber-400 text-slate-950',
-        green: 'bg-emerald-400 text-slate-950'
-      };
-
-      const c = data.ui_banner.color || 'red';
-      const bannerEl = document.getElementById('contextual-banner');
-      bannerEl.className = `rounded-xl border p-5 ${colorStyles[c] || colorStyles.red}`;
-      bannerEl.innerHTML = `
-        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-          <div class="flex items-center gap-2">
-            <span class="px-2.5 py-1 rounded font-bold text-xs uppercase ${badgeStyles[c]}">
-              ${data.escalated_action}
-            </span>
-            <span class="text-xs font-mono px-2 py-0.5 rounded bg-black/30">
-              Risk Score: ${data.risk_score} / 100 (${data.risk_level})
-            </span>
-            ${data.prompt_injection_detected ? '<span class="text-xs font-bold px-2 py-0.5 rounded bg-fuchsia-500 text-slate-950">PROMPT INJECTION BLOCKED</span>' : ''}
-          </div>
-          <span class="text-xs opacity-75 font-mono">ID: ${data.request_id}</span>
-        </div>
-        <h2 class="text-base font-bold text-white mb-1.5">${data.ui_banner.headline}</h2>
-        <p class="text-sm leading-relaxed opacity-95 mb-3">${data.ui_banner.short_analysis}</p>
-        <div class="pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-2 text-xs">
-          <div>
-            <span class="font-semibold">Recommended Next Steps:</span>
-            <span>${(data.recommended_next_steps || []).join(' • ')}</span>
-          </div>
-        </div>
-      `;
-
-      // Breakdown bars
-      document.getElementById('score-breakdown-panel').classList.remove('hidden');
-      document.getElementById('score-sender').textContent = `${data.score_breakdown.sender_integrity_score} / 35`;
-      document.getElementById('score-url').textContent = `${data.score_breakdown.url_scan_score} / 30`;
-      document.getElementById('score-psych').textContent = `${data.score_breakdown.psychological_content_score} / 35`;
-      document.getElementById('score-campaign').textContent = `+${data.score_breakdown.campaign_history_boost} / 15`;
-
-      // Sender Integrity Tool findings
-      const si = data.sender_integrity;
-      const redisBadge = document.getElementById('redis-trust-badge');
-      redisBadge.textContent = si.in_trusted_domains_redis ? `Redis: TRUSTED (${si.sender_domain})` : `Redis: UNTRUSTED (${si.sender_domain})`;
-      redisBadge.className = si.in_trusted_domains_redis
-        ? 'text-[11px] px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30'
-        : 'text-[11px] px-2 py-0.5 rounded bg-red-500/20 text-red-300 border border-red-500/30';
-
-      const pill = (label, val) => {
-        const ok = val === 'pass';
-        return `<span class="px-2 py-0.5 rounded text-[11px] font-mono ${ok ? 'bg-emerald-500/20 text-emerald-300' : 'bg-red-500/20 text-red-300'}">${label}: ${val}</span>`;
-      };
-      document.getElementById('auth-badges').innerHTML =
-        pill('SPF', si.spf_status) + pill('DKIM', si.dkim_status) + pill('DMARC', si.dmarc_status);
-
-      document.getElementById('sender-findings').innerHTML = (si.findings || []).map(f => `<li>${f}</li>`).join('');
-
-      // URL Scan Tool findings
-      const us = data.url_scan;
-      document.getElementById('url-count-badge').textContent = `${us.total_urls_scanned} URLs (${us.malicious_count} malicious)`;
-      document.getElementById('url-findings').innerHTML = (us.findings || []).map(f => `<li>${f}</li>`).join('');
-
-      // Psychological & Sanitizer notes
-      const notes = [
-        ...(data.psychological_tactics || []),
-        ...(data.sanitized_email.sanitization_notes || []).map(n => `[Sanitizer] ${n}`)
-      ];
-      document.getElementById('psych-findings').innerHTML = notes.map(n => `<li>${n}</li>`).join('');
-    }
-
-    async function loadCampaignHistory() {
-      const res = await fetch('/api/v1/campaigns');
-      const data = await res.json();
-      const tbody = document.getElementById('campaign-table-body');
-      tbody.innerHTML = (data.campaigns || []).map(c => `
-        <tr>
-          <td class="py-2 pr-3 font-mono text-sky-400">${c.campaign_id}</td>
-          <td class="py-2 pr-3 font-mono">${c.sender_domain}</td>
-          <td class="py-2 pr-3 truncate max-w-[220px]">${c.subject_pattern}</td>
-          <td class="py-2 pr-3 font-semibold">${c.seen_count}</td>
-          <td class="py-2 pr-3 font-mono">${c.last_risk_score}/100</td>
-          <td class="py-2"><span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-slate-800">${c.last_action}</span></td>
-        </tr>
-      `).join('');
-    }
-
-    async function loadTrustedDomains() {
-      const res = await fetch('/api/v1/trusted-domains');
-      const data = await res.json();
-      const listEl = document.getElementById('trusted-domains-list');
-      const entries = Object.entries(data.domains || {});
-      listEl.innerHTML = entries.map(([domain, cat]) => `
-        <div class="px-3 py-2 flex items-center justify-between">
-          <div>
-            <span class="font-mono text-white font-medium">${domain}</span>
-            <span class="text-slate-400 ml-2">${cat}</span>
-          </div>
-          <button onclick="removeTrustedDomain('${domain}')" class="text-red-400 hover:text-red-300">Remove</button>
-        </div>
-      `).join('');
-    }
-
-    async function addTrustedDomain() {
-      const domain = document.getElementById('new-trusted-domain').value.trim();
-      const category = document.getElementById('new-trusted-category').value.trim() || 'Verified Domain';
-      if (!domain) return;
-      await fetch('/api/v1/trusted-domains', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ domain, category })
-      });
-      document.getElementById('new-trusted-domain').value = '';
-      await loadTrustedDomains();
-    }
-
-    async function removeTrustedDomain(domain) {
-      await fetch(`/api/v1/trusted-domains/${encodeURIComponent(domain)}`, { method: 'DELETE' });
-      await loadTrustedDomains();
-    }
-
-    async function loadSkillsModal() {
-      const res = await fetch('/api/v1/skills');
-      const data = await res.json();
-      document.getElementById('skills-modal-content').textContent =
-        `=== base_system_prompt.md ===\n${data.base_system_prompt}\n\n` +
-        `=== skills/content-analysis.md ===\n${data.content_analysis_skill}\n\n` +
-        `=== skills/scam-scoring.md ===\n${data.scam_scoring_skill}`;
-    }
-
-    function toggleModal(id) {
-      const el = document.getElementById(id);
-      el.classList.toggle('hidden');
-    }
-
-    initDemo();
-  </script>
+  <script src="/static/app.js"></script>
 </body>
 </html>
-

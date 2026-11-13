@@ -1,0 +1,37 @@
+From: Carrick State Human Resources <hr@carrickstate.edu>
+To: putri.sutanto@carrickstate.edu
+Return-Path: <hr@carrickstate.edu>
+Subject: Your pay statement is ready
+Date: Sun, 01 Nov 2026 02:20:00 +0000
+Message-ID: <709426a524e3@carrickstate.edu>
+Authentication-Results: mx.carrickstate.edu; spf=pass
+ smtp.mailfrom=carrickstate.edu; dkim=pass header.d=carrickstate.edu;
+ dmarc=pass header.from=carrickstate.edu
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=carrickstate.edu; s=s1; b=780b3657117b355b
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShielda171348c2a0=="
+
+--==ScamShielda171348c2a0==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+Your pay statement for this period is ready. Sign in to the staff portal to v=
+iew it.
+
+Staff portal: https://portal.carrickstate.edu/payroll
+
+Human Resources
+
+--==ScamShielda171348c2a0==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello,</p><p>Your pay statement for this period is ready. Sign=
+ in to the staff portal to view it.</p><p><a href=3D"https://portal.carrickst=
+ate.edu/payroll">Staff portal</a></p><p>Human Resources</p></body></html>
+
+--==ScamShielda171348c2a0==--

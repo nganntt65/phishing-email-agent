@@ -1,0 +1,37 @@
+From: Stripe <receipts@stripe.com>
+To: clubs.treasurer@harrowgate.ac.uk
+Return-Path: <receipts@stripe.com>
+Subject: Receipt for your payment
+Date: Sun, 18 Oct 2026 09:28:00 +0000
+Message-ID: <b7b89a45693d@stripe.com>
+Authentication-Results: mx.harrowgate.ac.uk; spf=pass
+ smtp.mailfrom=stripe.com; dkim=pass header.d=stripe.com; dmarc=pass
+ header.from=stripe.com
+DKIM-Signature: v=1; a=rsa-sha256; d=stripe.com; s=s1; b=2aa93b436d15f16f
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield71b0946d2a0=="
+
+--==ScamShield71b0946d2a0==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+Your invoice for the student club subscription is overdue. You can pay it fro=
+m your dashboard.
+
+View invoice: https://dashboard.stripe.com/invoices
+
+Thanks, Stripe
+
+--==ScamShield71b0946d2a0==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello,</p><p>Your invoice for the student club subscription is=
+ overdue. You can pay it from your dashboard.</p><p><a href=3D"https://dashbo=
+ard.stripe.com/invoices">View invoice</a></p><p>Thanks, Stripe</p></body></ht=
+ml>
+
+--==ScamShield71b0946d2a0==--

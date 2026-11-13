@@ -1,0 +1,35 @@
+From: Westbrook News <news@westbrook.edu>
+To: samuel.alvarez@westbrook.edu
+Return-Path: <news@westbrook.edu>
+Subject: Library hours extended for finals
+Date: Fri, 23 Oct 2026 12:43:00 +0000
+Message-ID: <7d821ba362e7@westbrook.edu>
+Authentication-Results: mx.westbrook.edu; spf=pass
+ smtp.mailfrom=westbrook.edu; dkim=pass header.d=westbrook.edu; dmarc=pass
+ header.from=westbrook.edu
+DKIM-Signature: v=1; a=rsa-sha256; d=westbrook.edu; s=s1; b=e8e22743b65feea9
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield12718d4d050=="
+
+--==ScamShield12718d4d050==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello Westbrook,
+
+Library hours extended for finals. Details are on the university website.
+
+Read more: https://www.westbrook.edu/library/hours
+
+Have a good week.
+
+--==ScamShield12718d4d050==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello Westbrook,</p><p>Library hours extended for finals. Deta=
+ils are on the university website.</p><p><a href=3D"https://www.westbrook.edu=
+/library/hours">Read more</a></p><p>Have a good week.</p></body></html>
+
+--==ScamShield12718d4d050==--

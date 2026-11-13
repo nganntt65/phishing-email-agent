@@ -1,0 +1,31 @@
+From: Arjun Chen <arjun87@gmail.com>
+To: omar.rahman@harrowgate.ac.uk
+Return-Path: <arjun87@gmail.com>
+Subject: lunch
+Date: Sat, 24 Oct 2026 11:14:00 +0000
+Message-ID: <3d3a88b4f474@gmail.com>
+Authentication-Results: mx.harrowgate.ac.uk; spf=pass smtp.mailfrom=gmail.com;
+ dkim=pass header.d=gmail.com; dmarc=pass header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; d=gmail.com; s=s1; b=f73157494f3949a8
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShieldc8cf01f9440=="
+
+--==ScamShieldc8cf01f9440==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hey!
+
+I uploaded my notes to our shared folder.
+
+- Arjun
+
+--==ScamShieldc8cf01f9440==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hey!</p><p>I uploaded my notes to our shared folder.</p><p>- A=
+rjun</p></body></html>
+
+--==ScamShieldc8cf01f9440==--

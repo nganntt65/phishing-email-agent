@@ -1,0 +1,38 @@
+From: PayPal Security <security@paypal-resolution-center.net>
+To: sofia.nakamura@harrowgate.ac.uk
+Return-Path: <security@paypal-resolution-center.net>
+Subject: Unusual sign-in activity on your PayPal account
+Date: Sat, 24 Oct 2026 13:44:00 +0000
+Message-ID: <784c980402a2@paypal-resolution-center.net>
+Authentication-Results: mx.harrowgate.ac.uk; spf=fail
+ smtp.mailfrom=paypal-resolution-center.net; dkim=none
+ header.d=paypal-resolution-center.net; dmarc=fail
+ header.from=paypal-resolution-center.net
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield84a8ff8100=="
+
+--==ScamShield84a8ff8100==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Dear Customer,
+
+We detected an unauthorized login attempt on your PayPal account.
+
+Verify your identity immediately to restore access.
+
+https://www.paypal.com/verify: https://paypal-resolution-center.net/verify
+
+PayPal Trust & Safety
+
+--==ScamShield84a8ff8100==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Dear Customer,</p><p>We detected an unauthorized login attempt=
+ on your PayPal account.</p><p>Verify your identity immediately to restore ac=
+cess.</p><p><a href=3D"https://paypal-resolution-center.net/verify">https://w=
+ww.paypal.com/verify</a></p><p>PayPal Trust & Safety</p></body></html>
+
+--==ScamShield84a8ff8100==--

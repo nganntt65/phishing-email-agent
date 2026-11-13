@@ -1,0 +1,40 @@
+From: Westbrook Community Credit Union <alerts@westbrookccu.org>
+To: wei.hartono@westbrook.edu
+Return-Path: <alerts@westbrookccu.org>
+Subject: Please review a recent transaction
+Date: Sat, 31 Oct 2026 00:52:00 +0000
+Message-ID: <8ba42e326567@westbrookccu.org>
+Authentication-Results: mx.westbrook.edu; spf=pass
+ smtp.mailfrom=westbrookccu.org; dkim=pass header.d=westbrookccu.org;
+ dmarc=pass header.from=westbrookccu.org
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=westbrookccu.org; s=s1; b=523ae9934b3446bc
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield141a43db540=="
+
+--==ScamShield141a43db540==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+We noticed unusual activity on your debit card. If this wasn't you, sign in t=
+o review it.
+
+We will never ask for your password by email.
+
+Review transaction: https://westbrookccu.org/login
+
+Westbrook Community Credit Union
+
+--==ScamShield141a43db540==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello,</p><p>We noticed unusual activity on your debit card. I=
+f this wasn't you, sign in to review it.</p><p>We will never ask for your pas=
+sword by email.</p><p><a href=3D"https://westbrookccu.org/login">Review trans=
+action</a></p><p>Westbrook Community Credit Union</p></body></html>
+
+--==ScamShield141a43db540==--

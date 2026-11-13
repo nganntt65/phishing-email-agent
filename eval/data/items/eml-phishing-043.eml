@@ -1,0 +1,45 @@
+From: Housing Services <office@student-forms.top>
+To: amara.kowalski@meridian.ac.id
+Return-Path: <office@student-forms.top>
+Subject: Please open the attached form
+Date: Wed, 28 Oct 2026 22:33:00 +0000
+Message-ID: <6ced58007c02@student-forms.top>
+Authentication-Results: mx.meridian.ac.id; spf=softfail
+ smtp.mailfrom=student-forms.top; dkim=fail header.d=student-forms.top;
+ dmarc=fail header.from=student-forms.top
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="==ScamShieldbeff233d5f0=="
+
+--==ScamShieldbeff233d5f0==
+Content-Type: multipart/alternative; boundary="==ScamShield548ce6424d1=="
+
+--==ScamShield548ce6424d1==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+Please open the attached document and complete it today.
+
+Thank you.
+
+--==ScamShield548ce6424d1==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello,</p><p>Please open the attached document and complete it=
+ today.</p><p>Thank you.</p></body></html>
+
+--==ScamShield548ce6424d1==--
+
+--==ScamShieldbeff233d5f0==
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="Payment_Receipt.js"
+MIME-Version: 1.0
+
+TVraPtTvFkfhcz7AdpGcq2FWB37ZUy58NlrMQldH4Ziz4UaOAoTyMBU9uGh9jsI9sHmltn1yygQX
+SzhnsT5OqZRe
+
+--==ScamShieldbeff233d5f0==--

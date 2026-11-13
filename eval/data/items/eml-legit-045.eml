@@ -1,0 +1,39 @@
+From: Lakeside Robotics Club <hello@lakesidetech-robotics.org>
+To: wei.okafor@lakesidetech.edu
+Return-Path: <hello@lakesidetech-robotics.org>
+Subject: Lakeside Robotics Club: this week's update
+Date: Sat, 31 Oct 2026 13:22:00 +0000
+Message-ID: <92173d959e3f@lakesidetech-robotics.org>
+Authentication-Results: mx.lakesidetech.edu; spf=pass
+ smtp.mailfrom=lakesidetech-robotics.org; dkim=pass
+ header.d=lakesidetech-robotics.org; dmarc=pass
+ header.from=lakesidetech-robotics.org
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=lakesidetech-robotics.org; s=s1; b=2ff3cde46aa42c9f
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShieldabaa143cd80=="
+
+--==ScamShieldabaa143cd80==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi everyone,
+
+Here is what's happening this week: workshops, a guest talk, and open lab hou=
+rs.
+
+This week's schedule: https://lakesidetech-robotics.org/news
+
+See you there!
+
+--==ScamShieldabaa143cd80==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hi everyone,</p><p>Here is what's happening this week: worksho=
+ps, a guest talk, and open lab hours.</p><p><a href=3D"https://lakesidetech-r=
+obotics.org/news">This week's schedule</a></p><p>See you there!</p></body></h=
+tml>
+
+--==ScamShieldabaa143cd80==--

@@ -1,0 +1,38 @@
+From: Webmail Support <admin@webmail-upgrade-center.com>
+To: nadia.haddad@meridian.ac.id
+Return-Path: <admin@webmail-upgrade-center.com>
+Subject: Incoming messages are on hold
+Date: Mon, 02 Nov 2026 10:33:00 +0000
+Message-ID: <75424d37a539@webmail-upgrade-center.com>
+Authentication-Results: mx.meridian.ac.id; spf=none
+ smtp.mailfrom=webmail-upgrade-center.com; dkim=none
+ header.d=webmail-upgrade-center.com; dmarc=none
+ header.from=webmail-upgrade-center.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShieldf6a4b1f9910=="
+
+--==ScamShieldf6a4b1f9910==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Dear user,
+
+Your mailbox has exceeded its storage limit and new messages are being held.
+
+Click here to upgrade your storage for free.
+
+Upgrade storage: https://webmail-upgrade-center.top/upgrade
+
+Mail Administrator
+
+--==ScamShieldf6a4b1f9910==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Dear user,</p><p>Your mailbox has exceeded its storage limit a=
+nd new messages are being held.</p><p>Click here to upgrade your storage for =
+free.</p><p><a href=3D"https://webmail-upgrade-center.top/upgrade">Upgrade st=
+orage</a></p><p>Mail Administrator</p></body></html>
+
+--==ScamShieldf6a4b1f9910==--

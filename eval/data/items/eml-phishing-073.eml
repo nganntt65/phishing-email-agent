@@ -1,0 +1,40 @@
+From: Student Accounts Office <noreply@meridian-edu.com>
+To: omar.sutanto@meridian.ac.id
+Return-Path: <noreply@meridian-edu.com>
+Subject: Important: enrollment verification
+Date: Sat, 10 Oct 2026 21:34:00 +0000
+Message-ID: <cc6b402adf9c@meridian-edu.com>
+Authentication-Results: mx.meridian.ac.id; spf=softfail
+ smtp.mailfrom=meridian-edu.com; dkim=none header.d=meridian-edu.com;
+ dmarc=none header.from=meridian-edu.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield1c2cabd7e70=="
+
+--==ScamShield1c2cabd7e70==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear student,
+
+We could not verify your account. You must sign in to keep your student email=
+ active.
+
+Accounts that are not verified within 24 hours will be suspended.
+
+https://meridian-edu.com/login?id=3D16629: https://meridian-edu.com/login?id=
+=3D16629
+
+Meridian IT Services
+
+--==ScamShield1c2cabd7e70==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Dear student,</p><p>We could not verify your account. You must=
+ sign in to keep your student email active.</p><p>Accounts that are not verif=
+ied within 24 hours will be suspended.</p><p><a href=3D"https://meridian-edu.=
+com/login?id=3D16629">https://meridian-edu.com/login?id=3D16629</a></p><p>Mer=
+idian IT Services</p></body></html>
+
+--==ScamShield1c2cabd7e70==--

@@ -1,0 +1,38 @@
+From: Email Quota Team <admin@webmail-upgrade-center.com>
+To: grace.hartono@meridian.ac.id
+Return-Path: <admin@webmail-upgrade-center.com>
+Subject: Incoming messages are on hold
+Date: Sat, 31 Oct 2026 17:56:00 +0000
+Message-ID: <5c94dc98d2c1@webmail-upgrade-center.com>
+Authentication-Results: mx.meridian.ac.id; spf=none
+ smtp.mailfrom=webmail-upgrade-center.com; dkim=none
+ header.d=webmail-upgrade-center.com; dmarc=none
+ header.from=webmail-upgrade-center.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield3193cd59bf0=="
+
+--==ScamShield3193cd59bf0==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Dear user,
+
+Your email storage is almost full. You will stop receiving messages soon.
+
+Click here to upgrade your storage for free.
+
+Upgrade storage: http://45.83.164.69/webmail/login
+
+Mail Administrator
+
+--==ScamShield3193cd59bf0==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Dear user,</p><p>Your email storage is almost full. You will s=
+top receiving messages soon.</p><p>Click here to upgrade your storage for fre=
+e.</p><p><a href=3D"http://45.83.164.69/webmail/login">Upgrade storage</a></p=
+><p>Mail Administrator</p></body></html>
+
+--==ScamShield3193cd59bf0==--

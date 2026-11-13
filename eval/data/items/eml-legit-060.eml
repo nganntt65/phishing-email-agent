@@ -1,0 +1,31 @@
+From: Kenji Osei <kenji50@gmail.com>
+To: jonas.moreau@carrickstate.edu
+Return-Path: <kenji50@gmail.com>
+Subject: notes from today
+Date: Wed, 04 Nov 2026 08:28:00 +0000
+Message-ID: <ff1136ee1640@gmail.com>
+Authentication-Results: mx.carrickstate.edu; spf=pass smtp.mailfrom=gmail.com;
+ dkim=pass header.d=gmail.com; dmarc=pass header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; d=gmail.com; s=s1; b=491b90e99ca3fbb3
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShieldeab1a8b71f0=="
+
+--==ScamShieldeab1a8b71f0==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hey!
+
+I uploaded my notes to our shared folder.
+
+- Kenji
+
+--==ScamShieldeab1a8b71f0==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hey!</p><p>I uploaded my notes to our shared folder.</p><p>- K=
+enji</p></body></html>
+
+--==ScamShieldeab1a8b71f0==--

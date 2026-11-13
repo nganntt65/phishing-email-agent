@@ -1,0 +1,39 @@
+From: "Dr. Sofia Sutanto" <sofia.sutanto@westbrook.edu>
+To: aisha.kowalski@westbrook.edu
+Return-Path: <sofia.sutanto@westbrook.edu>
+Subject: Reminder - ECON 305 quiz closes at midnight
+Date: Wed, 21 Oct 2026 14:38:00 +0000
+Message-ID: <4b7e87d292a6@westbrook.edu>
+Authentication-Results: mx.westbrook.edu; spf=pass
+ smtp.mailfrom=westbrook.edu; dkim=pass header.d=westbrook.edu; dmarc=pass
+ header.from=westbrook.edu
+DKIM-Signature: v=1; a=rsa-sha256; d=westbrook.edu; s=s1; b=816bcb9f7426b193
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield6e9afd40150=="
+
+--==ScamShield6e9afd40150==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi all,
+
+This is a reminder that the assignment is due tonight. Submit immediately if =
+you have not yet.
+
+Late work will lose points.
+
+Course page: https://learn.westbrook.edu/courses/econ305
+
+Dr. Sutanto
+
+--==ScamShield6e9afd40150==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hi all,</p><p>This is a reminder that the assignment is due to=
+night. Submit immediately if you have not yet.</p><p>Late work will lose poin=
+ts.</p><p><a href=3D"https://learn.westbrook.edu/courses/econ305">Course page=
+</a></p><p>Dr. Sutanto</p></body></html>
+
+--==ScamShield6e9afd40150==--

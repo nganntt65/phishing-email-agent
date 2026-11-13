@@ -1,0 +1,7 @@
+Hello,
+
+Your invoice for the student club subscription is overdue. You can pay it from your dashboard.
+
+View invoice (click here)
+
+Thanks, Stripe

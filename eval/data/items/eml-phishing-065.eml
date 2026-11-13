@@ -1,0 +1,38 @@
+From: Apex Lab Equipment Accounts <billing@apex-supply.co>
+To: procurement@lakesidetech.edu
+Reply-To: ap-desk@apex-payments.net
+Return-Path: <billing@apex-supply.co>
+Subject: Overdue invoice - new remittance account
+Date: Thu, 15 Oct 2026 10:24:00 +0000
+Message-ID: <5be492698698@apex-supply.co>
+Authentication-Results: mx.lakesidetech.edu; spf=softfail
+ smtp.mailfrom=apex-supply.co; dkim=pass header.d=apex-supply.co; dmarc=none
+ header.from=apex-supply.co
+DKIM-Signature: v=1; a=rsa-sha256; d=apex-supply.co; s=s1; b=4bbe4aff9326dffd
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShieldb3fe2110d00=="
+
+--==ScamShieldb3fe2110d00==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello Accounts Payable,
+
+We have changed our bank account details. Please update your records before p=
+aying the overdue invoice.
+
+Reply to this email and we will send the new routing number.
+
+Apex Lab Equipment Billing
+
+--==ScamShieldb3fe2110d00==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello Accounts Payable,</p><p>We have changed our bank account=
+ details. Please update your records before paying the overdue invoice.</p><p=
+>Reply to this email and we will send the new routing number.</p><p>Apex Lab =
+Equipment Billing</p></body></html>
+
+--==ScamShieldb3fe2110d00==--

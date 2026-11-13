@@ -1,0 +1,38 @@
+From: "Prof. Amara Okafor" <prof.okafor6@harrowgate-faculty-mail.com>
+To: kenji.osei@harrowgate.ac.uk
+Return-Path: <prof.okafor6@harrowgate-faculty-mail.com>
+Subject: Request
+Date: Tue, 13 Oct 2026 01:37:00 +0000
+Message-ID: <a2816f962882@harrowgate-faculty-mail.com>
+Authentication-Results: mx.harrowgate.ac.uk; spf=pass
+ smtp.mailfrom=harrowgate-faculty-mail.com; dkim=pass
+ header.d=harrowgate-faculty-mail.com; dmarc=none
+ header.from=harrowgate-faculty-mail.com
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=harrowgate-faculty-mail.com; s=s1; b=7de1bdfed0725b5c
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield17f81401020=="
+
+--==ScamShield17f81401020==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi,
+
+I'm stuck in a meeting. Please purchase gift cards for the department prize a=
+nd send me the codes.
+
+Let me know as soon as possible.
+
+Prof. Okafor
+
+--==ScamShield17f81401020==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hi,</p><p>I'm stuck in a meeting. Please purchase gift cards f=
+or the department prize and send me the codes.</p><p>Let me know as soon as p=
+ossible.</p><p>Prof. Okafor</p></body></html>
+
+--==ScamShield17f81401020==--

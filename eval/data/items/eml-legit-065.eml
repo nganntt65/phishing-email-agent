@@ -1,0 +1,39 @@
+From: Meridian Community Credit Union <alerts@meridianccu.org>
+To: wei.chen@meridian.ac.id
+Return-Path: <alerts@meridianccu.org>
+Subject: Unusual activity on your card
+Date: Sat, 10 Oct 2026 16:20:00 +0000
+Message-ID: <12fca4704d48@meridianccu.org>
+Authentication-Results: mx.meridian.ac.id; spf=pass
+ smtp.mailfrom=meridianccu.org; dkim=pass header.d=meridianccu.org; dmarc=pass
+ header.from=meridianccu.org
+DKIM-Signature: v=1; a=rsa-sha256; d=meridianccu.org; s=s1; b=7740d83173318749
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield84ae1b9f690=="
+
+--==ScamShield84ae1b9f690==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+We noticed unusual activity on your debit card. If this wasn't you, sign in t=
+o review it.
+
+We will never ask for your password by email.
+
+Review transaction: https://meridianccu.org/login
+
+Meridian Community Credit Union
+
+--==ScamShield84ae1b9f690==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello,</p><p>We noticed unusual activity on your debit card. I=
+f this wasn't you, sign in to review it.</p><p>We will never ask for your pas=
+sword by email.</p><p><a href=3D"https://meridianccu.org/login">Review transa=
+ction</a></p><p>Meridian Community Credit Union</p></body></html>
+
+--==ScamShield84ae1b9f690==--

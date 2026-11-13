@@ -1,0 +1,32 @@
+From: Samuel Hartono <samuel.hartono.uni@gmail.com>
+To: aisha.castillo@carrickstate.edu
+Return-Path: <samuel.hartono.uni@gmail.com>
+Subject: Quick question
+Date: Wed, 28 Oct 2026 18:10:00 +0000
+Message-ID: <871543dac043@gmail.com>
+Authentication-Results: mx.carrickstate.edu; spf=pass smtp.mailfrom=gmail.com;
+ dkim=pass header.d=gmail.com; dmarc=pass header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; d=gmail.com; s=s1; b=9b49bd26df57c59a
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShieldf66c52c49f0=="
+
+--==ScamShieldf66c52c49f0==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi,
+
+I need your help with something small for the department. Reply when you see =
+this.
+
+Samuel
+
+--==ScamShieldf66c52c49f0==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hi,</p><p>I need your help with something small for the depart=
+ment. Reply when you see this.</p><p>Samuel</p></body></html>
+
+--==ScamShieldf66c52c49f0==--

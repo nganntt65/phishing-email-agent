@@ -1,0 +1,31 @@
+From: Lucia Mensah <lucia.mensah.uni@gmail.com>
+To: tomas.nakamura@lakesidetech.edu
+Return-Path: <lucia.mensah.uni@gmail.com>
+Subject: Are you on campus?
+Date: Wed, 28 Oct 2026 02:08:00 +0000
+Message-ID: <ba64639447b@gmail.com>
+Authentication-Results: mx.lakesidetech.edu; spf=pass smtp.mailfrom=gmail.com;
+ dkim=pass header.d=gmail.com; dmarc=pass header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; d=gmail.com; s=s1; b=df56ac6f96b648a
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield4a8da8eee40=="
+
+--==ScamShield4a8da8eee40==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+Are you on campus today? I need a quick favor but I'm in meetings all day.
+
+Lucia
+
+--==ScamShield4a8da8eee40==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hi,</p><p>Are you on campus today? I need a quick favor but I'=
+m in meetings all day.</p><p>Lucia</p></body></html>
+
+--==ScamShield4a8da8eee40==--

@@ -1,0 +1,32 @@
+From: Amara Osei <amara.osei.uni@gmail.com>
+To: nadia.osei@lakesidetech.edu
+Return-Path: <amara.osei.uni@gmail.com>
+Subject: Are you on campus?
+Date: Wed, 28 Oct 2026 21:48:00 +0000
+Message-ID: <60908b1e3b9d@gmail.com>
+Authentication-Results: mx.lakesidetech.edu; spf=pass smtp.mailfrom=gmail.com;
+ dkim=pass header.d=gmail.com; dmarc=pass header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; d=gmail.com; s=s1; b=eecf67d2749176f4
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShieldde5260001e0=="
+
+--==ScamShieldde5260001e0==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi,
+
+I need your help with something small for the department. Reply when you see =
+this.
+
+Amara
+
+--==ScamShieldde5260001e0==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hi,</p><p>I need your help with something small for the depart=
+ment. Reply when you see this.</p><p>Amara</p></body></html>
+
+--==ScamShieldde5260001e0==--

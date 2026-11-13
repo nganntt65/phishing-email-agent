@@ -1,0 +1,36 @@
+From: Stripe <receipts@stripe.com>
+To: clubs.treasurer@meridian.ac.id
+Return-Path: <receipts@stripe.com>
+Subject: Your invoice is overdue
+Date: Sun, 25 Oct 2026 08:28:00 +0000
+Message-ID: <1589d8776a0@stripe.com>
+Authentication-Results: mx.meridian.ac.id; spf=pass smtp.mailfrom=stripe.com;
+ dkim=pass header.d=stripe.com; dmarc=pass header.from=stripe.com
+DKIM-Signature: v=1; a=rsa-sha256; d=stripe.com; s=s1; b=144823f7e7e646c7
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield4104dd70540=="
+
+--==ScamShield4104dd70540==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+Your invoice for the student club subscription is overdue. You can pay it fro=
+m your dashboard.
+
+View invoice: https://dashboard.stripe.com/invoices
+
+Thanks, Stripe
+
+--==ScamShield4104dd70540==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello,</p><p>Your invoice for the student club subscription is=
+ overdue. You can pay it from your dashboard.</p><p><a href=3D"https://dashbo=
+ard.stripe.com/invoices">View invoice</a></p><p>Thanks, Stripe</p></body></ht=
+ml>
+
+--==ScamShield4104dd70540==--

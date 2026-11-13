@@ -1,0 +1,41 @@
+From: Student Accounts Office <registrar@lakesidetech-sso.net>
+To: nadia.rahman@lakesidetech.edu
+Reply-To: helpdesk-verify@secure-mail-center.xyz
+Return-Path: <registrar@lakesidetech-sso.net>
+Subject: Final notice: your student email will be deactivated
+Date: Sat, 31 Oct 2026 19:03:00 +0000
+Message-ID: <f5c99c10c572@lakesidetech-sso.net>
+Authentication-Results: mx.lakesidetech.edu; spf=fail
+ smtp.mailfrom=lakesidetech-sso.net; dkim=fail header.d=lakesidetech-sso.net;
+ dmarc=none header.from=lakesidetech-sso.net
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield19bd767e350=="
+
+--==ScamShield19bd767e350==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Lakeside student,
+
+We could not verify your account. You must sign in to confirm your enrollment=
+ for next term.
+
+Failure to verify will result in your account being terminated.
+
+https://portal.lakesidetech.edu/login: https://lakesidetech-sso.net/login?id=
+=3D42530
+
+Student Accounts Team
+
+--==ScamShield19bd767e350==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Dear Lakeside student,</p><p>We could not verify your account.=
+ You must sign in to confirm your enrollment for next term.</p><p>Failure to =
+verify will result in your account being terminated.</p><p><a href=3D"https:/=
+/lakesidetech-sso.net/login?id=3D42530">https://portal.lakesidetech.edu/login=
+</a></p><p>Student Accounts Team</p></body></html>
+
+--==ScamShield19bd767e350==--

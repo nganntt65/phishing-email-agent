@@ -1,0 +1,45 @@
+From: Financial Aid Office <office@secure-docs.click>
+To: lucia.castillo@harrowgate.ac.uk
+Return-Path: <office@secure-docs.click>
+Subject: Document for your review
+Date: Wed, 28 Oct 2026 17:28:00 +0000
+Message-ID: <28bee5af6e39@secure-docs.click>
+Authentication-Results: mx.harrowgate.ac.uk; spf=softfail
+ smtp.mailfrom=secure-docs.click; dkim=fail header.d=secure-docs.click;
+ dmarc=fail header.from=secure-docs.click
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="==ScamShielddcbe6033f70=="
+
+--==ScamShielddcbe6033f70==
+Content-Type: multipart/alternative; boundary="==ScamShield73798443881=="
+
+--==ScamShield73798443881==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+Please open the attached document and complete it today.
+
+Thank you.
+
+--==ScamShield73798443881==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello,</p><p>Please open the attached document and complete it=
+ today.</p><p>Thank you.</p></body></html>
+
+--==ScamShield73798443881==--
+
+--==ScamShielddcbe6033f70==
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="Scholarship_Award_Letter.iso"
+MIME-Version: 1.0
+
+TVoLPvt5nNnEEnRq4qGTMbeyYn5mPiWnsAHkwNzF4hvHbDgtzfWyhHYMjj/q2R90Is12qof8j5hR
+88HkcZzQuOSB
+
+--==ScamShielddcbe6033f70==--

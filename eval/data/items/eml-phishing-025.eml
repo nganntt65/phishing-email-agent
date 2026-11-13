@@ -1,0 +1,41 @@
+From: Student Accounts Office <noreply@lakesidetech.edu.account-check.co>
+To: maya.brennan@lakesidetech.edu
+Return-Path: <noreply@lakesidetech.edu.account-check.co>
+Subject: Action required: verify your student account
+Date: Sat, 17 Oct 2026 05:22:00 +0000
+Message-ID: <8268a43825b5@lakesidetech.edu.account-check.co>
+Authentication-Results: mx.lakesidetech.edu; spf=fail
+ smtp.mailfrom=lakesidetech.edu.account-check.co; dkim=fail
+ header.d=lakesidetech.edu.account-check.co; dmarc=none
+ header.from=lakesidetech.edu.account-check.co
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShieldad6651529e0=="
+
+--==ScamShieldad6651529e0==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear student,
+
+Our records show your account needs attention. Log in to keep your student em=
+ail active.
+
+If you do not act immediately your access will be locked.
+
+https://lakesidetech.edu.account-check.co/signin?id=3D15075: https://lakeside=
+tech.edu.account-check.co/signin?id=3D15075
+
+Office of the Registrar
+
+--==ScamShieldad6651529e0==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Dear student,</p><p>Our records show your account needs attent=
+ion. Log in to keep your student email active.</p><p>If you do not act immedi=
+ately your access will be locked.</p><p><a href=3D"https://lakesidetech.edu.a=
+ccount-check.co/signin?id=3D15075">https://lakesidetech.edu.account-check.co/=
+signin?id=3D15075</a></p><p>Office of the Registrar</p></body></html>
+
+--==ScamShieldad6651529e0==--

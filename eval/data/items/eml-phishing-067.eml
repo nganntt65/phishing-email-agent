@@ -1,0 +1,45 @@
+From: Accounts Receivable <office@secure-docs.click>
+To: daniel.lindqvist@lakesidetech.edu
+Return-Path: <office@secure-docs.click>
+Subject: Please open the attached form
+Date: Sat, 24 Oct 2026 17:23:00 +0000
+Message-ID: <bfbfac3e7b0d@secure-docs.click>
+Authentication-Results: mx.lakesidetech.edu; spf=fail
+ smtp.mailfrom=secure-docs.click; dkim=fail header.d=secure-docs.click;
+ dmarc=fail header.from=secure-docs.click
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="==ScamShield43ac1e86d80=="
+
+--==ScamShield43ac1e86d80==
+Content-Type: multipart/alternative; boundary="==ScamShield6195a5bafa1=="
+
+--==ScamShield6195a5bafa1==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+Please open the attached document and complete it today.
+
+Thank you.
+
+--==ScamShield6195a5bafa1==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello,</p><p>Please open the attached document and complete it=
+ today.</p><p>Thank you.</p></body></html>
+
+--==ScamShield6195a5bafa1==--
+
+--==ScamShield43ac1e86d80==
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="Invoice_7781.scr"
+MIME-Version: 1.0
+
+TVrJcAiUXbshF+hLU79qLDMhyYrg+F2HgOlF1CpB6dPxe/fOS7/eVs0dd/YTJMH3Odytuaz6ZffY
+zY5dF8plA0OJ
+
+--==ScamShield43ac1e86d80==--

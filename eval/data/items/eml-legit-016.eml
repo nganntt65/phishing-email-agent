@@ -1,0 +1,36 @@
+From: Microsoft <noreply@microsoft.com>
+To: elif.fischer@lakesidetech.edu
+Return-Path: <noreply@microsoft.com>
+Subject: [Microsoft] New sign-in to your account
+Date: Thu, 08 Oct 2026 09:25:00 +0000
+Message-ID: <bdf6dc9c96de@microsoft.com>
+Authentication-Results: mx.lakesidetech.edu; spf=pass
+ smtp.mailfrom=microsoft.com; dkim=pass header.d=microsoft.com; dmarc=pass
+ header.from=microsoft.com
+DKIM-Signature: v=1; a=rsa-sha256; d=microsoft.com; s=s1; b=6fac16730ad45230
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield7504cc3ede0=="
+
+--==ScamShield7504cc3ede0==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+A new sign-in to your account was detected from a new device.
+
+Review activity: https://microsoft.com/account/security
+
+If this was you, no action is needed. If not, review your security settings.
+
+--==ScamShield7504cc3ede0==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hi,</p><p>A new sign-in to your account was detected from a ne=
+w device.</p><p><a href=3D"https://microsoft.com/account/security">Review act=
+ivity</a></p><p>If this was you, no action is needed. If not, review your sec=
+urity settings.</p></body></html>
+
+--==ScamShield7504cc3ede0==--

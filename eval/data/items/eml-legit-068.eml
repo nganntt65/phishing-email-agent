@@ -1,0 +1,36 @@
+From: Open Data Week <events@opendataweek.net>
+To: rizky.hartono@carrickstate.edu
+Return-Path: <events@opendataweek.net>
+Subject: Invitation: Open Data Week
+Date: Fri, 16 Oct 2026 00:12:00 +0000
+Message-ID: <f4d3a29319fa@opendataweek.net>
+Authentication-Results: mx.carrickstate.edu; spf=pass
+ smtp.mailfrom=opendataweek.net; dkim=pass header.d=opendataweek.net;
+ dmarc=pass header.from=opendataweek.net
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=opendataweek.net; s=s1; b=46426c458d03f17a
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShielda0200b29030=="
+
+--==ScamShielda0200b29030==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Dear colleague,
+
+You are invited to attend Open Data Week. Registration is free for students.
+
+Event details: https://opendataweek.net/program
+
+We hope to see you there.
+
+--==ScamShielda0200b29030==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Dear colleague,</p><p>You are invited to attend Open Data Week=
+. Registration is free for students.</p><p><a href=3D"https://opendataweek.ne=
+t/program">Event details</a></p><p>We hope to see you there.</p></body></html>
+
+--==ScamShielda0200b29030==--

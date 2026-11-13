@@ -1,0 +1,36 @@
+From: Microsoft <noreply@microsoft.com>
+To: tomas.rahman@carrickstate.edu
+Return-Path: <noreply@microsoft.com>
+Subject: [Microsoft] New sign-in to your account
+Date: Wed, 28 Oct 2026 20:08:00 +0000
+Message-ID: <e25d9ca8a5c4@microsoft.com>
+Authentication-Results: mx.carrickstate.edu; spf=pass
+ smtp.mailfrom=microsoft.com; dkim=pass header.d=microsoft.com; dmarc=pass
+ header.from=microsoft.com
+DKIM-Signature: v=1; a=rsa-sha256; d=microsoft.com; s=s1; b=10d4de39161237c9
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield654f2dad3f0=="
+
+--==ScamShield654f2dad3f0==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+A new sign-in to your account was detected from a new device.
+
+Review activity: https://microsoft.com/account/security
+
+If this was you, no action is needed. If not, review your security settings.
+
+--==ScamShield654f2dad3f0==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hi,</p><p>A new sign-in to your account was detected from a ne=
+w device.</p><p><a href=3D"https://microsoft.com/account/security">Review act=
+ivity</a></p><p>If this was you, no action is needed. If not, review your sec=
+urity settings.</p></body></html>
+
+--==ScamShield654f2dad3f0==--

@@ -1,0 +1,36 @@
+From: Lakeside News <news@lakesidetech.edu>
+To: daniel.castillo@lakesidetech.edu
+Return-Path: <news@lakesidetech.edu>
+Subject: New shuttle schedule
+Date: Thu, 08 Oct 2026 11:28:00 +0000
+Message-ID: <e60f2c33350c@lakesidetech.edu>
+Authentication-Results: mx.lakesidetech.edu; spf=pass
+ smtp.mailfrom=lakesidetech.edu; dkim=pass header.d=lakesidetech.edu;
+ dmarc=pass header.from=lakesidetech.edu
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=lakesidetech.edu; s=s1; b=71f2ce8fb69f68c3
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield16ff4c96d60=="
+
+--==ScamShield16ff4c96d60==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello Lakeside,
+
+New shuttle schedule. Details are on the university website.
+
+Read more: https://www.lakesidetech.edu/transport/shuttle
+
+Have a good week.
+
+--==ScamShield16ff4c96d60==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello Lakeside,</p><p>New shuttle schedule. Details are on the=
+ university website.</p><p><a href=3D"https://www.lakesidetech.edu/transport/=
+shuttle">Read more</a></p><p>Have a good week.</p></body></html>
+
+--==ScamShield16ff4c96d60==--

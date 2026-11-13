@@ -1,0 +1,38 @@
+From: Microsoft Security <security@rnicrosoft-support.com>
+To: maya.fischer@lakesidetech.edu
+Return-Path: <security@rnicrosoft-support.com>
+Subject: Unusual sign-in activity on your Microsoft account
+Date: Wed, 07 Oct 2026 13:08:00 +0000
+Message-ID: <6bc4bde13c1b@rnicrosoft-support.com>
+Authentication-Results: mx.lakesidetech.edu; spf=fail
+ smtp.mailfrom=rnicrosoft-support.com; dkim=none
+ header.d=rnicrosoft-support.com; dmarc=fail
+ header.from=rnicrosoft-support.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield1d86ad8a8c0=="
+
+--==ScamShield1d86ad8a8c0==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+Your Microsoft account has been temporarily locked for your protection.
+
+Verify your identity immediately to restore access.
+
+https://www.microsoft.com/signin: https://rnicrosoft-support.com/signin
+
+Microsoft Trust & Safety
+
+--==ScamShield1d86ad8a8c0==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello,</p><p>Your Microsoft account has been temporarily locke=
+d for your protection.</p><p>Verify your identity immediately to restore acce=
+ss.</p><p><a href=3D"https://rnicrosoft-support.com/signin">https://www.micro=
+soft.com/signin</a></p><p>Microsoft Trust & Safety</p></body></html>
+
+--==ScamShield1d86ad8a8c0==--

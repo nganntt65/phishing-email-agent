@@ -1,0 +1,41 @@
+From: Research Placement Team <hello@research-assistant-jobs.org>
+To: samuel.okafor@carrickstate.edu
+Return-Path: <hello@research-assistant-jobs.org>
+Subject: You have been shortlisted
+Date: Wed, 07 Oct 2026 19:15:00 +0000
+Message-ID: <913ee0c53cb8@research-assistant-jobs.org>
+Authentication-Results: mx.carrickstate.edu; spf=pass
+ smtp.mailfrom=research-assistant-jobs.org; dkim=pass
+ header.d=research-assistant-jobs.org; dmarc=pass
+ header.from=research-assistant-jobs.org
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=research-assistant-jobs.org; s=s1; b=14296c07f26b4776
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShieldbb15ed62690=="
+
+--==ScamShieldbb15ed62690==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi there,
+
+Thank you for your interest. Your housing assignment for next term is ready t=
+o review.
+
+Kindly review the details and complete the form at your convenience.
+
+Open the form: https://research-assistant-jobs.org/apply
+
+Warm regards,
+
+--==ScamShieldbb15ed62690==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hi there,</p><p>Thank you for your interest. Your housing assi=
+gnment for next term is ready to review.</p><p>Kindly review the details and =
+complete the form at your convenience.</p><p><a href=3D"https://research-assi=
+stant-jobs.org/apply">Open the form</a></p><p>Warm regards,</p></body></html>
+
+--==ScamShieldbb15ed62690==--

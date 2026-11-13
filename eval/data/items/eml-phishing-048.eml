@@ -1,0 +1,35 @@
+From: Parcel Notifications <notify@parcel-alerts-center.com>
+To: hannah.osei@westbrook.edu
+Return-Path: <notify@parcel-alerts-center.com>
+Subject: Delivery attempt failed
+Date: Thu, 08 Oct 2026 11:36:00 +0000
+Message-ID: <afbba1235a8c@parcel-alerts-center.com>
+Authentication-Results: mx.westbrook.edu; spf=none
+ smtp.mailfrom=parcel-alerts-center.com; dkim=none
+ header.d=parcel-alerts-center.com; dmarc=none
+ header.from=parcel-alerts-center.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield260db953010=="
+
+--==ScamShield260db953010==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+We tried to deliver your package but nobody was available.
+
+Reschedule delivery: https://bit.ly/3Kx9qPz
+
+Reschedule your delivery using the link below.
+
+--==ScamShield260db953010==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello,</p><p>We tried to deliver your package but nobody was a=
+vailable.</p><p><a href=3D"https://bit.ly/3Kx9qPz">Reschedule delivery</a></p=
+><p>Reschedule your delivery using the link below.</p></body></html>
+
+--==ScamShield260db953010==--

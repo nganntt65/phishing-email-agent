@@ -1,0 +1,36 @@
+From: Open Data Week <events@opendataweek.net>
+To: daniel.fischer@lakesidetech.edu
+Return-Path: <events@opendataweek.net>
+Subject: Invitation: Open Data Week
+Date: Thu, 29 Oct 2026 01:23:00 +0000
+Message-ID: <c33a1d691fba@opendataweek.net>
+Authentication-Results: mx.lakesidetech.edu; spf=pass
+ smtp.mailfrom=opendataweek.net; dkim=pass header.d=opendataweek.net;
+ dmarc=pass header.from=opendataweek.net
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=opendataweek.net; s=s1; b=92f837d447503f1d
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShieldce39e58ff00=="
+
+--==ScamShieldce39e58ff00==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Dear colleague,
+
+You are invited to attend Open Data Week. Registration is free for students.
+
+Event details: https://opendataweek.net/program
+
+We hope to see you there.
+
+--==ScamShieldce39e58ff00==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Dear colleague,</p><p>You are invited to attend Open Data Week=
+. Registration is free for students.</p><p><a href=3D"https://opendataweek.ne=
+t/program">Event details</a></p><p>We hope to see you there.</p></body></html>
+
+--==ScamShieldce39e58ff00==--

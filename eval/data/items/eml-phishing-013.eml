@@ -1,0 +1,40 @@
+From: Westbrook Help Desk <noreply@westbrook-edu.com>
+To: samuel.chen@westbrook.edu
+Reply-To: helpdesk-verify@secure-mail-center.xyz
+Return-Path: <noreply@westbrook-edu.com>
+Subject: Action required: verify your student account
+Date: Fri, 23 Oct 2026 17:22:00 +0000
+Message-ID: <693d6c6fa611@westbrook-edu.com>
+Authentication-Results: mx.westbrook.edu; spf=softfail
+ smtp.mailfrom=westbrook-edu.com; dkim=none header.d=westbrook-edu.com;
+ dmarc=fail header.from=westbrook-edu.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShielddd778eedb30=="
+
+--==ScamShielddd778eedb30==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+We could not verify your account. You must sign in to release your financial =
+aid refund.
+
+Accounts that are not verified within 24 hours will be suspended.
+
+Sign in to the student portal: https://westbrook-edu.com/sso/verify?id=3D46500
+
+Student Accounts Team
+
+--==ScamShielddd778eedb30==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello,</p><p>We could not verify your account. You must sign i=
+n to release your financial aid refund.</p><p>Accounts that are not verified =
+within 24 hours will be suspended.</p><p><a href=3D"https://westbrook-edu.com=
+/sso/verify?id=3D46500">Sign in to the student portal</a></p><p>Student Accou=
+nts Team</p></body></html>
+
+--==ScamShielddd778eedb30==--

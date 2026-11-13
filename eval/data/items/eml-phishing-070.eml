@@ -1,0 +1,32 @@
+From: Daniel Haddad <daniel.haddad.uni@gmail.com>
+To: aisha.alvarez@carrickstate.edu
+Return-Path: <daniel.haddad.uni@gmail.com>
+Subject: Are you on campus?
+Date: Mon, 02 Nov 2026 22:47:00 +0000
+Message-ID: <f22bb24cc64f@gmail.com>
+Authentication-Results: mx.carrickstate.edu; spf=pass smtp.mailfrom=gmail.com;
+ dkim=pass header.d=gmail.com; dmarc=pass header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; d=gmail.com; s=s1; b=6b4be4118a4a0e2d
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShieldbe965befdf0=="
+
+--==ScamShieldbe965befdf0==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi,
+
+I need your help with something small for the department. Reply when you see =
+this.
+
+Daniel
+
+--==ScamShieldbe965befdf0==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hi,</p><p>I need your help with something small for the depart=
+ment. Reply when you see this.</p><p>Daniel</p></body></html>
+
+--==ScamShieldbe965befdf0==--

@@ -1,0 +1,40 @@
+From: "Dr. Arjun Brennan" <arjun.brennan@harrowgate.ac.uk>
+To: rizky.alvarez@harrowgate.ac.uk
+Return-Path: <arjun.brennan@harrowgate.ac.uk>
+Subject: Reminder - BIO 210 quiz closes at midnight
+Date: Fri, 16 Oct 2026 03:02:00 +0000
+Message-ID: <a59bc0d7ac73@harrowgate.ac.uk>
+Authentication-Results: mx.harrowgate.ac.uk; spf=pass
+ smtp.mailfrom=harrowgate.ac.uk; dkim=pass header.d=harrowgate.ac.uk;
+ dmarc=pass header.from=harrowgate.ac.uk
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=harrowgate.ac.uk; s=s1; b=493e904d30ec2796
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShielddc5b62a8df0=="
+
+--==ScamShielddc5b62a8df0==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi all,
+
+This is a reminder that the assignment is due tonight. Submit immediately if =
+you have not yet.
+
+Late work will lose points.
+
+Course page: https://learn.harrowgate.ac.uk/courses/bio210
+
+Dr. Brennan
+
+--==ScamShielddc5b62a8df0==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hi all,</p><p>This is a reminder that the assignment is due to=
+night. Submit immediately if you have not yet.</p><p>Late work will lose poin=
+ts.</p><p><a href=3D"https://learn.harrowgate.ac.uk/courses/bio210">Course pa=
+ge</a></p><p>Dr. Brennan</p></body></html>
+
+--==ScamShielddc5b62a8df0==--

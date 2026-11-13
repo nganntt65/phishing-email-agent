@@ -1,0 +1,31 @@
+From: Jonas Mensah <jonas62@gmail.com>
+To: omar.alvarez@harrowgate.ac.uk
+Return-Path: <jonas62@gmail.com>
+Subject: notes from today
+Date: Thu, 08 Oct 2026 10:44:00 +0000
+Message-ID: <28770f5675f8@gmail.com>
+Authentication-Results: mx.harrowgate.ac.uk; spf=pass smtp.mailfrom=gmail.com;
+ dkim=pass header.d=gmail.com; dmarc=pass header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; d=gmail.com; s=s1; b=6a662fce7089fc6d
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield767bf7e1d30=="
+
+--==ScamShield767bf7e1d30==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hey!
+
+I uploaded my notes to our shared folder.
+
+- Jonas
+
+--==ScamShield767bf7e1d30==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hey!</p><p>I uploaded my notes to our shared folder.</p><p>- J=
+onas</p></body></html>
+
+--==ScamShield767bf7e1d30==--

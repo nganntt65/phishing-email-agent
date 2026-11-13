@@ -1,0 +1,37 @@
+From: Stripe <receipts@stripe.com>
+To: clubs.treasurer@lakesidetech.edu
+Return-Path: <receipts@stripe.com>
+Subject: Receipt for your payment
+Date: Thu, 08 Oct 2026 19:37:00 +0000
+Message-ID: <2434a9e27ba9@stripe.com>
+Authentication-Results: mx.lakesidetech.edu; spf=pass
+ smtp.mailfrom=stripe.com; dkim=pass header.d=stripe.com; dmarc=pass
+ header.from=stripe.com
+DKIM-Signature: v=1; a=rsa-sha256; d=stripe.com; s=s1; b=598ddaeceaafe543
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShieldf74f6b58c80=="
+
+--==ScamShieldf74f6b58c80==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+Your invoice for the student club subscription is overdue. You can pay it fro=
+m your dashboard.
+
+View invoice: https://dashboard.stripe.com/invoices
+
+Thanks, Stripe
+
+--==ScamShieldf74f6b58c80==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello,</p><p>Your invoice for the student club subscription is=
+ overdue. You can pay it from your dashboard.</p><p><a href=3D"https://dashbo=
+ard.stripe.com/invoices">View invoice</a></p><p>Thanks, Stripe</p></body></ht=
+ml>
+
+--==ScamShieldf74f6b58c80==--

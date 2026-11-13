@@ -1,0 +1,40 @@
+From: "Dr. Daniel Mensah" <daniel.mensah@carrickstate.edu>
+To: rizky.lindqvist@carrickstate.edu
+Return-Path: <daniel.mensah@carrickstate.edu>
+Subject: HIST 202: assignment due tonight
+Date: Thu, 22 Oct 2026 04:38:00 +0000
+Message-ID: <1f70e0630cd@carrickstate.edu>
+Authentication-Results: mx.carrickstate.edu; spf=pass
+ smtp.mailfrom=carrickstate.edu; dkim=pass header.d=carrickstate.edu;
+ dmarc=pass header.from=carrickstate.edu
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=carrickstate.edu; s=s1; b=4d29d1ab345512f7
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield36f200c2610=="
+
+--==ScamShield36f200c2610==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi all,
+
+This is a reminder that the assignment is due tonight. Submit immediately if =
+you have not yet.
+
+Late work will lose points.
+
+Course page: https://learn.carrickstate.edu/courses/hist202
+
+Dr. Mensah
+
+--==ScamShield36f200c2610==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hi all,</p><p>This is a reminder that the assignment is due to=
+night. Submit immediately if you have not yet.</p><p>Late work will lose poin=
+ts.</p><p><a href=3D"https://learn.carrickstate.edu/courses/hist202">Course p=
+age</a></p><p>Dr. Mensah</p></body></html>
+
+--==ScamShield36f200c2610==--

@@ -1,0 +1,7 @@
+Hi,
+
+A new sign-in to your account was detected from a new device.
+
+Review activity (click here)
+
+If this was you, no action is needed. If not, review your security settings.

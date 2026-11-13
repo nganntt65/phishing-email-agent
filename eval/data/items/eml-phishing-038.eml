@@ -1,0 +1,41 @@
+From: Microsoft Security <security@micros0ft-office365.com>
+To: sofia.osei@harrowgate.ac.uk
+Return-Path: <security@micros0ft-office365.com>
+Subject: Unusual sign-in activity on your Microsoft account
+Date: Mon, 02 Nov 2026 03:02:00 +0000
+Message-ID: <7f1c1156d6d@micros0ft-office365.com>
+Authentication-Results: mx.harrowgate.ac.uk; spf=softfail
+ smtp.mailfrom=micros0ft-office365.com; dkim=none
+ header.d=micros0ft-office365.com; dmarc=fail
+ header.from=micros0ft-office365.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield3ff319c1250=="
+
+--==ScamShield3ff319c1250==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+We detected an unauthorized login attempt on your Microsoft account.
+
+Please confirm your password within 24 hours or the account will be permanent=
+ly closed.
+
+https://www.microsoft.com/account-update: https://micros0ft-office365.com/acc=
+ount-update
+
+Microsoft Trust & Safety
+
+--==ScamShield3ff319c1250==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello,</p><p>We detected an unauthorized login attempt on your=
+ Microsoft account.</p><p>Please confirm your password within 24 hours or the=
+ account will be permanently closed.</p><p><a href=3D"https://micros0ft-offic=
+e365.com/account-update">https://www.microsoft.com/account-update</a></p><p>M=
+icrosoft Trust & Safety</p></body></html>
+
+--==ScamShield3ff319c1250==--

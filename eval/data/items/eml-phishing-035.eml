@@ -1,0 +1,39 @@
+From: Grant Disbursement Office <grants@global-grant-center.top>
+To: tomas.mensah@westbrook.edu
+Return-Path: <grants@global-grant-center.top>
+Subject: Release your scholarship funds
+Date: Wed, 28 Oct 2026 07:47:00 +0000
+Message-ID: <8bcfbc10fa52@global-grant-center.top>
+Authentication-Results: mx.westbrook.edu; spf=none
+ smtp.mailfrom=global-grant-center.top; dkim=none
+ header.d=global-grant-center.top; dmarc=none
+ header.from=global-grant-center.top
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield9accc429030=="
+
+--==ScamShield9accc429030==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear awardee,
+
+You were selected for a $4,000 Excellence Grant.
+
+A processing fee of $45 is required to release the funds. Pay the fee within =
+48 hours.
+
+Pay processing fee: https://global-grant-center.top/pay
+
+Grant Disbursement Office
+
+--==ScamShield9accc429030==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Dear awardee,</p><p>You were selected for a $4,000 Excellence =
+Grant.</p><p>A processing fee of $45 is required to release the funds. Pay th=
+e fee within 48 hours.</p><p><a href=3D"https://global-grant-center.top/pay">=
+Pay processing fee</a></p><p>Grant Disbursement Office</p></body></html>
+
+--==ScamShield9accc429030==--

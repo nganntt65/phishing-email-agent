@@ -1,0 +1,39 @@
+From: Grant Disbursement Office <grants@scholarship-release.net>
+To: wei.moreau@lakesidetech.edu
+Return-Path: <grants@scholarship-release.net>
+Subject: Release your scholarship funds
+Date: Thu, 22 Oct 2026 17:17:00 +0000
+Message-ID: <b0b608601833@scholarship-release.net>
+Authentication-Results: mx.lakesidetech.edu; spf=none
+ smtp.mailfrom=scholarship-release.net; dkim=none
+ header.d=scholarship-release.net; dmarc=none
+ header.from=scholarship-release.net
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield375edb0d3c0=="
+
+--==ScamShield375edb0d3c0==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear awardee,
+
+You were selected for a $1,200 Excellence Grant.
+
+A processing fee of $45 is required to release the funds. Pay the fee within =
+48 hours.
+
+Pay processing fee: https://scholarship-release.net/pay
+
+Grant Disbursement Office
+
+--==ScamShield375edb0d3c0==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Dear awardee,</p><p>You were selected for a $1,200 Excellence =
+Grant.</p><p>A processing fee of $45 is required to release the funds. Pay th=
+e fee within 48 hours.</p><p><a href=3D"https://scholarship-release.net/pay">=
+Pay processing fee</a></p><p>Grant Disbursement Office</p></body></html>
+
+--==ScamShield375edb0d3c0==--

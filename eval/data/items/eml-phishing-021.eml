@@ -1,0 +1,41 @@
+From: Campus Careers Hub <hello@campus-careers-hub.com>
+To: hannah.nakamura@harrowgate.ac.uk
+Return-Path: <hello@campus-careers-hub.com>
+Subject: Your housing assignment
+Date: Mon, 05 Oct 2026 17:07:00 +0000
+Message-ID: <f1ee13432e61@campus-careers-hub.com>
+Authentication-Results: mx.harrowgate.ac.uk; spf=pass
+ smtp.mailfrom=campus-careers-hub.com; dkim=pass
+ header.d=campus-careers-hub.com; dmarc=pass
+ header.from=campus-careers-hub.com
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=campus-careers-hub.com; s=s1; b=b0e6a969e21342b0
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield26e767dcea0=="
+
+--==ScamShield26e767dcea0==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi there,
+
+Thank you for your interest. Your housing assignment for next term is ready t=
+o review.
+
+Kindly review the details and complete the form at your convenience.
+
+Open the form: https://campus-careers-hub.com/details
+
+Warm regards,
+
+--==ScamShield26e767dcea0==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hi there,</p><p>Thank you for your interest. Your housing assi=
+gnment for next term is ready to review.</p><p>Kindly review the details and =
+complete the form at your convenience.</p><p><a href=3D"https://campus-career=
+s-hub.com/details">Open the form</a></p><p>Warm regards,</p></body></html>
+
+--==ScamShield26e767dcea0==--

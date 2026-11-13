@@ -1,0 +1,37 @@
+From: ParcelWay <updates@parcelway-delivery.com>
+To: aisha.chen@lakesidetech.edu
+Return-Path: <updates@parcelway-delivery.com>
+Subject: Your order has shipped
+Date: Sat, 17 Oct 2026 15:15:00 +0000
+Message-ID: <1f314d183eba@parcelway-delivery.com>
+Authentication-Results: mx.lakesidetech.edu; spf=pass
+ smtp.mailfrom=parcelway-delivery.com; dkim=pass
+ header.d=parcelway-delivery.com; dmarc=pass
+ header.from=parcelway-delivery.com
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=parcelway-delivery.com; s=s1; b=3d0a5f0c0c394ec7
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShielda36b79afcc0=="
+
+--==ScamShielda36b79afcc0==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+Your order has shipped and should arrive in 3-5 business days.
+
+Track package: https://parcelway-delivery.com/track/1c76bdf6
+
+Track it any time.
+
+--==ScamShielda36b79afcc0==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hi,</p><p>Your order has shipped and should arrive in 3-5 busi=
+ness days.</p><p><a href=3D"https://parcelway-delivery.com/track/1c76bdf6">Tr=
+ack package</a></p><p>Track it any time.</p></body></html>
+
+--==ScamShielda36b79afcc0==--

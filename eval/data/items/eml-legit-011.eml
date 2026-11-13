@@ -1,0 +1,36 @@
+From: Westbrook Human Resources <hr@westbrook.edu>
+To: aisha.okafor@westbrook.edu
+Return-Path: <hr@westbrook.edu>
+Subject: Your pay statement is ready
+Date: Fri, 09 Oct 2026 05:47:00 +0000
+Message-ID: <371287cdb6a1@westbrook.edu>
+Authentication-Results: mx.westbrook.edu; spf=pass
+ smtp.mailfrom=westbrook.edu; dkim=pass header.d=westbrook.edu; dmarc=pass
+ header.from=westbrook.edu
+DKIM-Signature: v=1; a=rsa-sha256; d=westbrook.edu; s=s1; b=6b7a2460604e46cb
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield57742221670=="
+
+--==ScamShield57742221670==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+Your pay statement for this period is ready. Sign in to the staff portal to v=
+iew it.
+
+Staff portal: https://portal.westbrook.edu/payroll
+
+Human Resources
+
+--==ScamShield57742221670==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello,</p><p>Your pay statement for this period is ready. Sign=
+ in to the staff portal to view it.</p><p><a href=3D"https://portal.westbrook=
+.edu/payroll">Staff portal</a></p><p>Human Resources</p></body></html>
+
+--==ScamShield57742221670==--

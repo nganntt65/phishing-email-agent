@@ -1,0 +1,37 @@
+From: ParcelWay <updates@parcelway-delivery.com>
+To: amara.alvarez@meridian.ac.id
+Return-Path: <updates@parcelway-delivery.com>
+Subject: Your order has shipped
+Date: Thu, 08 Oct 2026 16:25:00 +0000
+Message-ID: <4f6ededab027@parcelway-delivery.com>
+Authentication-Results: mx.meridian.ac.id; spf=pass
+ smtp.mailfrom=parcelway-delivery.com; dkim=pass
+ header.d=parcelway-delivery.com; dmarc=pass
+ header.from=parcelway-delivery.com
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=parcelway-delivery.com; s=s1; b=56ea57b3beed10b6
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield5538b8f24e0=="
+
+--==ScamShield5538b8f24e0==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+Your order has shipped and should arrive in 3-5 business days.
+
+Track package: https://parcelway-delivery.com/track/862268d1
+
+Track it any time.
+
+--==ScamShield5538b8f24e0==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hi,</p><p>Your order has shipped and should arrive in 3-5 busi=
+ness days.</p><p><a href=3D"https://parcelway-delivery.com/track/862268d1">Tr=
+ack package</a></p><p>Track it any time.</p></body></html>
+
+--==ScamShield5538b8f24e0==--

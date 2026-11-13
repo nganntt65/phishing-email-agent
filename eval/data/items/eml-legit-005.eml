@@ -1,0 +1,40 @@
+From: Harborview Bank <alerts@harborview-bank.com>
+To: sofia.hartono@westbrook.edu
+Return-Path: <alerts@harborview-bank.com>
+Subject: Please review a recent transaction
+Date: Fri, 09 Oct 2026 10:47:00 +0000
+Message-ID: <5f65bd21bc11@harborview-bank.com>
+Authentication-Results: mx.westbrook.edu; spf=pass
+ smtp.mailfrom=harborview-bank.com; dkim=pass header.d=harborview-bank.com;
+ dmarc=pass header.from=harborview-bank.com
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=harborview-bank.com; s=s1; b=214f3f12cfd01cbd
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShieldf8e6e50030=="
+
+--==ScamShieldf8e6e50030==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+We noticed unusual activity on your debit card. If this wasn't you, sign in t=
+o review it.
+
+We will never ask for your password by email.
+
+Review transaction: https://harborview-bank.com/login
+
+Harborview Bank
+
+--==ScamShieldf8e6e50030==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello,</p><p>We noticed unusual activity on your debit card. I=
+f this wasn't you, sign in to review it.</p><p>We will never ask for your pas=
+sword by email.</p><p><a href=3D"https://harborview-bank.com/login">Review tr=
+ansaction</a></p><p>Harborview Bank</p></body></html>
+
+--==ScamShieldf8e6e50030==--

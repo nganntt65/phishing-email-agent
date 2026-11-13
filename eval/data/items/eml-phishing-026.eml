@@ -1,0 +1,39 @@
+From: Google Security <security@g00gle-drive-share.com>
+To: daniel.kowalski@westbrook.edu
+Return-Path: <security@g00gle-drive-share.com>
+Subject: Unusual sign-in activity on your Google account
+Date: Tue, 20 Oct 2026 01:46:00 +0000
+Message-ID: <504dc9535b63@g00gle-drive-share.com>
+Authentication-Results: mx.westbrook.edu; spf=fail
+ smtp.mailfrom=g00gle-drive-share.com; dkim=none
+ header.d=g00gle-drive-share.com; dmarc=fail
+ header.from=g00gle-drive-share.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield9b6fb782710=="
+
+--==ScamShield9b6fb782710==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+Your Google account has been temporarily locked for your protection.
+
+Verify your identity immediately to restore access.
+
+https://www.google.com/secure/login: https://g00gle-drive-share.com/secure/lo=
+gin
+
+Google Trust & Safety
+
+--==ScamShield9b6fb782710==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello,</p><p>Your Google account has been temporarily locked f=
+or your protection.</p><p>Verify your identity immediately to restore access.=
+</p><p><a href=3D"https://g00gle-drive-share.com/secure/login">https://www.go=
+ogle.com/secure/login</a></p><p>Google Trust & Safety</p></body></html>
+
+--==ScamShield9b6fb782710==--

@@ -1,0 +1,41 @@
+From: Campus Careers Hub <hello@campus-careers-hub.com>
+To: sofia.rahman@carrickstate.edu
+Return-Path: <hello@campus-careers-hub.com>
+Subject: Your housing assignment
+Date: Sun, 11 Oct 2026 07:02:00 +0000
+Message-ID: <986f23e323d@campus-careers-hub.com>
+Authentication-Results: mx.carrickstate.edu; spf=pass
+ smtp.mailfrom=campus-careers-hub.com; dkim=pass
+ header.d=campus-careers-hub.com; dmarc=pass
+ header.from=campus-careers-hub.com
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=campus-careers-hub.com; s=s1; b=fef518a64dead645
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield1d7e1ca5a10=="
+
+--==ScamShield1d7e1ca5a10==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi there,
+
+Thank you for your interest. Your housing assignment for next term is ready t=
+o review.
+
+Kindly review the details and complete the form at your convenience.
+
+Open the form: https://campus-careers-hub.com/apply
+
+Warm regards,
+
+--==ScamShield1d7e1ca5a10==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hi there,</p><p>Thank you for your interest. Your housing assi=
+gnment for next term is ready to review.</p><p>Kindly review the details and =
+complete the form at your convenience.</p><p><a href=3D"https://campus-career=
+s-hub.com/apply">Open the form</a></p><p>Warm regards,</p></body></html>
+
+--==ScamShield1d7e1ca5a10==--

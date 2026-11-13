@@ -1,0 +1,35 @@
+From: Parcel Notifications <notify@parcel-alerts-center.com>
+To: nadia.haddad@meridian.ac.id
+Return-Path: <notify@parcel-alerts-center.com>
+Subject: Your package is waiting
+Date: Wed, 07 Oct 2026 22:25:00 +0000
+Message-ID: <309746a02a9b@parcel-alerts-center.com>
+Authentication-Results: mx.meridian.ac.id; spf=none
+ smtp.mailfrom=parcel-alerts-center.com; dkim=none
+ header.d=parcel-alerts-center.com; dmarc=none
+ header.from=parcel-alerts-center.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield1ff7dc67e00=="
+
+--==ScamShield1ff7dc67e00==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+We tried to deliver your package but nobody was available.
+
+Reschedule delivery: https://bit.ly/3Kx9qPz
+
+Reschedule your delivery using the link below.
+
+--==ScamShield1ff7dc67e00==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello,</p><p>We tried to deliver your package but nobody was a=
+vailable.</p><p><a href=3D"https://bit.ly/3Kx9qPz">Reschedule delivery</a></p=
+><p>Reschedule your delivery using the link below.</p></body></html>
+
+--==ScamShield1ff7dc67e00==--

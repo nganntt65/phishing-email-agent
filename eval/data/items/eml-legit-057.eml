@@ -1,0 +1,37 @@
+From: Campus Film Society <hello@campusfilmsociety.org>
+To: nadia.lindqvist@carrickstate.edu
+Return-Path: <hello@campusfilmsociety.org>
+Subject: Campus Film Society: this week's update
+Date: Sat, 10 Oct 2026 17:04:00 +0000
+Message-ID: <c74c3c6a3174@campusfilmsociety.org>
+Authentication-Results: mx.carrickstate.edu; spf=pass
+ smtp.mailfrom=campusfilmsociety.org; dkim=pass
+ header.d=campusfilmsociety.org; dmarc=pass header.from=campusfilmsociety.org
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=campusfilmsociety.org; s=s1; b=5dc7b3e6a52964ff
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield625cb5e69c0=="
+
+--==ScamShield625cb5e69c0==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi everyone,
+
+Here is what's happening this week: workshops, a guest talk, and open lab hou=
+rs.
+
+This week's schedule: https://campusfilmsociety.org/news
+
+See you there!
+
+--==ScamShield625cb5e69c0==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hi everyone,</p><p>Here is what's happening this week: worksho=
+ps, a guest talk, and open lab hours.</p><p><a href=3D"https://campusfilmsoci=
+ety.org/news">This week's schedule</a></p><p>See you there!</p></body></html>
+
+--==ScamShield625cb5e69c0==--

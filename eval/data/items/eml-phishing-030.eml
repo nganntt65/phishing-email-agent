@@ -1,0 +1,37 @@
+From: "Prof. Priya Rahman" <prof.rahman87@mailbox-free.com>
+To: lucia.osei@meridian.ac.id
+Return-Path: <prof.rahman87@mailbox-free.com>
+Subject: Request
+Date: Sat, 17 Oct 2026 10:32:00 +0000
+Message-ID: <a208a9f25336@mailbox-free.com>
+Authentication-Results: mx.meridian.ac.id; spf=pass
+ smtp.mailfrom=mailbox-free.com; dkim=pass header.d=mailbox-free.com;
+ dmarc=pass header.from=mailbox-free.com
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=mailbox-free.com; s=s1; b=55cee5db9e87e04c
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShieldd117e8392a0=="
+
+--==ScamShieldd117e8392a0==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi,
+
+I need a favor. Can you buy 4 Apple gift cards for a student award today? I w=
+ill reimburse you.
+
+Let me know as soon as possible.
+
+Prof. Rahman
+
+--==ScamShieldd117e8392a0==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hi,</p><p>I need a favor. Can you buy 4 Apple gift cards for a=
+ student award today? I will reimburse you.</p><p>Let me know as soon as poss=
+ible.</p><p>Prof. Rahman</p></body></html>
+
+--==ScamShieldd117e8392a0==--
