@@ -1,0 +1,38 @@
+From: Google Security <security@g00gle-drive-share.com>
+To: kenji.chen@westbrook.edu
+Return-Path: <security@g00gle-drive-share.com>
+Subject: Your Google account has been limited
+Date: Fri, 09 Oct 2026 06:24:00 +0000
+Message-ID: <5be618c26797@g00gle-drive-share.com>
+Authentication-Results: mx.westbrook.edu; spf=softfail
+ smtp.mailfrom=g00gle-drive-share.com; dkim=none
+ header.d=g00gle-drive-share.com; dmarc=fail
+ header.from=g00gle-drive-share.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield58d8f564130=="
+
+--==ScamShield58d8f564130==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Dear Valued User,
+
+We detected an unauthorized login attempt on your Google account.
+
+Verify your identity immediately to restore access.
+
+Restore access: https://g00gle-drive-share.com/secure/login
+
+Google Trust & Safety
+
+--==ScamShield58d8f564130==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Dear Valued User,</p><p>We detected an unauthorized login atte=
+mpt on your Google account.</p><p>Verify your identity immediately to restore=
+ access.</p><p><a href=3D"https://g00gle-drive-share.com/secure/login">Restor=
+e access</a></p><p>Google Trust & Safety</p></body></html>
+
+--==ScamShield58d8f564130==--

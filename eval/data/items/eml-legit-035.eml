@@ -1,0 +1,37 @@
+From: Lakeside Human Resources <hr@lakesidetech.edu>
+To: kenji.nakamura@lakesidetech.edu
+Return-Path: <hr@lakesidetech.edu>
+Subject: Your pay statement is ready
+Date: Tue, 03 Nov 2026 21:49:00 +0000
+Message-ID: <cf1d9feefdff@lakesidetech.edu>
+Authentication-Results: mx.lakesidetech.edu; spf=pass
+ smtp.mailfrom=lakesidetech.edu; dkim=pass header.d=lakesidetech.edu;
+ dmarc=pass header.from=lakesidetech.edu
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=lakesidetech.edu; s=s1; b=2a60c652e7147668
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield70b89f72f30=="
+
+--==ScamShield70b89f72f30==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+Your pay statement for this period is ready. Sign in to the staff portal to v=
+iew it.
+
+Staff portal: https://portal.lakesidetech.edu/payroll
+
+Human Resources
+
+--==ScamShield70b89f72f30==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello,</p><p>Your pay statement for this period is ready. Sign=
+ in to the staff portal to view it.</p><p><a href=3D"https://portal.lakesidet=
+ech.edu/payroll">Staff portal</a></p><p>Human Resources</p></body></html>
+
+--==ScamShield70b89f72f30==--

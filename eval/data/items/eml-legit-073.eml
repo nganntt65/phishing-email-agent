@@ -1,0 +1,37 @@
+From: Harrowgate News <news@harrowgate.ac.uk>
+To: putri.castillo@harrowgate.ac.uk
+Return-Path: <news@harrowgate.ac.uk>
+Subject: Spring course registration opens
+Date: Sun, 18 Oct 2026 16:55:00 +0000
+Message-ID: <51beb7e6a14c@harrowgate.ac.uk>
+Authentication-Results: mx.harrowgate.ac.uk; spf=pass
+ smtp.mailfrom=harrowgate.ac.uk; dkim=pass header.d=harrowgate.ac.uk;
+ dmarc=pass header.from=harrowgate.ac.uk
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=harrowgate.ac.uk; s=s1; b=fcef1972bbf483ce
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield58dc5be7d10=="
+
+--==ScamShield58dc5be7d10==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello Harrowgate,
+
+Spring course registration opens. Details are on the university website.
+
+Read more: https://www.harrowgate.ac.uk/registrar/registration
+
+Have a good week.
+
+--==ScamShield58dc5be7d10==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello Harrowgate,</p><p>Spring course registration opens. Deta=
+ils are on the university website.</p><p><a href=3D"https://www.harrowgate.ac=
+.uk/registrar/registration">Read more</a></p><p>Have a good week.</p></body><=
+/html>
+
+--==ScamShield58dc5be7d10==--

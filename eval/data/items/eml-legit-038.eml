@@ -1,0 +1,40 @@
+From: "Dr. Kenji Brennan" <kenji.brennan@harrowgate.ac.uk>
+To: arjun.osei@harrowgate.ac.uk
+Return-Path: <kenji.brennan@harrowgate.ac.uk>
+Subject: Reminder - ECON 305 quiz closes at midnight
+Date: Wed, 28 Oct 2026 23:59:00 +0000
+Message-ID: <b61e1a435206@harrowgate.ac.uk>
+Authentication-Results: mx.harrowgate.ac.uk; spf=pass
+ smtp.mailfrom=harrowgate.ac.uk; dkim=pass header.d=harrowgate.ac.uk;
+ dmarc=pass header.from=harrowgate.ac.uk
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=harrowgate.ac.uk; s=s1; b=8412a335d88c656d
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield1fd9e604b30=="
+
+--==ScamShield1fd9e604b30==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi all,
+
+This is a reminder that the assignment is due tonight. Submit immediately if =
+you have not yet.
+
+Late work will lose points.
+
+Course page: https://learn.harrowgate.ac.uk/courses/econ305
+
+Dr. Brennan
+
+--==ScamShield1fd9e604b30==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hi all,</p><p>This is a reminder that the assignment is due to=
+night. Submit immediately if you have not yet.</p><p>Late work will lose poin=
+ts.</p><p><a href=3D"https://learn.harrowgate.ac.uk/courses/econ305">Course p=
+age</a></p><p>Dr. Brennan</p></body></html>
+
+--==ScamShield1fd9e604b30==--

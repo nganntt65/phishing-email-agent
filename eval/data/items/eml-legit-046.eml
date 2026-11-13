@@ -1,0 +1,36 @@
+From: Westbrook IT Services <it-services@westbrook.edu>
+To: elif.fischer@westbrook.edu
+Return-Path: <it-services@westbrook.edu>
+Subject: Scheduled maintenance this Saturday
+Date: Thu, 08 Oct 2026 05:33:00 +0000
+Message-ID: <81e08b48f496@westbrook.edu>
+Authentication-Results: mx.westbrook.edu; spf=pass
+ smtp.mailfrom=westbrook.edu; dkim=pass header.d=westbrook.edu; dmarc=pass
+ header.from=westbrook.edu
+DKIM-Signature: v=1; a=rsa-sha256; d=westbrook.edu; s=s1; b=fd034adac9525185
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield8d81f38dd40=="
+
+--==ScamShield8d81f38dd40==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+Email and the student portal will be unavailable Saturday from 1 to 3 AM for =
+maintenance.
+
+Status page: https://status.westbrook.edu
+
+No action is needed.
+
+--==ScamShield8d81f38dd40==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello,</p><p>Email and the student portal will be unavailable =
+Saturday from 1 to 3 AM for maintenance.</p><p><a href=3D"https://status.west=
+brook.edu">Status page</a></p><p>No action is needed.</p></body></html>
+
+--==ScamShield8d81f38dd40==--

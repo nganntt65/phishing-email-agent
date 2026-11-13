@@ -1,0 +1,37 @@
+From: Carrick State IT Services <it-services@carrickstate.edu>
+To: putri.sutanto@carrickstate.edu
+Return-Path: <it-services@carrickstate.edu>
+Subject: Scheduled maintenance this Saturday
+Date: Thu, 29 Oct 2026 09:02:00 +0000
+Message-ID: <dd20d342af08@carrickstate.edu>
+Authentication-Results: mx.carrickstate.edu; spf=pass
+ smtp.mailfrom=carrickstate.edu; dkim=pass header.d=carrickstate.edu;
+ dmarc=pass header.from=carrickstate.edu
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=carrickstate.edu; s=s1; b=14cb056407437c3b
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShieldf20ba362790=="
+
+--==ScamShieldf20ba362790==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+Email and the student portal will be unavailable Saturday from 1 to 3 AM for =
+maintenance.
+
+Status page: https://status.carrickstate.edu
+
+No action is needed.
+
+--==ScamShieldf20ba362790==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello,</p><p>Email and the student portal will be unavailable =
+Saturday from 1 to 3 AM for maintenance.</p><p><a href=3D"https://status.carr=
+ickstate.edu">Status page</a></p><p>No action is needed.</p></body></html>
+
+--==ScamShieldf20ba362790==--

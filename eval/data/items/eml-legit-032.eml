@@ -1,0 +1,38 @@
+From: BioTech Symposium 2026 <events@biotech-symposium.org>
+To: elif.fischer@meridian.ac.id
+Return-Path: <events@biotech-symposium.org>
+Subject: Invitation: BioTech Symposium 2026
+Date: Tue, 06 Oct 2026 02:23:00 +0000
+Message-ID: <2e254f11d8dc@biotech-symposium.org>
+Authentication-Results: mx.meridian.ac.id; spf=pass
+ smtp.mailfrom=biotech-symposium.org; dkim=pass
+ header.d=biotech-symposium.org; dmarc=pass header.from=biotech-symposium.org
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=biotech-symposium.org; s=s1; b=36d55494f37fd50d
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShieldf2577bc55a0=="
+
+--==ScamShieldf2577bc55a0==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear colleague,
+
+You are invited to attend BioTech Symposium 2026. Registration is free for st=
+udents.
+
+Event details: https://biotech-symposium.org/program
+
+We hope to see you there.
+
+--==ScamShieldf2577bc55a0==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Dear colleague,</p><p>You are invited to attend BioTech Sympos=
+ium 2026. Registration is free for students.</p><p><a href=3D"https://biotech=
+-symposium.org/program">Event details</a></p><p>We hope to see you there.</p>=
+</body></html>
+
+--==ScamShieldf2577bc55a0==--

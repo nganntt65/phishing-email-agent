@@ -1,0 +1,37 @@
+From: Parcel Notifications <notify@parcel-alerts-center.com>
+To: samuel.haddad@lakesidetech.edu
+Return-Path: <notify@parcel-alerts-center.com>
+Subject: Your package is waiting
+Date: Wed, 21 Oct 2026 22:21:00 +0000
+Message-ID: <addcab3b4d37@parcel-alerts-center.com>
+Authentication-Results: mx.lakesidetech.edu; spf=none
+ smtp.mailfrom=parcel-alerts-center.com; dkim=pass
+ header.d=parcel-alerts-center.com; dmarc=none
+ header.from=parcel-alerts-center.com
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=parcel-alerts-center.com; s=s1; b=67814c1fcc530e36
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield2ab963f37f0=="
+
+--==ScamShield2ab963f37f0==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+We tried to deliver your package but nobody was available.
+
+Reschedule delivery: https://bit.ly/4fTr2Lm
+
+Reschedule your delivery using the link below.
+
+--==ScamShield2ab963f37f0==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello,</p><p>We tried to deliver your package but nobody was a=
+vailable.</p><p><a href=3D"https://bit.ly/4fTr2Lm">Reschedule delivery</a></p=
+><p>Reschedule your delivery using the link below.</p></body></html>
+
+--==ScamShield2ab963f37f0==--

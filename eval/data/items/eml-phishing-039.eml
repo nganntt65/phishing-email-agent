@@ -1,0 +1,38 @@
+From: Mail Administrator <admin@webmail-upgrade-center.com>
+To: aisha.osei@carrickstate.edu
+Return-Path: <admin@webmail-upgrade-center.com>
+Subject: Incoming messages are on hold
+Date: Wed, 14 Oct 2026 15:29:00 +0000
+Message-ID: <4199b31022f0@webmail-upgrade-center.com>
+Authentication-Results: mx.carrickstate.edu; spf=none
+ smtp.mailfrom=webmail-upgrade-center.com; dkim=none
+ header.d=webmail-upgrade-center.com; dmarc=none
+ header.from=webmail-upgrade-center.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield5ec4536f1d0=="
+
+--==ScamShield5ec4536f1d0==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Dear user,
+
+Your mailbox has exceeded its storage limit and new messages are being held.
+
+Click here to upgrade your storage for free.
+
+Upgrade storage: http://45.83.61.216/webmail/login
+
+Mail Administrator
+
+--==ScamShield5ec4536f1d0==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Dear user,</p><p>Your mailbox has exceeded its storage limit a=
+nd new messages are being held.</p><p>Click here to upgrade your storage for =
+free.</p><p><a href=3D"http://45.83.61.216/webmail/login">Upgrade storage</a>=
+</p><p>Mail Administrator</p></body></html>
+
+--==ScamShield5ec4536f1d0==--

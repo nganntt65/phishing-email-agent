@@ -1,0 +1,41 @@
+From: Meridian IT Services <accounts@meridian-edu.com>
+To: jonas.alvarez@meridian.ac.id
+Reply-To: helpdesk-verify@secure-mail-center.xyz
+Return-Path: <accounts@meridian-edu.com>
+Subject: Re-confirm your Meridian login within 24 hours
+Date: Thu, 08 Oct 2026 06:15:00 +0000
+Message-ID: <af34a193c4b2@meridian-edu.com>
+Authentication-Results: mx.meridian.ac.id; spf=fail
+ smtp.mailfrom=meridian-edu.com; dkim=fail header.d=meridian-edu.com;
+ dmarc=fail header.from=meridian-edu.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield49ebc2026f0=="
+
+--==ScamShield49ebc2026f0==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+We could not verify your account. You must sign in to keep your student email=
+ active.
+
+Failure to verify will result in your account being terminated.
+
+https://meridian-edu.com/sso/verify?id=3D19807: https://meridian-edu.com/sso/=
+verify?id=3D19807
+
+Office of the Registrar
+
+--==ScamShield49ebc2026f0==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello,</p><p>We could not verify your account. You must sign i=
+n to keep your student email active.</p><p>Failure to verify will result in y=
+our account being terminated.</p><p><a href=3D"https://meridian-edu.com/sso/v=
+erify?id=3D19807">https://meridian-edu.com/sso/verify?id=3D19807</a></p><p>Of=
+fice of the Registrar</p></body></html>
+
+--==ScamShield49ebc2026f0==--

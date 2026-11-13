@@ -1,0 +1,41 @@
+From: Campus Careers Hub <hello@campus-careers-hub.com>
+To: putri.castillo@meridian.ac.id
+Return-Path: <hello@campus-careers-hub.com>
+Subject: You have been shortlisted
+Date: Mon, 26 Oct 2026 23:17:00 +0000
+Message-ID: <a8d20f87d0@campus-careers-hub.com>
+Authentication-Results: mx.meridian.ac.id; spf=pass
+ smtp.mailfrom=campus-careers-hub.com; dkim=pass
+ header.d=campus-careers-hub.com; dmarc=pass
+ header.from=campus-careers-hub.com
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=campus-careers-hub.com; s=s1; b=b9de7a3a486822b9
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShieldd64c6e27ff0=="
+
+--==ScamShieldd64c6e27ff0==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi there,
+
+Thank you for your interest. Your housing assignment for next term is ready t=
+o review.
+
+Kindly review the details and complete the form at your convenience.
+
+Open the form: https://campus-careers-hub.com/form
+
+Warm regards,
+
+--==ScamShieldd64c6e27ff0==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hi there,</p><p>Thank you for your interest. Your housing assi=
+gnment for next term is ready to review.</p><p>Kindly review the details and =
+complete the form at your convenience.</p><p><a href=3D"https://campus-career=
+s-hub.com/form">Open the form</a></p><p>Warm regards,</p></body></html>
+
+--==ScamShieldd64c6e27ff0==--

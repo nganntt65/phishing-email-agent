@@ -1,0 +1,38 @@
+From: Email Quota Team <admin@webmail-upgrade-center.com>
+To: arjun.okafor@meridian.ac.id
+Return-Path: <admin@webmail-upgrade-center.com>
+Subject: Your mailbox is 98% full
+Date: Thu, 22 Oct 2026 16:31:00 +0000
+Message-ID: <36b87b3a4e3e@webmail-upgrade-center.com>
+Authentication-Results: mx.meridian.ac.id; spf=neutral
+ smtp.mailfrom=webmail-upgrade-center.com; dkim=none
+ header.d=webmail-upgrade-center.com; dmarc=none
+ header.from=webmail-upgrade-center.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield66dd59ba710=="
+
+--==ScamShield66dd59ba710==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Dear user,
+
+Your mailbox has exceeded its storage limit and new messages are being held.
+
+Click here to upgrade your storage for free.
+
+Upgrade storage: http://45.83.128.65/webmail/login
+
+Mail Administrator
+
+--==ScamShield66dd59ba710==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Dear user,</p><p>Your mailbox has exceeded its storage limit a=
+nd new messages are being held.</p><p>Click here to upgrade your storage for =
+free.</p><p><a href=3D"http://45.83.128.65/webmail/login">Upgrade storage</a>=
+</p><p>Mail Administrator</p></body></html>
+
+--==ScamShield66dd59ba710==--

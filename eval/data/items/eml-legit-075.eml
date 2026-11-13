@@ -1,0 +1,37 @@
+From: Westbrook IT Services <no-reply@westbrook.edu>
+To: rizky.alvarez@westbrook.edu
+Return-Path: <no-reply@westbrook.edu>
+Subject: Password reset requested
+Date: Fri, 23 Oct 2026 04:15:00 +0000
+Message-ID: <dd84f6729464@westbrook.edu>
+Authentication-Results: mx.westbrook.edu; spf=pass
+ smtp.mailfrom=westbrook.edu; dkim=pass header.d=westbrook.edu; dmarc=pass
+ header.from=westbrook.edu
+DKIM-Signature: v=1; a=rsa-sha256; d=westbrook.edu; s=s1; b=28e213bce6fdd7af
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield53d04015870=="
+
+--==ScamShield53d04015870==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+We received a request to reset your password. The link expires within 24 hour=
+s.
+
+Reset password: https://portal.westbrook.edu/password/reset?token=3D9ddd39d793
+
+If you did not request this, you can ignore this message.
+
+--==ScamShield53d04015870==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello,</p><p>We received a request to reset your password. The=
+ link expires within 24 hours.</p><p><a href=3D"https://portal.westbrook.edu/=
+password/reset?token=3D9ddd39d793">Reset password</a></p><p>If you did not re=
+quest this, you can ignore this message.</p></body></html>
+
+--==ScamShield53d04015870==--

@@ -1,0 +1,40 @@
+From: Summit Federal <alerts@summitfederal.com>
+To: amara.chen@westbrook.edu
+Return-Path: <alerts@summitfederal.com>
+Subject: Please review a recent transaction
+Date: Sun, 01 Nov 2026 15:26:00 +0000
+Message-ID: <1d7c4a1dab32@summitfederal.com>
+Authentication-Results: mx.westbrook.edu; spf=pass
+ smtp.mailfrom=summitfederal.com; dkim=pass header.d=summitfederal.com;
+ dmarc=pass header.from=summitfederal.com
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=summitfederal.com; s=s1; b=556daea67b03283
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield53f758dce20=="
+
+--==ScamShield53f758dce20==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+We noticed unusual activity on your debit card. If this wasn't you, sign in t=
+o review it.
+
+We will never ask for your password by email.
+
+Review transaction: https://summitfederal.com/login
+
+Summit Federal
+
+--==ScamShield53f758dce20==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello,</p><p>We noticed unusual activity on your debit card. I=
+f this wasn't you, sign in to review it.</p><p>We will never ask for your pas=
+sword by email.</p><p><a href=3D"https://summitfederal.com/login">Review tran=
+saction</a></p><p>Summit Federal</p></body></html>
+
+--==ScamShield53f758dce20==--

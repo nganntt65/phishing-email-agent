@@ -11,9 +11,17 @@ __pycache__/
 *.db-journal
 *.sqlite3
 
+# Evaluation caches (Gemini responses may cost quota to regenerate, but are machine-local)
+eval/cache/
+
 # Environment variables & secrets
 .env
 .env.*
+!.env.example
+
+# Items added from the Evaluation tab may be real emails: keep them on this computer.
+# To share a set of synthetic or demo items deliberately, remove this line for that commit.
+eval/added/
 
 # macOS / IDE files
 .DS_Store

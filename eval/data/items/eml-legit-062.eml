@@ -1,0 +1,40 @@
+From: "Dr. Priya Fischer" <priya.fischer@carrickstate.edu>
+To: jonas.mensah@carrickstate.edu
+Return-Path: <priya.fischer@carrickstate.edu>
+Subject: Reminder - CS 101 quiz closes at midnight
+Date: Mon, 12 Oct 2026 01:45:00 +0000
+Message-ID: <ed65b5a5f8e6@carrickstate.edu>
+Authentication-Results: mx.carrickstate.edu; spf=pass
+ smtp.mailfrom=carrickstate.edu; dkim=pass header.d=carrickstate.edu;
+ dmarc=pass header.from=carrickstate.edu
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=carrickstate.edu; s=s1; b=a3404f08b34191b8
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShieldcb2c913a7c0=="
+
+--==ScamShieldcb2c913a7c0==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi all,
+
+This is a reminder that the assignment is due tonight. Submit immediately if =
+you have not yet.
+
+Late work will lose points.
+
+Course page: https://learn.carrickstate.edu/courses/cs101
+
+Dr. Fischer
+
+--==ScamShieldcb2c913a7c0==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hi all,</p><p>This is a reminder that the assignment is due to=
+night. Submit immediately if you have not yet.</p><p>Late work will lose poin=
+ts.</p><p><a href=3D"https://learn.carrickstate.edu/courses/cs101">Course pag=
+e</a></p><p>Dr. Fischer</p></body></html>
+
+--==ScamShieldcb2c913a7c0==--

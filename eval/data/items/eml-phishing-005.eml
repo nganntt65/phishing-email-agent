@@ -1,0 +1,39 @@
+From: "Harbor Catering Co. Accounts" <billing@harbor-supply.co>
+To: procurement@westbrook.edu
+Reply-To: ap-desk@harbor-payments.net
+Return-Path: <billing@harbor-supply.co>
+Subject: Updated banking details for invoice payment
+Date: Sun, 25 Oct 2026 01:24:00 +0000
+Message-ID: <fd51451b4cf3@harbor-supply.co>
+Authentication-Results: mx.westbrook.edu; spf=softfail
+ smtp.mailfrom=harbor-supply.co; dkim=pass header.d=harbor-supply.co;
+ dmarc=none header.from=harbor-supply.co
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=harbor-supply.co; s=s1; b=a3d70628ece66fa2
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield8eb02b61c40=="
+
+--==ScamShield8eb02b61c40==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello Accounts Payable,
+
+We have changed our bank account details. Please update your records before p=
+aying the overdue invoice.
+
+The new ACH details are attached to the reply thread.
+
+Harbor Catering Co. Billing
+
+--==ScamShield8eb02b61c40==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello Accounts Payable,</p><p>We have changed our bank account=
+ details. Please update your records before paying the overdue invoice.</p><p=
+>The new ACH details are attached to the reply thread.</p><p>Harbor Catering =
+Co. Billing</p></body></html>
+
+--==ScamShield8eb02b61c40==--

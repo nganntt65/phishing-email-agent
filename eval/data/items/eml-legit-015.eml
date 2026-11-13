@@ -1,0 +1,39 @@
+From: Lakeside IT Services <no-reply@lakesidetech.edu>
+To: hannah.mensah@lakesidetech.edu
+Return-Path: <no-reply@lakesidetech.edu>
+Subject: Password reset requested
+Date: Mon, 05 Oct 2026 15:31:00 +0000
+Message-ID: <6e3fbf3c5140@lakesidetech.edu>
+Authentication-Results: mx.lakesidetech.edu; spf=pass
+ smtp.mailfrom=lakesidetech.edu; dkim=pass header.d=lakesidetech.edu;
+ dmarc=pass header.from=lakesidetech.edu
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=lakesidetech.edu; s=s1; b=2112507c2cfa55b0
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield88615546670=="
+
+--==ScamShield88615546670==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+We received a request to reset your password. The link expires within 24 hour=
+s.
+
+Reset password: https://portal.lakesidetech.edu/password/reset?token=3D1e53ff=
+d3a2
+
+If you did not request this, you can ignore this message.
+
+--==ScamShield88615546670==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello,</p><p>We received a request to reset your password. The=
+ link expires within 24 hours.</p><p><a href=3D"https://portal.lakesidetech.e=
+du/password/reset?token=3D1e53ffd3a2">Reset password</a></p><p>If you did not=
+ request this, you can ignore this message.</p></body></html>
+
+--==ScamShield88615546670==--

@@ -1,0 +1,38 @@
+From: PayPal Security <security@paypal-resolution-center.net>
+To: daniel.moreau@meridian.ac.id
+Return-Path: <security@paypal-resolution-center.net>
+Subject: Your PayPal account has been limited
+Date: Wed, 07 Oct 2026 17:18:00 +0000
+Message-ID: <5ff55bc440f1@paypal-resolution-center.net>
+Authentication-Results: mx.meridian.ac.id; spf=fail
+ smtp.mailfrom=paypal-resolution-center.net; dkim=none
+ header.d=paypal-resolution-center.net; dmarc=fail
+ header.from=paypal-resolution-center.net
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield256e417d470=="
+
+--==ScamShield256e417d470==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Dear Customer,
+
+Your PayPal account has been temporarily locked for your protection.
+
+Verify your identity immediately to restore access.
+
+https://www.paypal.com/signin: https://paypal-resolution-center.net/signin
+
+PayPal Trust & Safety
+
+--==ScamShield256e417d470==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Dear Customer,</p><p>Your PayPal account has been temporarily =
+locked for your protection.</p><p>Verify your identity immediately to restore=
+ access.</p><p><a href=3D"https://paypal-resolution-center.net/signin">https:=
+//www.paypal.com/signin</a></p><p>PayPal Trust & Safety</p></body></html>
+
+--==ScamShield256e417d470==--

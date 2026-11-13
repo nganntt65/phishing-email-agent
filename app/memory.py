@@ -4,23 +4,36 @@ import os
 import re
 import sqlite3
 from datetime import datetime, timezone
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
 from urllib.parse import urlparse
 
 from app.schemas import CampaignMatchResult, SanitizedEmailPayload
+
+# Only results at these levels start a new campaign record. Everything else is forgotten.
+REMEMBERED_LEVELS = ("HIGH", "CRITICAL")
+
+
+def _subject_pattern(subject: str) -> str:
+    """Normalised subject used for correlation: lower-case, digits -> '#', spaces collapsed."""
+    return re.sub(r"\s+", " ", re.sub(r"\d+", "#", (subject or "").lower().strip()))
 
 
 class CampaignHistoryMemory:
     """
     MEMORY Layer: Campaign history / Historical outputs.
-    Persists email analysis outputs in SQLite and computes campaign fingerprints
-    (based on normalized subject template + sender domain + URL domains) to correlate
-    recurring phishing waves across recipients.
+    Computes campaign fingerprints (normalized subject template + sender domain + URL domains) to
+    correlate recurring phishing waves across recipients. Stores only flagged scams, and only the
+    attacker's side of them; email bodies and recipients' data are never written to disk.
     """
 
     def __init__(self, db_path: str | None = None) -> None:
         base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        self.db_path = db_path or os.path.join(base_dir, "campaign_memory.db")
+        # CAMPAIGN_DB_PATH lets tests and the evaluation harness use a throwaway database.
+        self.db_path = (
+            db_path
+            or os.getenv("CAMPAIGN_DB_PATH", "").strip()
+            or os.path.join(base_dir, "campaign_memory.db")
+        )
         self._init_db()
 
     def _init_db(self) -> None:
@@ -150,11 +163,20 @@ class CampaignHistoryMemory:
         risk_score: int,
         risk_level: str,
         escalated_action: str,
-        short_analysis: str,
-        full_response_dict: Dict[str, Any],
-    ) -> str:
+        metadata: Optional[Dict[str, Any]] = None,
+    ) -> Optional[str]:
+        """Remember a scam wave without remembering anyone's email.
+
+        Data minimisation:
+        - A *new* campaign is only created for HIGH/CRITICAL results. Ordinary mail leaves no trace,
+          so scanning a private email to check it is safe.
+        - What is kept is the attacker's side only: sender domain, normalised subject pattern, the
+          fingerprint hash and scores. Never the body, the full sender address, or the raw subject.
+        - Existing campaigns still get their counters updated, so de-escalation keeps working.
+        Returns the campaign id, or None when nothing was stored.
+        """
         now_iso = datetime.now(timezone.utc).isoformat()
-        norm_subj = re.sub(r"\d+", "#", payload.headers.subject.lower().strip())
+        norm_subj = _subject_pattern(payload.headers.subject)
 
         with sqlite3.connect(self.db_path) as conn:
             conn.row_factory = sqlite3.Row
@@ -162,6 +184,9 @@ class CampaignHistoryMemory:
                 "SELECT campaign_id, seen_count FROM campaign_clusters WHERE fingerprint = ?",
                 (fingerprint,),
             ).fetchone()
+
+            if not existing and risk_level not in REMEMBERED_LEVELS:
+                return None
 
             if existing:
                 campaign_id = existing["campaign_id"]
@@ -210,45 +235,41 @@ class CampaignHistoryMemory:
                     payload.request_id,
                     now_iso,
                     campaign_id,
-                    payload.headers.from_address,
-                    payload.headers.subject,
+                    payload.headers.from_domain,  # column name is historical: only the domain is stored
+                    norm_subj,                    # normalised pattern, not the raw subject
                     risk_score,
                     risk_level,
                     escalated_action,
-                    short_analysis,
-                    json.dumps(full_response_dict),
+                    "",                           # short_analysis: may quote the email, so not kept
+                    json.dumps(metadata or {}),   # scores/engine only, never email content
                 ),
             )
             conn.commit()
         return campaign_id
 
     def list_recent_history(self, limit: int = 15) -> Dict[str, Any]:
+        """Public listing: flagged scam campaigns and anonymous per-scan scores only.
+
+        Ordinary mail (rows from older databases that predate data minimisation) is never listed,
+        and per-scan rows carry no sender or subject.
+        """
+        placeholders = ",".join("?" for _ in REMEMBERED_LEVELS)
         with sqlite3.connect(self.db_path) as conn:
             conn.row_factory = sqlite3.Row
             campaigns = [
                 dict(r)
                 for r in conn.execute(
-                    "SELECT * FROM campaign_clusters ORDER BY last_seen DESC LIMIT ?",
-                    (limit,),
+                    f"SELECT campaign_id, sender_domain, subject_pattern, seen_count, first_seen, last_seen, "
+                    f"last_risk_score, last_risk_level, last_action FROM campaign_clusters "
+                    f"WHERE last_risk_level IN ({placeholders}) ORDER BY last_seen DESC LIMIT ?",
+                    (*REMEMBERED_LEVELS, limit),
                 ).fetchall()
             ]
             history = [
-                {
-                    k: r[k]
-                    for k in (
-                        "request_id",
-                        "analyzed_at",
-                        "campaign_id",
-                        "sender_address",
-                        "subject",
-                        "risk_score",
-                        "risk_level",
-                        "escalated_action",
-                        "short_analysis",
-                    )
-                }
+                dict(r)
                 for r in conn.execute(
-                    "SELECT * FROM historical_outputs ORDER BY analyzed_at DESC LIMIT ?",
+                    "SELECT request_id, analyzed_at, campaign_id, risk_score, risk_level, escalated_action "
+                    "FROM historical_outputs ORDER BY analyzed_at DESC LIMIT ?",
                     (limit,),
                 ).fetchall()
             ]

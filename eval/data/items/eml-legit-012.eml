@@ -1,0 +1,31 @@
+From: Kenji Fischer <kenji93@gmail.com>
+To: priya.hartono@harrowgate.ac.uk
+Return-Path: <kenji93@gmail.com>
+Subject: study group tomorrow?
+Date: Mon, 12 Oct 2026 01:48:00 +0000
+Message-ID: <cbd9e2aa4ac@gmail.com>
+Authentication-Results: mx.harrowgate.ac.uk; spf=pass smtp.mailfrom=gmail.com;
+ dkim=pass header.d=gmail.com; dmarc=pass header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; d=gmail.com; s=s1; b=14e286e5ac8936bc
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield7145a888290=="
+
+--==ScamShield7145a888290==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hey!
+
+Are we still meeting at the library at 3?
+
+- Kenji
+
+--==ScamShield7145a888290==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hey!</p><p>Are we still meeting at the library at 3?</p><p>- K=
+enji</p></body></html>
+
+--==ScamShield7145a888290==--

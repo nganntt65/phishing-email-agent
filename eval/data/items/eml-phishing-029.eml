@@ -1,0 +1,39 @@
+From: Brightline Supplies Accounts <billing@brightline-supply.co>
+To: procurement@carrickstate.edu
+Reply-To: ap-desk@brightline-payments.net
+Return-Path: <billing@brightline-supply.co>
+Subject: Overdue invoice - new remittance account
+Date: Sun, 18 Oct 2026 07:18:00 +0000
+Message-ID: <6e0d35ce8841@brightline-supply.co>
+Authentication-Results: mx.carrickstate.edu; spf=softfail
+ smtp.mailfrom=brightline-supply.co; dkim=pass header.d=brightline-supply.co;
+ dmarc=none header.from=brightline-supply.co
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=brightline-supply.co; s=s1; b=9479e1e6c9277d9b
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShielda79b4e2c240=="
+
+--==ScamShielda79b4e2c240==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello Accounts Payable,
+
+We have changed our bank account details. Please update your records before p=
+aying the overdue invoice.
+
+Reply to this email and we will send the new routing number.
+
+Brightline Supplies Billing
+
+--==ScamShielda79b4e2c240==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello Accounts Payable,</p><p>We have changed our bank account=
+ details. Please update your records before paying the overdue invoice.</p><p=
+>Reply to this email and we will send the new routing number.</p><p>Brightlin=
+e Supplies Billing</p></body></html>
+
+--==ScamShielda79b4e2c240==--

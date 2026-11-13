@@ -1,0 +1,35 @@
+From: "Prof. Maya Chen" <prof.chen56@gmail.com>
+To: tomas.rahman@meridian.ac.id
+Return-Path: <prof.chen56@gmail.com>
+Subject: Request
+Date: Mon, 12 Oct 2026 20:46:00 +0000
+Message-ID: <f729859131d2@gmail.com>
+Authentication-Results: mx.meridian.ac.id; spf=pass smtp.mailfrom=gmail.com;
+ dkim=pass header.d=gmail.com; dmarc=none header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; d=gmail.com; s=s1; b=45241ea6a6846099
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShieldce9dac6e830=="
+
+--==ScamShieldce9dac6e830==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi,
+
+I need a favor. Can you buy 4 Apple gift cards for a student award today? I w=
+ill reimburse you.
+
+Let me know as soon as possible.
+
+Prof. Chen
+
+--==ScamShieldce9dac6e830==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hi,</p><p>I need a favor. Can you buy 4 Apple gift cards for a=
+ student award today? I will reimburse you.</p><p>Let me know as soon as poss=
+ible.</p><p>Prof. Chen</p></body></html>
+
+--==ScamShieldce9dac6e830==--

@@ -1,0 +1,73 @@
+{
+  "by_attack_type": {
+    "bank_alert": 8,
+    "bec_nolink": 8,
+    "bec_wire": 9,
+    "brand_lookalike": 14,
+    "campus_announcement": 10,
+    "campus_credential": 10,
+    "club_newsletter": 8,
+    "course_reminder": 10,
+    "gift_card": 8,
+    "http_benign": 1,
+    "http_login": 1,
+    "invoice_ach": 8,
+    "invoice_trusted": 8,
+    "it_maintenance": 8,
+    "mailbox_quota": 10,
+    "malware_attachment": 7,
+    "partner_invite": 8,
+    "password_reset": 10,
+    "payroll_notice": 7,
+    "personal": 7,
+    "polite_phish": 8,
+    "prompt_injection": 8,
+    "raw_ip": 1,
+    "risky_tld": 1,
+    "risky_tld_login": 2,
+    "scholarship_fee": 7,
+    "security_alert": 8,
+    "shipping_notice": 8,
+    "shortlink": 2,
+    "shortlink_delivery": 7,
+    "trusted_brand": 7,
+    "university_lookalike": 10,
+    "university_named_club": 1,
+    "university_official": 12,
+    "university_typo": 4,
+    "unknown_benign": 7,
+    "unknown_domain": 3,
+    "unknown_login": 4
+  },
+  "by_difficulty": {
+    "easy": 76,
+    "hard": 82,
+    "medium": 102
+  },
+  "by_kind_label": {
+    "eml/legit": 75,
+    "eml/phishing": 75,
+    "pdf/legit": 15,
+    "pdf/phishing": 15,
+    "plain_text/legit": 10,
+    "plain_text/phishing": 10,
+    "url/legit": 30,
+    "url/phishing": 30
+  },
+  "by_split": {
+    "dev": 128,
+    "test": 132
+  },
+  "excluded": "app/sample_emails.py (8 hand-written demo emails; rules were tuned on them)",
+  "generator_version": "1.0",
+  "paraphrased": false,
+  "seed": 42,
+  "total": 260,
+  "universities": [
+    "westbrook.edu",
+    "lakesidetech.edu",
+    "harrowgate.ac.uk",
+    "meridian.ac.id",
+    "carrickstate.edu"
+  ]
+}

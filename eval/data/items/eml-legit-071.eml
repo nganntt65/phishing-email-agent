@@ -1,0 +1,37 @@
+From: Carrick State Human Resources <hr@carrickstate.edu>
+To: hannah.brennan@carrickstate.edu
+Return-Path: <hr@carrickstate.edu>
+Subject: Your pay statement is ready
+Date: Thu, 29 Oct 2026 17:26:00 +0000
+Message-ID: <a3949e3c5a88@carrickstate.edu>
+Authentication-Results: mx.carrickstate.edu; spf=pass
+ smtp.mailfrom=carrickstate.edu; dkim=pass header.d=carrickstate.edu;
+ dmarc=pass header.from=carrickstate.edu
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=carrickstate.edu; s=s1; b=7f7f6c0a07c0d116
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShielda0e3954cb10=="
+
+--==ScamShielda0e3954cb10==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+Your pay statement for this period is ready. Sign in to the staff portal to v=
+iew it.
+
+Staff portal: https://portal.carrickstate.edu/payroll
+
+Human Resources
+
+--==ScamShielda0e3954cb10==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello,</p><p>Your pay statement for this period is ready. Sign=
+ in to the staff portal to view it.</p><p><a href=3D"https://portal.carrickst=
+ate.edu/payroll">Staff portal</a></p><p>Human Resources</p></body></html>
+
+--==ScamShielda0e3954cb10==--

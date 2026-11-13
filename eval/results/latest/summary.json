@@ -1,0 +1,3549 @@
+{
+  "run_at": "2026-11-13T00:02:09+00:00",
+  "split": "test",
+  "threshold": 60,
+  "n_items": 132,
+  "dataset": {
+    "seed": 42,
+    "universities": [
+      "westbrook.edu",
+      "lakesidetech.edu",
+      "harrowgate.ac.uk",
+      "meridian.ac.id",
+      "carrickstate.edu"
+    ],
+    "total": 260,
+    "by_kind_label": {
+      "eml/legit": 75,
+      "eml/phishing": 75,
+      "pdf/legit": 15,
+      "pdf/phishing": 15,
+      "plain_text/legit": 10,
+      "plain_text/phishing": 10,
+      "url/legit": 30,
+      "url/phishing": 30
+    },
+    "generator_version": "1.0",
+    "paraphrased": false
+  },
+  "systems": {
+    "rules": {
+      "status": "ok",
+      "overall": {
+        "n": 122,
+        "tp": 57,
+        "fp": 0,
+        "tn": 61,
+        "fn": 4,
+        "correct": 118,
+        "wrong": 4,
+        "precision": 1.0,
+        "recall": 0.9344,
+        "f1": 0.9661,
+        "accuracy": 0.9672,
+        "specificity": 1.0
+      },
+      "overall_including_plain_text": {
+        "n": 132,
+        "tp": 61,
+        "fp": 0,
+        "tn": 66,
+        "fn": 5,
+        "correct": 127,
+        "wrong": 5,
+        "precision": 1.0,
+        "recall": 0.9242,
+        "f1": 0.9606,
+        "accuracy": 0.9621,
+        "specificity": 1.0
+      },
+      "by_input_kind": {
+        "eml": {
+          "n": 76,
+          "tp": 35,
+          "fp": 0,
+          "tn": 38,
+          "fn": 3,
+          "correct": 73,
+          "wrong": 3,
+          "precision": 1.0,
+          "recall": 0.9211,
+          "f1": 0.9589,
+          "accuracy": 0.9605,
+          "specificity": 1.0
+        },
+        "pdf": {
+          "n": 16,
+          "tp": 7,
+          "fp": 0,
+          "tn": 8,
+          "fn": 1,
+          "correct": 15,
+          "wrong": 1,
+          "precision": 1.0,
+          "recall": 0.875,
+          "f1": 0.9333,
+          "accuracy": 0.9375,
+          "specificity": 1.0
+        },
+        "plain_text": {
+          "n": 10,
+          "tp": 4,
+          "fp": 0,
+          "tn": 5,
+          "fn": 1,
+          "correct": 9,
+          "wrong": 1,
+          "precision": 1.0,
+          "recall": 0.8,
+          "f1": 0.8889,
+          "accuracy": 0.9,
+          "specificity": 1.0
+        },
+        "url": {
+          "n": 30,
+          "tp": 15,
+          "fp": 0,
+          "tn": 15,
+          "fn": 0,
+          "correct": 30,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        }
+      },
+      "by_difficulty": {
+        "easy": {
+          "n": 39,
+          "tp": 23,
+          "fp": 0,
+          "tn": 15,
+          "fn": 1,
+          "correct": 38,
+          "wrong": 1,
+          "precision": 1.0,
+          "recall": 0.9583,
+          "f1": 0.9787,
+          "accuracy": 0.9744,
+          "specificity": 1.0
+        },
+        "hard": {
+          "n": 41,
+          "tp": 15,
+          "fp": 0,
+          "tn": 22,
+          "fn": 4,
+          "correct": 37,
+          "wrong": 4,
+          "precision": 1.0,
+          "recall": 0.7895,
+          "f1": 0.8824,
+          "accuracy": 0.9024,
+          "specificity": 1.0
+        },
+        "medium": {
+          "n": 52,
+          "tp": 23,
+          "fp": 0,
+          "tn": 29,
+          "fn": 0,
+          "correct": 52,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        }
+      },
+      "by_attack_type": {
+        "bank_alert": {
+          "n": 3,
+          "tp": 0,
+          "fp": 0,
+          "tn": 3,
+          "fn": 0,
+          "correct": 3,
+          "wrong": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "bec_nolink": {
+          "n": 4,
+          "tp": 4,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 4,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        },
+        "bec_wire": {
+          "n": 3,
+          "tp": 3,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 3,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        },
+        "brand_lookalike": {
+          "n": 5,
+          "tp": 5,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 5,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        },
+        "campus_announcement": {
+          "n": 4,
+          "tp": 0,
+          "fp": 0,
+          "tn": 4,
+          "fn": 0,
+          "correct": 4,
+          "wrong": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "campus_credential": {
+          "n": 6,
+          "tp": 6,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 6,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        },
+        "club_newsletter": {
+          "n": 3,
+          "tp": 0,
+          "fp": 0,
+          "tn": 3,
+          "fn": 0,
+          "correct": 3,
+          "wrong": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "course_reminder": {
+          "n": 3,
+          "tp": 0,
+          "fp": 0,
+          "tn": 3,
+          "fn": 0,
+          "correct": 3,
+          "wrong": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "gift_card": {
+          "n": 6,
+          "tp": 6,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 6,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        },
+        "invoice_ach": {
+          "n": 4,
+          "tp": 4,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 4,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        },
+        "invoice_trusted": {
+          "n": 5,
+          "tp": 0,
+          "fp": 0,
+          "tn": 5,
+          "fn": 0,
+          "correct": 5,
+          "wrong": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "it_maintenance": {
+          "n": 6,
+          "tp": 0,
+          "fp": 0,
+          "tn": 6,
+          "fn": 0,
+          "correct": 6,
+          "wrong": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "mailbox_quota": {
+          "n": 5,
+          "tp": 5,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 5,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        },
+        "malware_attachment": {
+          "n": 2,
+          "tp": 1,
+          "fp": 0,
+          "tn": 0,
+          "fn": 1,
+          "correct": 1,
+          "wrong": 1,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6667,
+          "accuracy": 0.5,
+          "specificity": null
+        },
+        "partner_invite": {
+          "n": 6,
+          "tp": 0,
+          "fp": 0,
+          "tn": 6,
+          "fn": 0,
+          "correct": 6,
+          "wrong": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "password_reset": {
+          "n": 5,
+          "tp": 0,
+          "fp": 0,
+          "tn": 5,
+          "fn": 0,
+          "correct": 5,
+          "wrong": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "payroll_notice": {
+          "n": 4,
+          "tp": 0,
+          "fp": 0,
+          "tn": 4,
+          "fn": 0,
+          "correct": 4,
+          "wrong": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "personal": {
+          "n": 3,
+          "tp": 0,
+          "fp": 0,
+          "tn": 3,
+          "fn": 0,
+          "correct": 3,
+          "wrong": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "polite_phish": {
+          "n": 5,
+          "tp": 1,
+          "fp": 0,
+          "tn": 0,
+          "fn": 4,
+          "correct": 1,
+          "wrong": 4,
+          "precision": 1.0,
+          "recall": 0.2,
+          "f1": 0.3333,
+          "accuracy": 0.2,
+          "specificity": null
+        },
+        "prompt_injection": {
+          "n": 4,
+          "tp": 4,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 4,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        },
+        "risky_tld_login": {
+          "n": 1,
+          "tp": 1,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 1,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        },
+        "scholarship_fee": {
+          "n": 4,
+          "tp": 4,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 4,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        },
+        "security_alert": {
+          "n": 4,
+          "tp": 0,
+          "fp": 0,
+          "tn": 4,
+          "fn": 0,
+          "correct": 4,
+          "wrong": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "shipping_notice": {
+          "n": 5,
+          "tp": 0,
+          "fp": 0,
+          "tn": 5,
+          "fn": 0,
+          "correct": 5,
+          "wrong": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "shortlink": {
+          "n": 1,
+          "tp": 1,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 1,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        },
+        "shortlink_delivery": {
+          "n": 4,
+          "tp": 4,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 4,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        },
+        "trusted_brand": {
+          "n": 2,
+          "tp": 0,
+          "fp": 0,
+          "tn": 2,
+          "fn": 0,
+          "correct": 2,
+          "wrong": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "university_lookalike": {
+          "n": 7,
+          "tp": 7,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 7,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        },
+        "university_named_club": {
+          "n": 1,
+          "tp": 0,
+          "fp": 0,
+          "tn": 1,
+          "fn": 0,
+          "correct": 1,
+          "wrong": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "university_official": {
+          "n": 7,
+          "tp": 0,
+          "fp": 0,
+          "tn": 7,
+          "fn": 0,
+          "correct": 7,
+          "wrong": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "university_typo": {
+          "n": 3,
+          "tp": 3,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 3,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        },
+        "unknown_benign": {
+          "n": 5,
+          "tp": 0,
+          "fp": 0,
+          "tn": 5,
+          "fn": 0,
+          "correct": 5,
+          "wrong": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "unknown_domain": {
+          "n": 1,
+          "tp": 1,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 1,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        },
+        "unknown_login": {
+          "n": 1,
+          "tp": 1,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 1,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        }
+      },
+      "threshold_sweep": {
+        "points": [
+          {
+            "threshold": 0,
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6667,
+            "fp": 61,
+            "fn": 0
+          },
+          {
+            "threshold": 5,
+            "precision": 0.8769,
+            "recall": 0.9344,
+            "f1": 0.9048,
+            "fp": 8,
+            "fn": 4
+          },
+          {
+            "threshold": 10,
+            "precision": 0.8906,
+            "recall": 0.9344,
+            "f1": 0.912,
+            "fp": 7,
+            "fn": 4
+          },
+          {
+            "threshold": 15,
+            "precision": 0.9661,
+            "recall": 0.9344,
+            "f1": 0.95,
+            "fp": 2,
+            "fn": 4
+          },
+          {
+            "threshold": 20,
+            "precision": 0.9661,
+            "recall": 0.9344,
+            "f1": 0.95,
+            "fp": 2,
+            "fn": 4
+          },
+          {
+            "threshold": 25,
+            "precision": 0.9661,
+            "recall": 0.9344,
+            "f1": 0.95,
+            "fp": 2,
+            "fn": 4
+          },
+          {
+            "threshold": 30,
+            "precision": 0.9661,
+            "recall": 0.9344,
+            "f1": 0.95,
+            "fp": 2,
+            "fn": 4
+          },
+          {
+            "threshold": 35,
+            "precision": 0.9661,
+            "recall": 0.9344,
+            "f1": 0.95,
+            "fp": 2,
+            "fn": 4
+          },
+          {
+            "threshold": 40,
+            "precision": 0.9661,
+            "recall": 0.9344,
+            "f1": 0.95,
+            "fp": 2,
+            "fn": 4
+          },
+          {
+            "threshold": 45,
+            "precision": 0.9661,
+            "recall": 0.9344,
+            "f1": 0.95,
+            "fp": 2,
+            "fn": 4
+          },
+          {
+            "threshold": 50,
+            "precision": 0.9661,
+            "recall": 0.9344,
+            "f1": 0.95,
+            "fp": 2,
+            "fn": 4
+          },
+          {
+            "threshold": 55,
+            "precision": 1.0,
+            "recall": 0.9344,
+            "f1": 0.9661,
+            "fp": 0,
+            "fn": 4
+          },
+          {
+            "threshold": 60,
+            "precision": 1.0,
+            "recall": 0.9344,
+            "f1": 0.9661,
+            "fp": 0,
+            "fn": 4
+          },
+          {
+            "threshold": 65,
+            "precision": 1.0,
+            "recall": 0.7049,
+            "f1": 0.8269,
+            "fp": 0,
+            "fn": 18
+          },
+          {
+            "threshold": 70,
+            "precision": 1.0,
+            "recall": 0.6557,
+            "f1": 0.7921,
+            "fp": 0,
+            "fn": 21
+          },
+          {
+            "threshold": 75,
+            "precision": 1.0,
+            "recall": 0.541,
+            "f1": 0.7021,
+            "fp": 0,
+            "fn": 28
+          },
+          {
+            "threshold": 80,
+            "precision": 1.0,
+            "recall": 0.5246,
+            "f1": 0.6882,
+            "fp": 0,
+            "fn": 29
+          },
+          {
+            "threshold": 85,
+            "precision": 1.0,
+            "recall": 0.5082,
+            "f1": 0.6739,
+            "fp": 0,
+            "fn": 30
+          },
+          {
+            "threshold": 90,
+            "precision": 1.0,
+            "recall": 0.4098,
+            "f1": 0.5814,
+            "fp": 0,
+            "fn": 36
+          },
+          {
+            "threshold": 95,
+            "precision": 1.0,
+            "recall": 0.1475,
+            "f1": 0.2571,
+            "fp": 0,
+            "fn": 52
+          },
+          {
+            "threshold": 100,
+            "precision": 1.0,
+            "recall": 0.1475,
+            "f1": 0.2571,
+            "fp": 0,
+            "fn": 52
+          }
+        ],
+        "best": {
+          "threshold": 60,
+          "precision": 1.0,
+          "recall": 0.9344,
+          "f1": 0.9661,
+          "fp": 0,
+          "fn": 4
+        }
+      },
+      "average_precision": 0.9672,
+      "latency": {
+        "mean_ms": 10.9,
+        "p95_ms": 16.8
+      },
+      "failures": 0,
+      "failure_examples": [],
+      "groundedness_mean": null,
+      "secondary": {
+        "threshold": 60,
+        "selected_on": "dev split among action thresholds (30, 60, 85) (dev F1 0.974)",
+        "n": 122,
+        "tp": 57,
+        "fp": 0,
+        "tn": 61,
+        "fn": 4,
+        "correct": 118,
+        "wrong": 4,
+        "precision": 1.0,
+        "recall": 0.9344,
+        "f1": 0.9661,
+        "accuracy": 0.9672,
+        "specificity": 1.0
+      }
+    },
+    "ml_baseline": {
+      "status": "ok",
+      "overall": {
+        "n": 122,
+        "tp": 55,
+        "fp": 0,
+        "tn": 61,
+        "fn": 6,
+        "correct": 116,
+        "wrong": 6,
+        "precision": 1.0,
+        "recall": 0.9016,
+        "f1": 0.9483,
+        "accuracy": 0.9508,
+        "specificity": 1.0
+      },
+      "overall_including_plain_text": {
+        "n": 132,
+        "tp": 60,
+        "fp": 0,
+        "tn": 66,
+        "fn": 6,
+        "correct": 126,
+        "wrong": 6,
+        "precision": 1.0,
+        "recall": 0.9091,
+        "f1": 0.9524,
+        "accuracy": 0.9545,
+        "specificity": 1.0
+      },
+      "by_input_kind": {
+        "eml": {
+          "n": 76,
+          "tp": 38,
+          "fp": 0,
+          "tn": 38,
+          "fn": 0,
+          "correct": 76,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "pdf": {
+          "n": 16,
+          "tp": 8,
+          "fp": 0,
+          "tn": 8,
+          "fn": 0,
+          "correct": 16,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "plain_text": {
+          "n": 10,
+          "tp": 5,
+          "fp": 0,
+          "tn": 5,
+          "fn": 0,
+          "correct": 10,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "url": {
+          "n": 30,
+          "tp": 9,
+          "fp": 0,
+          "tn": 15,
+          "fn": 6,
+          "correct": 24,
+          "wrong": 6,
+          "precision": 1.0,
+          "recall": 0.6,
+          "f1": 0.75,
+          "accuracy": 0.8,
+          "specificity": 1.0
+        }
+      },
+      "by_difficulty": {
+        "easy": {
+          "n": 39,
+          "tp": 22,
+          "fp": 0,
+          "tn": 15,
+          "fn": 2,
+          "correct": 37,
+          "wrong": 2,
+          "precision": 1.0,
+          "recall": 0.9167,
+          "f1": 0.9565,
+          "accuracy": 0.9487,
+          "specificity": 1.0
+        },
+        "hard": {
+          "n": 41,
+          "tp": 16,
+          "fp": 0,
+          "tn": 22,
+          "fn": 3,
+          "correct": 38,
+          "wrong": 3,
+          "precision": 1.0,
+          "recall": 0.8421,
+          "f1": 0.9143,
+          "accuracy": 0.9268,
+          "specificity": 1.0
+        },
+        "medium": {
+          "n": 52,
+          "tp": 22,
+          "fp": 0,
+          "tn": 29,
+          "fn": 1,
+          "correct": 51,
+          "wrong": 1,
+          "precision": 1.0,
+          "recall": 0.9565,
+          "f1": 0.9778,
+          "accuracy": 0.9808,
+          "specificity": 1.0
+        }
+      },
+      "by_attack_type": {
+        "bank_alert": {
+          "n": 3,
+          "tp": 0,
+          "fp": 0,
+          "tn": 3,
+          "fn": 0,
+          "correct": 3,
+          "wrong": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "bec_nolink": {
+          "n": 4,
+          "tp": 4,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 4,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        },
+        "bec_wire": {
+          "n": 3,
+          "tp": 3,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 3,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        },
+        "brand_lookalike": {
+          "n": 5,
+          "tp": 5,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 5,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        },
+        "campus_announcement": {
+          "n": 4,
+          "tp": 0,
+          "fp": 0,
+          "tn": 4,
+          "fn": 0,
+          "correct": 4,
+          "wrong": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "campus_credential": {
+          "n": 6,
+          "tp": 6,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 6,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        },
+        "club_newsletter": {
+          "n": 3,
+          "tp": 0,
+          "fp": 0,
+          "tn": 3,
+          "fn": 0,
+          "correct": 3,
+          "wrong": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "course_reminder": {
+          "n": 3,
+          "tp": 0,
+          "fp": 0,
+          "tn": 3,
+          "fn": 0,
+          "correct": 3,
+          "wrong": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "gift_card": {
+          "n": 6,
+          "tp": 6,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 6,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        },
+        "invoice_ach": {
+          "n": 4,
+          "tp": 4,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 4,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        },
+        "invoice_trusted": {
+          "n": 5,
+          "tp": 0,
+          "fp": 0,
+          "tn": 5,
+          "fn": 0,
+          "correct": 5,
+          "wrong": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "it_maintenance": {
+          "n": 6,
+          "tp": 0,
+          "fp": 0,
+          "tn": 6,
+          "fn": 0,
+          "correct": 6,
+          "wrong": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "mailbox_quota": {
+          "n": 5,
+          "tp": 5,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 5,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        },
+        "malware_attachment": {
+          "n": 2,
+          "tp": 2,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 2,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        },
+        "partner_invite": {
+          "n": 6,
+          "tp": 0,
+          "fp": 0,
+          "tn": 6,
+          "fn": 0,
+          "correct": 6,
+          "wrong": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "password_reset": {
+          "n": 5,
+          "tp": 0,
+          "fp": 0,
+          "tn": 5,
+          "fn": 0,
+          "correct": 5,
+          "wrong": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "payroll_notice": {
+          "n": 4,
+          "tp": 0,
+          "fp": 0,
+          "tn": 4,
+          "fn": 0,
+          "correct": 4,
+          "wrong": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "personal": {
+          "n": 3,
+          "tp": 0,
+          "fp": 0,
+          "tn": 3,
+          "fn": 0,
+          "correct": 3,
+          "wrong": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "polite_phish": {
+          "n": 5,
+          "tp": 5,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 5,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        },
+        "prompt_injection": {
+          "n": 4,
+          "tp": 4,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 4,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        },
+        "risky_tld_login": {
+          "n": 1,
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 1,
+          "correct": 0,
+          "wrong": 1,
+          "precision": null,
+          "recall": 0.0,
+          "f1": null,
+          "accuracy": 0.0,
+          "specificity": null
+        },
+        "scholarship_fee": {
+          "n": 4,
+          "tp": 4,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 4,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        },
+        "security_alert": {
+          "n": 4,
+          "tp": 0,
+          "fp": 0,
+          "tn": 4,
+          "fn": 0,
+          "correct": 4,
+          "wrong": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "shipping_notice": {
+          "n": 5,
+          "tp": 0,
+          "fp": 0,
+          "tn": 5,
+          "fn": 0,
+          "correct": 5,
+          "wrong": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "shortlink": {
+          "n": 1,
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 1,
+          "correct": 0,
+          "wrong": 1,
+          "precision": null,
+          "recall": 0.0,
+          "f1": null,
+          "accuracy": 0.0,
+          "specificity": null
+        },
+        "shortlink_delivery": {
+          "n": 4,
+          "tp": 4,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 4,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        },
+        "trusted_brand": {
+          "n": 2,
+          "tp": 0,
+          "fp": 0,
+          "tn": 2,
+          "fn": 0,
+          "correct": 2,
+          "wrong": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "university_lookalike": {
+          "n": 7,
+          "tp": 5,
+          "fp": 0,
+          "tn": 0,
+          "fn": 2,
+          "correct": 5,
+          "wrong": 2,
+          "precision": 1.0,
+          "recall": 0.7143,
+          "f1": 0.8333,
+          "accuracy": 0.7143,
+          "specificity": null
+        },
+        "university_named_club": {
+          "n": 1,
+          "tp": 0,
+          "fp": 0,
+          "tn": 1,
+          "fn": 0,
+          "correct": 1,
+          "wrong": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "university_official": {
+          "n": 7,
+          "tp": 0,
+          "fp": 0,
+          "tn": 7,
+          "fn": 0,
+          "correct": 7,
+          "wrong": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "university_typo": {
+          "n": 3,
+          "tp": 1,
+          "fp": 0,
+          "tn": 0,
+          "fn": 2,
+          "correct": 1,
+          "wrong": 2,
+          "precision": 1.0,
+          "recall": 0.3333,
+          "f1": 0.5,
+          "accuracy": 0.3333,
+          "specificity": null
+        },
+        "unknown_benign": {
+          "n": 5,
+          "tp": 0,
+          "fp": 0,
+          "tn": 5,
+          "fn": 0,
+          "correct": 5,
+          "wrong": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "unknown_domain": {
+          "n": 1,
+          "tp": 1,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 1,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        },
+        "unknown_login": {
+          "n": 1,
+          "tp": 1,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 1,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        }
+      },
+      "threshold_sweep": {
+        "points": [
+          {
+            "threshold": 0,
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6667,
+            "fp": 61,
+            "fn": 0
+          },
+          {
+            "threshold": 5,
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6667,
+            "fp": 61,
+            "fn": 0
+          },
+          {
+            "threshold": 10,
+            "precision": 0.5648,
+            "recall": 1.0,
+            "f1": 0.7219,
+            "fp": 47,
+            "fn": 0
+          },
+          {
+            "threshold": 15,
+            "precision": 0.7093,
+            "recall": 1.0,
+            "f1": 0.8299,
+            "fp": 25,
+            "fn": 0
+          },
+          {
+            "threshold": 20,
+            "precision": 0.8026,
+            "recall": 1.0,
+            "f1": 0.8905,
+            "fp": 15,
+            "fn": 0
+          },
+          {
+            "threshold": 25,
+            "precision": 0.8133,
+            "recall": 1.0,
+            "f1": 0.8971,
+            "fp": 14,
+            "fn": 0
+          },
+          {
+            "threshold": 30,
+            "precision": 0.8472,
+            "recall": 1.0,
+            "f1": 0.9173,
+            "fp": 11,
+            "fn": 0
+          },
+          {
+            "threshold": 35,
+            "precision": 0.8971,
+            "recall": 1.0,
+            "f1": 0.9457,
+            "fp": 7,
+            "fn": 0
+          },
+          {
+            "threshold": 40,
+            "precision": 0.9385,
+            "recall": 1.0,
+            "f1": 0.9683,
+            "fp": 4,
+            "fn": 0
+          },
+          {
+            "threshold": 45,
+            "precision": 0.9524,
+            "recall": 0.9836,
+            "f1": 0.9677,
+            "fp": 3,
+            "fn": 1
+          },
+          {
+            "threshold": 50,
+            "precision": 0.9831,
+            "recall": 0.9508,
+            "f1": 0.9667,
+            "fp": 1,
+            "fn": 3
+          },
+          {
+            "threshold": 55,
+            "precision": 0.9828,
+            "recall": 0.9344,
+            "f1": 0.958,
+            "fp": 1,
+            "fn": 4
+          },
+          {
+            "threshold": 60,
+            "precision": 1.0,
+            "recall": 0.9016,
+            "f1": 0.9483,
+            "fp": 0,
+            "fn": 6
+          },
+          {
+            "threshold": 65,
+            "precision": 1.0,
+            "recall": 0.8525,
+            "f1": 0.9204,
+            "fp": 0,
+            "fn": 9
+          },
+          {
+            "threshold": 70,
+            "precision": 1.0,
+            "recall": 0.8033,
+            "f1": 0.8909,
+            "fp": 0,
+            "fn": 12
+          },
+          {
+            "threshold": 75,
+            "precision": 1.0,
+            "recall": 0.7377,
+            "f1": 0.8491,
+            "fp": 0,
+            "fn": 16
+          },
+          {
+            "threshold": 80,
+            "precision": 1.0,
+            "recall": 0.7049,
+            "f1": 0.8269,
+            "fp": 0,
+            "fn": 18
+          },
+          {
+            "threshold": 85,
+            "precision": 1.0,
+            "recall": 0.5738,
+            "f1": 0.7292,
+            "fp": 0,
+            "fn": 26
+          },
+          {
+            "threshold": 90,
+            "precision": 1.0,
+            "recall": 0.2623,
+            "f1": 0.4156,
+            "fp": 0,
+            "fn": 45
+          },
+          {
+            "threshold": 95,
+            "precision": null,
+            "recall": 0.0,
+            "f1": null,
+            "fp": 0,
+            "fn": 61
+          },
+          {
+            "threshold": 100,
+            "precision": null,
+            "recall": 0.0,
+            "f1": null,
+            "fp": 0,
+            "fn": 61
+          }
+        ],
+        "best": {
+          "threshold": 40,
+          "precision": 0.9385,
+          "recall": 1.0,
+          "f1": 0.9683,
+          "fp": 4,
+          "fn": 0
+        }
+      },
+      "average_precision": 0.9976,
+      "latency": {
+        "mean_ms": 2.9,
+        "p95_ms": 4.8
+      },
+      "failures": 0,
+      "failure_examples": [],
+      "groundedness_mean": null,
+      "trained_on": "dev split (128 items) in 166.0 ms",
+      "secondary": {
+        "threshold": 50,
+        "selected_on": "probability 0.5 (the model's own decision boundary)",
+        "n": 122,
+        "tp": 58,
+        "fp": 1,
+        "tn": 60,
+        "fn": 3,
+        "correct": 118,
+        "wrong": 4,
+        "precision": 0.9831,
+        "recall": 0.9508,
+        "f1": 0.9667,
+        "accuracy": 0.9672,
+        "specificity": 0.9836
+      }
+    },
+    "ml_unseen_types": {
+      "status": "ok",
+      "overall": {
+        "n": 58,
+        "tp": 20,
+        "fp": 17,
+        "tn": 15,
+        "fn": 6,
+        "correct": 35,
+        "wrong": 23,
+        "precision": 0.5405,
+        "recall": 0.7692,
+        "f1": 0.6349,
+        "accuracy": 0.6034,
+        "specificity": 0.4688
+      },
+      "overall_including_plain_text": {
+        "n": 64,
+        "tp": 21,
+        "fp": 18,
+        "tn": 17,
+        "fn": 8,
+        "correct": 38,
+        "wrong": 26,
+        "precision": 0.5385,
+        "recall": 0.7241,
+        "f1": 0.6176,
+        "accuracy": 0.5938,
+        "specificity": 0.4857
+      },
+      "by_input_kind": {
+        "eml": {
+          "n": 38,
+          "tp": 12,
+          "fp": 8,
+          "tn": 12,
+          "fn": 6,
+          "correct": 24,
+          "wrong": 14,
+          "precision": 0.6,
+          "recall": 0.6667,
+          "f1": 0.6316,
+          "accuracy": 0.6316,
+          "specificity": 0.6
+        },
+        "pdf": {
+          "n": 6,
+          "tp": 3,
+          "fp": 1,
+          "tn": 2,
+          "fn": 0,
+          "correct": 5,
+          "wrong": 1,
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571,
+          "accuracy": 0.8333,
+          "specificity": 0.6667
+        },
+        "plain_text": {
+          "n": 6,
+          "tp": 1,
+          "fp": 1,
+          "tn": 2,
+          "fn": 2,
+          "correct": 3,
+          "wrong": 3,
+          "precision": 0.5,
+          "recall": 0.3333,
+          "f1": 0.4,
+          "accuracy": 0.5,
+          "specificity": 0.6667
+        },
+        "url": {
+          "n": 14,
+          "tp": 5,
+          "fp": 8,
+          "tn": 1,
+          "fn": 0,
+          "correct": 6,
+          "wrong": 8,
+          "precision": 0.3846,
+          "recall": 1.0,
+          "f1": 0.5556,
+          "accuracy": 0.4286,
+          "specificity": 0.1111
+        }
+      },
+      "by_difficulty": {
+        "easy": {
+          "n": 22,
+          "tp": 7,
+          "fp": 2,
+          "tn": 9,
+          "fn": 4,
+          "correct": 16,
+          "wrong": 6,
+          "precision": 0.7778,
+          "recall": 0.6364,
+          "f1": 0.7,
+          "accuracy": 0.7273,
+          "specificity": 0.8182
+        },
+        "hard": {
+          "n": 18,
+          "tp": 10,
+          "fp": 1,
+          "tn": 7,
+          "fn": 0,
+          "correct": 17,
+          "wrong": 1,
+          "precision": 0.9091,
+          "recall": 1.0,
+          "f1": 0.9524,
+          "accuracy": 0.9444,
+          "specificity": 0.875
+        },
+        "medium": {
+          "n": 24,
+          "tp": 4,
+          "fp": 15,
+          "tn": 1,
+          "fn": 4,
+          "correct": 5,
+          "wrong": 19,
+          "precision": 0.2105,
+          "recall": 0.5,
+          "f1": 0.2963,
+          "accuracy": 0.2083,
+          "specificity": 0.0625
+        }
+      },
+      "by_attack_type": {
+        "bec_wire": {
+          "n": 3,
+          "tp": 3,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 3,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        },
+        "campus_announcement": {
+          "n": 4,
+          "tp": 0,
+          "fp": 1,
+          "tn": 3,
+          "fn": 0,
+          "correct": 3,
+          "wrong": 1,
+          "precision": 0.0,
+          "recall": null,
+          "f1": null,
+          "accuracy": 0.75,
+          "specificity": 0.75
+        },
+        "campus_credential": {
+          "n": 6,
+          "tp": 2,
+          "fp": 0,
+          "tn": 0,
+          "fn": 4,
+          "correct": 2,
+          "wrong": 4,
+          "precision": 1.0,
+          "recall": 0.3333,
+          "f1": 0.5,
+          "accuracy": 0.3333,
+          "specificity": null
+        },
+        "course_reminder": {
+          "n": 3,
+          "tp": 0,
+          "fp": 1,
+          "tn": 2,
+          "fn": 0,
+          "correct": 2,
+          "wrong": 1,
+          "precision": 0.0,
+          "recall": null,
+          "f1": null,
+          "accuracy": 0.6667,
+          "specificity": 0.6667
+        },
+        "invoice_ach": {
+          "n": 4,
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 4,
+          "correct": 0,
+          "wrong": 4,
+          "precision": null,
+          "recall": 0.0,
+          "f1": null,
+          "accuracy": 0.0,
+          "specificity": null
+        },
+        "it_maintenance": {
+          "n": 6,
+          "tp": 0,
+          "fp": 0,
+          "tn": 6,
+          "fn": 0,
+          "correct": 6,
+          "wrong": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "malware_attachment": {
+          "n": 2,
+          "tp": 2,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 2,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        },
+        "password_reset": {
+          "n": 5,
+          "tp": 0,
+          "fp": 0,
+          "tn": 5,
+          "fn": 0,
+          "correct": 5,
+          "wrong": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null,
+          "accuracy": 1.0,
+          "specificity": 1.0
+        },
+        "personal": {
+          "n": 3,
+          "tp": 0,
+          "fp": 3,
+          "tn": 0,
+          "fn": 0,
+          "correct": 0,
+          "wrong": 3,
+          "precision": 0.0,
+          "recall": null,
+          "f1": null,
+          "accuracy": 0.0,
+          "specificity": 0.0
+        },
+        "polite_phish": {
+          "n": 1,
+          "tp": 1,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 1,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        },
+        "prompt_injection": {
+          "n": 3,
+          "tp": 3,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 3,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        },
+        "scholarship_fee": {
+          "n": 1,
+          "tp": 1,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 1,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        },
+        "shipping_notice": {
+          "n": 5,
+          "tp": 0,
+          "fp": 5,
+          "tn": 0,
+          "fn": 0,
+          "correct": 0,
+          "wrong": 5,
+          "precision": 0.0,
+          "recall": null,
+          "f1": null,
+          "accuracy": 0.0,
+          "specificity": 0.0
+        },
+        "shortlink": {
+          "n": 1,
+          "tp": 1,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 1,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        },
+        "shortlink_delivery": {
+          "n": 4,
+          "tp": 4,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 4,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        },
+        "trusted_brand": {
+          "n": 2,
+          "tp": 0,
+          "fp": 2,
+          "tn": 0,
+          "fn": 0,
+          "correct": 0,
+          "wrong": 2,
+          "precision": 0.0,
+          "recall": null,
+          "f1": null,
+          "accuracy": 0.0,
+          "specificity": 0.0
+        },
+        "university_official": {
+          "n": 7,
+          "tp": 0,
+          "fp": 6,
+          "tn": 1,
+          "fn": 0,
+          "correct": 1,
+          "wrong": 6,
+          "precision": 0.0,
+          "recall": null,
+          "f1": null,
+          "accuracy": 0.1429,
+          "specificity": 0.1429
+        },
+        "university_typo": {
+          "n": 3,
+          "tp": 3,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 3,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        },
+        "unknown_login": {
+          "n": 1,
+          "tp": 1,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "correct": 1,
+          "wrong": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0,
+          "specificity": null
+        }
+      },
+      "threshold_sweep": {
+        "points": [
+          {
+            "threshold": 0,
+            "precision": 0.4483,
+            "recall": 1.0,
+            "f1": 0.619,
+            "fp": 32,
+            "fn": 0
+          },
+          {
+            "threshold": 5,
+            "precision": 0.4483,
+            "recall": 1.0,
+            "f1": 0.619,
+            "fp": 32,
+            "fn": 0
+          },
+          {
+            "threshold": 10,
+            "precision": 0.4483,
+            "recall": 1.0,
+            "f1": 0.619,
+            "fp": 32,
+            "fn": 0
+          },
+          {
+            "threshold": 15,
+            "precision": 0.4483,
+            "recall": 1.0,
+            "f1": 0.619,
+            "fp": 32,
+            "fn": 0
+          },
+          {
+            "threshold": 20,
+            "precision": 0.4483,
+            "recall": 1.0,
+            "f1": 0.619,
+            "fp": 32,
+            "fn": 0
+          },
+          {
+            "threshold": 25,
+            "precision": 0.4483,
+            "recall": 1.0,
+            "f1": 0.619,
+            "fp": 32,
+            "fn": 0
+          },
+          {
+            "threshold": 30,
+            "precision": 0.4815,
+            "recall": 1.0,
+            "f1": 0.65,
+            "fp": 28,
+            "fn": 0
+          },
+          {
+            "threshold": 35,
+            "precision": 0.4815,
+            "recall": 1.0,
+            "f1": 0.65,
+            "fp": 28,
+            "fn": 0
+          },
+          {
+            "threshold": 40,
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6667,
+            "fp": 26,
+            "fn": 0
+          },
+          {
+            "threshold": 45,
+            "precision": 0.4894,
+            "recall": 0.8846,
+            "f1": 0.6301,
+            "fp": 24,
+            "fn": 3
+          },
+          {
+            "threshold": 50,
+            "precision": 0.5476,
+            "recall": 0.8846,
+            "f1": 0.6765,
+            "fp": 19,
+            "fn": 3
+          },
+          {
+            "threshold": 55,
+            "precision": 0.561,
+            "recall": 0.8846,
+            "f1": 0.6866,
+            "fp": 18,
+            "fn": 3
+          },
+          {
+            "threshold": 60,
+            "precision": 0.5405,
+            "recall": 0.7692,
+            "f1": 0.6349,
+            "fp": 17,
+            "fn": 6
+          },
+          {
+            "threshold": 65,
+            "precision": 0.5484,
+            "recall": 0.6538,
+            "f1": 0.5965,
+            "fp": 14,
+            "fn": 9
+          },
+          {
+            "threshold": 70,
+            "precision": 0.6111,
+            "recall": 0.4231,
+            "f1": 0.5,
+            "fp": 7,
+            "fn": 15
+          },
+          {
+            "threshold": 75,
+            "precision": 0.6667,
+            "recall": 0.0769,
+            "f1": 0.1379,
+            "fp": 1,
+            "fn": 24
+          },
+          {
+            "threshold": 80,
+            "precision": 1.0,
+            "recall": 0.0769,
+            "f1": 0.1429,
+            "fp": 0,
+            "fn": 24
+          },
+          {
+            "threshold": 85,
+            "precision": 1.0,
+            "recall": 0.0769,
+            "f1": 0.1429,
+            "fp": 0,
+            "fn": 24
+          },
+          {
+            "threshold": 90,
+            "precision": null,
+            "recall": 0.0,
+            "f1": null,
+            "fp": 0,
+            "fn": 26
+          },
+          {
+            "threshold": 95,
+            "precision": null,
+            "recall": 0.0,
+            "f1": null,
+            "fp": 0,
+            "fn": 26
+          },
+          {
+            "threshold": 100,
+            "precision": null,
+            "recall": 0.0,
+            "f1": null,
+            "fp": 0,
+            "fn": 26
+          }
+        ],
+        "best": {
+          "threshold": 55,
+          "precision": 0.561,
+          "recall": 0.8846,
+          "f1": 0.6866,
+          "fp": 18,
+          "fn": 3
+        }
+      },
+      "average_precision": 0.6066,
+      "latency": {
+        "mean_ms": null,
+        "p95_ms": null
+      },
+      "failures": 0,
+      "failure_examples": [],
+      "groundedness_mean": null,
+      "trained_on": "dev items of half the attack types (59 items); tested on the other half's test items",
+      "secondary": {
+        "threshold": 50,
+        "selected_on": "probability 0.5",
+        "n": 58,
+        "tp": 23,
+        "fp": 19,
+        "tn": 13,
+        "fn": 3,
+        "correct": 36,
+        "wrong": 22,
+        "precision": 0.5476,
+        "recall": 0.8846,
+        "f1": 0.6765,
+        "accuracy": 0.6207,
+        "specificity": 0.4062
+      },
+      "rules_on_same_items": {
+        "threshold": 60,
+        "n": 58,
+        "tp": 25,
+        "fp": 0,
+        "tn": 32,
+        "fn": 1,
+        "correct": 57,
+        "wrong": 1,
+        "precision": 1.0,
+        "recall": 0.9615,
+        "f1": 0.9804,
+        "accuracy": 0.9828,
+        "specificity": 1.0,
+        "at_30": {
+          "n": 58,
+          "tp": 25,
+          "fp": 2,
+          "tn": 30,
+          "fn": 1,
+          "correct": 55,
+          "wrong": 3,
+          "precision": 0.9259,
+          "recall": 0.9615,
+          "f1": 0.9434,
+          "accuracy": 0.9483,
+          "specificity": 0.9375
+        }
+      }
+    },
+    "llm_hybrid": {
+      "status": "skipped",
+      "reason": "GEMINI_API_KEY is not set"
+    },
+    "llm_only": {
+      "status": "skipped",
+      "reason": "GEMINI_API_KEY is not set"
+    }
+  },
+  "errors": {
+    "rules": [
+      {
+        "id": "eml-phishing-009",
+        "label": "phishing",
+        "predicted": "legit",
+        "risk_score": 0,
+        "input_kind": "eml",
+        "attack_type": "polite_phish",
+        "difficulty": "hard",
+        "title": "Polite lure from attacker-owned research-assistant-jobs.org",
+        "finding": "We found no warning signs in this email.",
+        "reasons": [
+          "Sender domain 'research-assistant-jobs.org' is NOT present in Trusted Domains Redis DB.",
+          "[CLEAN] https://research-assistant-jobs.org/apply (research-assistant-jobs.org)",
+          "No manipulative psychological tactics detected."
+        ],
+        "explanation": null
+      },
+      {
+        "id": "eml-phishing-021",
+        "label": "phishing",
+        "predicted": "legit",
+        "risk_score": 0,
+        "input_kind": "eml",
+        "attack_type": "polite_phish",
+        "difficulty": "hard",
+        "title": "Polite lure from attacker-owned campus-careers-hub.com",
+        "finding": "We found no warning signs in this email.",
+        "reasons": [
+          "Sender domain 'campus-careers-hub.com' is NOT present in Trusted Domains Redis DB.",
+          "[CLEAN] https://campus-careers-hub.com/details (campus-careers-hub.com)",
+          "No manipulative psychological tactics detected."
+        ],
+        "explanation": null
+      },
+      {
+        "id": "eml-phishing-069",
+        "label": "phishing",
+        "predicted": "legit",
+        "risk_score": 0,
+        "input_kind": "eml",
+        "attack_type": "polite_phish",
+        "difficulty": "hard",
+        "title": "Polite lure from attacker-owned campus-careers-hub.com",
+        "finding": "We found no warning signs in this email.",
+        "reasons": [
+          "Sender domain 'campus-careers-hub.com' is NOT present in Trusted Domains Redis DB.",
+          "[CLEAN] https://campus-careers-hub.com/apply (campus-careers-hub.com)",
+          "No manipulative psychological tactics detected."
+        ],
+        "explanation": null
+      },
+      {
+        "id": "pdf-phishing-008",
+        "label": "phishing",
+        "predicted": "legit",
+        "risk_score": 0,
+        "input_kind": "pdf",
+        "attack_type": "polite_phish",
+        "difficulty": "hard",
+        "title": "Polite lure from attacker-owned campus-careers-hub.com",
+        "finding": "We found no warning signs in this email.",
+        "reasons": [
+          "Sender domain 'campus-careers-hub.com' is NOT present in Trusted Domains Redis DB.",
+          "No authentication headers (SPF/DKIM/DMARC) were available, so they could not be checked.",
+          "[CLEAN] https://campus-careers-hub.com/apply (campus-careers-hub.com)",
+          "No manipulative psychological tactics detected."
+        ],
+        "explanation": null
+      },
+      {
+        "id": "plain_text-phishing-007",
+        "label": "phishing",
+        "predicted": "legit",
+        "risk_score": 0,
+        "input_kind": "plain_text",
+        "attack_type": "malware_attachment",
+        "difficulty": "easy",
+        "title": "Dangerous attachment Grade_Appeal_Form.pdf.exe",
+        "finding": "We found no warning signs in this email.",
+        "reasons": [
+          "No sender address was available, so the sender could not be checked.",
+          "No authentication headers (SPF/DKIM/DMARC) were available, so they could not be checked.",
+          "No URLs or high-risk attachments present in email.",
+          "No manipulative psychological tactics detected."
+        ],
+        "explanation": null
+      }
+    ],
+    "ml_baseline": [
+      {
+        "id": "url-phishing-002",
+        "label": "phishing",
+        "predicted": "legit",
+        "risk_score": 46.5,
+        "input_kind": "url",
+        "attack_type": "university_typo",
+        "difficulty": "hard",
+        "title": "Link: https://harr0wgate.ac.uk/signin",
+        "finding": null,
+        "reasons": [],
+        "explanation": [
+          {
+            "feature": "ac",
+            "weight": -0.029
+          },
+          {
+            "feature": "ni",
+            "weight": 0.028
+          },
+          {
+            "feature": ".ac.",
+            "weight": -0.026
+          },
+          {
+            "feature": "ac.",
+            "weight": -0.026
+          },
+          {
+            "feature": "c.",
+            "weight": -0.026
+          }
+        ]
+      },
+      {
+        "id": "url-phishing-006",
+        "label": "phishing",
+        "predicted": "legit",
+        "risk_score": 56.9,
+        "input_kind": "url",
+        "attack_type": "university_lookalike",
+        "difficulty": "easy",
+        "title": "Link: https://harrowgate.ac.uk.account-verify.co/login",
+        "finding": null,
+        "reasons": [],
+        "explanation": [
+          {
+            "feature": "ac",
+            "weight": -0.034
+          },
+          {
+            "feature": "nt-",
+            "weight": 0.02
+          },
+          {
+            "feature": "ro",
+            "weight": -0.02
+          },
+          {
+            "feature": "erif",
+            "weight": 0.019
+          },
+          {
+            "feature": "erify",
+            "weight": 0.019
+          }
+        ]
+      },
+      {
+        "id": "url-phishing-014",
+        "label": "phishing",
+        "predicted": "legit",
+        "risk_score": 59.4,
+        "input_kind": "url",
+        "attack_type": "university_lookalike",
+        "difficulty": "easy",
+        "title": "Link: https://meridian.ac.id.account-verify.co/login",
+        "finding": null,
+        "reasons": [],
+        "explanation": [
+          {
+            "feature": "ac",
+            "weight": -0.034
+          },
+          {
+            "feature": ".i",
+            "weight": -0.023
+          },
+          {
+            "feature": "nt-",
+            "weight": 0.021
+          },
+          {
+            "feature": "erif",
+            "weight": 0.02
+          },
+          {
+            "feature": "erify",
+            "weight": 0.02
+          }
+        ]
+      },
+      {
+        "id": "url-phishing-020",
+        "label": "phishing",
+        "predicted": "legit",
+        "risk_score": 45.4,
+        "input_kind": "url",
+        "attack_type": "risky_tld_login",
+        "difficulty": "medium",
+        "title": "Link: https://scholarship-award.top/claim/login",
+        "finding": null,
+        "reasons": [],
+        "explanation": [
+          {
+            "feature": "/sc",
+            "weight": -0.031
+          },
+          {
+            "feature": "/sch",
+            "weight": -0.031
+          },
+          {
+            "feature": "sc",
+            "weight": -0.031
+          },
+          {
+            "feature": "sch",
+            "weight": -0.031
+          },
+          {
+            "feature": "m/l",
+            "weight": 0.026
+          }
+        ]
+      },
+      {
+        "id": "url-phishing-021",
+        "label": "phishing",
+        "predicted": "legit",
+        "risk_score": 53.0,
+        "input_kind": "url",
+        "attack_type": "shortlink",
+        "difficulty": "hard",
+        "title": "Link: https://bit.ly/3Kx9qPz",
+        "finding": null,
+        "reasons": [],
+        "explanation": [
+          {
+            "feature": "ly",
+            "weight": 0.054
+          },
+          {
+            "feature": "it.",
+            "weight": 0.047
+          },
+          {
+            "feature": "it",
+            "weight": -0.036
+          },
+          {
+            "feature": "t.",
+            "weight": 0.009
+          },
+          {
+            "feature": "//",
+            "weight": 0.004
+          }
+        ]
+      },
+      {
+        "id": "url-phishing-027",
+        "label": "phishing",
+        "predicted": "legit",
+        "risk_score": 43.8,
+        "input_kind": "url",
+        "attack_type": "university_typo",
+        "difficulty": "hard",
+        "title": "Link: https://mer1dian.ac.id/signin",
+        "finding": null,
+        "reasons": [],
+        "explanation": [
+          {
+            "feature": ".i",
+            "weight": -0.033
+          },
+          {
+            "feature": "ac",
+            "weight": -0.029
+          },
+          {
+            "feature": "ni",
+            "weight": 0.027
+          },
+          {
+            "feature": ".ac.",
+            "weight": -0.026
+          },
+          {
+            "feature": "ac.",
+            "weight": -0.026
+          }
+        ]
+      }
+    ],
+    "ml_unseen_types": [
+      {
+        "id": "eml-legit-007",
+        "label": "legit",
+        "predicted": "phishing",
+        "risk_score": 66.5,
+        "input_kind": "eml",
+        "attack_type": "shipping_notice",
+        "difficulty": "medium",
+        "title": "Shipping notice from an unlisted courier",
+        "finding": null,
+        "reasons": [],
+        "explanation": [
+          {
+            "feature": "it",
+            "weight": -0.107
+          },
+          {
+            "feature": "has",
+            "weight": 0.073
+          },
+          {
+            "feature": "delivery",
+            "weight": 0.059
+          },
+          {
+            "feature": "in",
+            "weight": -0.054
+          },
+          {
+            "feature": "package",
+            "weight": 0.048
+          }
+        ]
+      },
+      {
+        "id": "eml-legit-012",
+        "label": "legit",
+        "predicted": "phishing",
+        "risk_score": 74.7,
+        "input_kind": "eml",
+        "attack_type": "personal",
+        "difficulty": "medium",
+        "title": "Personal email from a friend",
+        "finding": null,
+        "reasons": [],
+        "explanation": [
+          {
+            "feature": "at",
+            "weight": 0.083
+          },
+          {
+            "feature": "are",
+            "weight": 0.059
+          },
+          {
+            "feature": "gmail",
+            "weight": 0.049
+          },
+          {
+            "feature": "gmail com",
+            "weight": 0.049
+          },
+          {
+            "feature": "the",
+            "weight": 0.047
+          }
+        ]
+      },
+      {
+        "id": "eml-legit-031",
+        "label": "legit",
+        "predicted": "phishing",
+        "risk_score": 66.5,
+        "input_kind": "eml",
+        "attack_type": "shipping_notice",
+        "difficulty": "medium",
+        "title": "Shipping notice from an unlisted courier",
+        "finding": null,
+        "reasons": [],
+        "explanation": [
+          {
+            "feature": "it",
+            "weight": -0.107
+          },
+          {
+            "feature": "has",
+            "weight": 0.073
+          },
+          {
+            "feature": "delivery",
+            "weight": 0.059
+          },
+          {
+            "feature": "in",
+            "weight": -0.054
+          },
+          {
+            "feature": "package",
+            "weight": 0.048
+          }
+        ]
+      },
+      {
+        "id": "eml-legit-048",
+        "label": "legit",
+        "predicted": "phishing",
+        "risk_score": 74.8,
+        "input_kind": "eml",
+        "attack_type": "personal",
+        "difficulty": "medium",
+        "title": "Personal email from a friend",
+        "finding": null,
+        "reasons": [],
+        "explanation": [
+          {
+            "feature": "at",
+            "weight": 0.083
+          },
+          {
+            "feature": "are",
+            "weight": 0.059
+          },
+          {
+            "feature": "gmail",
+            "weight": 0.049
+          },
+          {
+            "feature": "gmail com",
+            "weight": 0.049
+          },
+          {
+            "feature": "the",
+            "weight": 0.047
+          }
+        ]
+      },
+      {
+        "id": "eml-legit-049",
+        "label": "legit",
+        "predicted": "phishing",
+        "risk_score": 61.5,
+        "input_kind": "eml",
+        "attack_type": "campus_announcement",
+        "difficulty": "easy",
+        "title": "New shuttle schedule",
+        "finding": null,
+        "reasons": [],
+        "explanation": [
+          {
+            "feature": "week",
+            "weight": -0.087
+          },
+          {
+            "feature": "schedule",
+            "weight": -0.057
+          },
+          {
+            "feature": "hello",
+            "weight": -0.048
+          },
+          {
+            "feature": "www",
+            "weight": 0.048
+          },
+          {
+            "feature": "new",
+            "weight": -0.046
+          }
+        ]
+      },
+      {
+        "id": "eml-legit-055",
+        "label": "legit",
+        "predicted": "phishing",
+        "risk_score": 66.5,
+        "input_kind": "eml",
+        "attack_type": "shipping_notice",
+        "difficulty": "medium",
+        "title": "Shipping notice from an unlisted courier",
+        "finding": null,
+        "reasons": [],
+        "explanation": [
+          {
+            "feature": "it",
+            "weight": -0.107
+          },
+          {
+            "feature": "has",
+            "weight": 0.073
+          },
+          {
+            "feature": "delivery",
+            "weight": 0.059
+          },
+          {
+            "feature": "in",
+            "weight": -0.054
+          },
+          {
+            "feature": "package",
+            "weight": 0.048
+          }
+        ]
+      },
+      {
+        "id": "eml-legit-067",
+        "label": "legit",
+        "predicted": "phishing",
+        "risk_score": 66.5,
+        "input_kind": "eml",
+        "attack_type": "shipping_notice",
+        "difficulty": "medium",
+        "title": "Shipping notice from an unlisted courier",
+        "finding": null,
+        "reasons": [],
+        "explanation": [
+          {
+            "feature": "it",
+            "weight": -0.107
+          },
+          {
+            "feature": "has",
+            "weight": 0.073
+          },
+          {
+            "feature": "delivery",
+            "weight": 0.059
+          },
+          {
+            "feature": "in",
+            "weight": -0.054
+          },
+          {
+            "feature": "package",
+            "weight": 0.048
+          }
+        ]
+      },
+      {
+        "id": "eml-legit-072",
+        "label": "legit",
+        "predicted": "phishing",
+        "risk_score": 74.5,
+        "input_kind": "eml",
+        "attack_type": "personal",
+        "difficulty": "medium",
+        "title": "Personal email from a friend",
+        "finding": null,
+        "reasons": [],
+        "explanation": [
+          {
+            "feature": "jonas",
+            "weight": 0.095
+          },
+          {
+            "feature": "today",
+            "weight": 0.059
+          },
+          {
+            "feature": "from",
+            "weight": -0.059
+          },
+          {
+            "feature": "gmail",
+            "weight": 0.055
+          },
+          {
+            "feature": "gmail com",
+            "weight": 0.055
+          }
+        ]
+      },
+      {
+        "id": "pdf-legit-002",
+        "label": "legit",
+        "predicted": "phishing",
+        "risk_score": 75.6,
+        "input_kind": "pdf",
+        "attack_type": "course_reminder",
+        "difficulty": "hard",
+        "title": "Urgent but real course reminder (ECON 305)",
+        "finding": null,
+        "reasons": [],
+        "explanation": [
+          {
+            "feature": "if",
+            "weight": -0.043
+          },
+          {
+            "feature": "jonas",
+            "weight": 0.042
+          },
+          {
+            "feature": "id",
+            "weight": 0.039
+          },
+          {
+            "feature": "ac",
+            "weight": 0.037
+          },
+          {
+            "feature": "this",
+            "weight": -0.034
+          }
+        ]
+      },
+      {
+        "id": "plain_text-legit-007",
+        "label": "legit",
+        "predicted": "phishing",
+        "risk_score": 65.8,
+        "input_kind": "plain_text",
+        "attack_type": "shipping_notice",
+        "difficulty": "medium",
+        "title": "Shipping notice from an unlisted courier",
+        "finding": null,
+        "reasons": [],
+        "explanation": [
+          {
+            "feature": "it",
+            "weight": -0.094
+          },
+          {
+            "feature": "delivery",
+            "weight": 0.071
+          },
+          {
+            "feature": "has",
+            "weight": 0.052
+          },
+          {
+            "feature": "in",
+            "weight": -0.048
+          },
+          {
+            "feature": "package",
+            "weight": 0.042
+          }
+        ]
+      },
+      {
+        "id": "url-legit-003",
+        "label": "legit",
+        "predicted": "phishing",
+        "risk_score": 73.8,
+        "input_kind": "url",
+        "attack_type": "university_official",
+        "difficulty": "medium",
+        "title": "Link: https://portal.carrickstate.edu/login",
+        "finding": null,
+        "reasons": [],
+        "explanation": [
+          {
+            "feature": "or",
+            "weight": -0.034
+          },
+          {
+            "feature": "/l",
+            "weight": 0.016
+          },
+          {
+            "feature": "ri",
+            "weight": 0.015
+          },
+          {
+            "feature": "in",
+            "weight": 0.014
+          },
+          {
+            "feature": "/lo",
+            "weight": 0.014
+          }
+        ]
+      },
+      {
+        "id": "url-legit-008",
+        "label": "legit",
+        "predicted": "phishing",
+        "risk_score": 70.1,
+        "input_kind": "url",
+        "attack_type": "university_official",
+        "difficulty": "medium",
+        "title": "Link: https://portal.harrowgate.ac.uk/login",
+        "finding": null,
+        "reasons": [],
+        "explanation": [
+          {
+            "feature": "or",
+            "weight": -0.05
+          },
+          {
+            "feature": "ow",
+            "weight": -0.035
+          },
+          {
+            "feature": "k/",
+            "weight": -0.035
+          },
+          {
+            "feature": "/l",
+            "weight": 0.024
+          },
+          {
+            "feature": "in",
+            "weight": 0.022
+          }
+        ]
+      },
+      {
+        "id": "url-legit-010",
+        "label": "legit",
+        "predicted": "phishing",
+        "risk_score": 68.5,
+        "input_kind": "url",
+        "attack_type": "trusted_brand",
+        "difficulty": "easy",
+        "title": "Link: https://stripe.com/docs/payments",
+        "finding": null,
+        "reasons": [],
+        "explanation": [
+          {
+            "feature": "/do",
+            "weight": -0.034
+          },
+          {
+            "feature": "do",
+            "weight": -0.034
+          },
+          {
+            "feature": "s/",
+            "weight": -0.034
+          },
+          {
+            "feature": "tr",
+            "weight": -0.034
+          },
+          {
+            "feature": "oc",
+            "weight": -0.033
+          }
+        ]
+      },
+      {
+        "id": "url-legit-014",
+        "label": "legit",
+        "predicted": "phishing",
+        "risk_score": 68.3,
+        "input_kind": "url",
+        "attack_type": "university_official",
+        "difficulty": "medium",
+        "title": "Link: https://library.carrickstate.edu/search?q=statistics",
+        "finding": null,
+        "reasons": [],
+        "explanation": [
+          {
+            "feature": "arc",
+            "weight": -0.02
+          },
+          {
+            "feature": "li",
+            "weight": -0.02
+          },
+          {
+            "feature": "ra",
+            "weight": -0.02
+          },
+          {
+            "feature": "rc",
+            "weight": -0.02
+          },
+          {
+            "feature": "ry",
+            "weight": -0.02
+          }
+        ]
+      },
+      {
+        "id": "url-legit-015",
+        "label": "legit",
+        "predicted": "phishing",
+        "risk_score": 74.2,
+        "input_kind": "url",
+        "attack_type": "trusted_brand",
+        "difficulty": "medium",
+        "title": "Link: https://myaccount.google.com/security",
+        "finding": null,
+        "reasons": [],
+        "explanation": [
+          {
+            "feature": "ty",
+            "weight": -0.025
+          },
+          {
+            "feature": "ri",
+            "weight": 0.018
+          },
+          {
+            "feature": "co",
+            "weight": 0.016
+          },
+          {
+            "feature": "og",
+            "weight": 0.016
+          },
+          {
+            "feature": "ac",
+            "weight": -0.015
+          }
+        ]
+      },
+      {
+        "id": "url-legit-016",
+        "label": "legit",
+        "predicted": "phishing",
+        "risk_score": 61.3,
+        "input_kind": "url",
+        "attack_type": "university_official",
+        "difficulty": "medium",
+        "title": "Link: https://www.lakesidetech.edu/admissions",
+        "finding": null,
+        "reasons": [],
+        "explanation": [
+          {
+            "feature": "ww",
+            "weight": -0.066
+          },
+          {
+            "feature": "si",
+            "weight": 0.028
+          },
+          {
+            "feature": "//w",
+            "weight": -0.023
+          },
+          {
+            "feature": "//ww",
+            "weight": -0.023
+          },
+          {
+            "feature": "//www",
+            "weight": -0.023
+          }
+        ]
+      },
+      {
+        "id": "url-legit-020",
+        "label": "legit",
+        "predicted": "phishing",
+        "risk_score": 69.0,
+        "input_kind": "url",
+        "attack_type": "university_official",
+        "difficulty": "medium",
+        "title": "Link: https://library.lakesidetech.edu/search?q=statistics",
+        "finding": null,
+        "reasons": [],
+        "explanation": [
+          {
+            "feature": "arc",
+            "weight": -0.023
+          },
+          {
+            "feature": "li",
+            "weight": -0.023
+          },
+          {
+            "feature": "ra",
+            "weight": -0.023
+          },
+          {
+            "feature": "rc",
+            "weight": -0.023
+          },
+          {
+            "feature": "ry",
+            "weight": -0.023
+          }
+        ]
+      },
+      {
+        "id": "url-legit-028",
+        "label": "legit",
+        "predicted": "phishing",
+        "risk_score": 63.5,
+        "input_kind": "url",
+        "attack_type": "university_official",
+        "difficulty": "medium",
+        "title": "Link: https://library.harrowgate.ac.uk/search?q=statistics",
+        "finding": null,
+        "reasons": [],
+        "explanation": [
+          {
+            "feature": "ow",
+            "weight": -0.029
+          },
+          {
+            "feature": "arc",
+            "weight": -0.029
+          },
+          {
+            "feature": "k/",
+            "weight": -0.029
+          },
+          {
+            "feature": "li",
+            "weight": -0.029
+          },
+          {
+            "feature": "ra",
+            "weight": -0.029
+          }
+        ]
+      },
+      {
+        "id": "eml-phishing-001",
+        "label": "phishing",
+        "predicted": "legit",
+        "risk_score": 55.3,
+        "input_kind": "eml",
+        "attack_type": "campus_credential",
+        "difficulty": "easy",
+        "title": "University login lure from westbrook-edu.com",
+        "finding": null,
+        "reasons": [],
+        "explanation": [
+          {
+            "feature": "in to",
+            "weight": -0.085
+          },
+          {
+            "feature": "portal",
+            "weight": -0.06
+          },
+          {
+            "feature": "sign",
+            "weight": -0.056
+          },
+          {
+            "feature": "sign in",
+            "weight": -0.056
+          },
+          {
+            "feature": "verify",
+            "weight": 0.055
+          }
+        ]
+      },
+      {
+        "id": "eml-phishing-029",
+        "label": "phishing",
+        "predicted": "legit",
+        "risk_score": 44.1,
+        "input_kind": "eml",
+        "attack_type": "invoice_ach",
+        "difficulty": "medium",
+        "title": "Vendor bank-change request (Brightline Supplies)",
+        "finding": null,
+        "reasons": [],
+        "explanation": [
+          {
+            "feature": "invoice",
+            "weight": -0.08
+          },
+          {
+            "feature": "overdue",
+            "weight": -0.059
+          },
+          {
+            "feature": "this",
+            "weight": -0.059
+          },
+          {
+            "feature": "hello",
+            "weight": -0.05
+          },
+          {
+            "feature": "new",
+            "weight": -0.049
+          }
+        ]
+      },
+      {
+        "id": "eml-phishing-041",
+        "label": "phishing",
+        "predicted": "legit",
+        "risk_score": 44.0,
+        "input_kind": "eml",
+        "attack_type": "invoice_ach",
+        "difficulty": "medium",
+        "title": "Vendor bank-change request (Brightline Supplies)",
+        "finding": null,
+        "reasons": [],
+        "explanation": [
+          {
+            "feature": "invoice",
+            "weight": -0.081
+          },
+          {
+            "feature": "this",
+            "weight": -0.059
+          },
+          {
+            "feature": "hello",
+            "weight": -0.05
+          },
+          {
+            "feature": "overdue",
+            "weight": -0.048
+          },
+          {
+            "feature": "we will",
+            "weight": -0.045
+          }
+        ]
+      },
+      {
+        "id": "eml-phishing-049",
+        "label": "phishing",
+        "predicted": "legit",
+        "risk_score": 55.9,
+        "input_kind": "eml",
+        "attack_type": "campus_credential",
+        "difficulty": "easy",
+        "title": "University login lure from lakesidetech-sso.net",
+        "finding": null,
+        "reasons": [],
+        "explanation": [
+          {
+            "feature": "portal",
+            "weight": -0.069
+          },
+          {
+            "feature": "your account",
+            "weight": -0.062
+          },
+          {
+            "feature": "in to",
+            "weight": -0.056
+          },
+          {
+            "feature": "verify",
+            "weight": 0.051
+          },
+          {
+            "feature": "edu",
+            "weight": -0.041
+          }
+        ]
+      },
+      {
+        "id": "eml-phishing-053",
+        "label": "phishing",
+        "predicted": "legit",
+        "risk_score": 44.5,
+        "input_kind": "eml",
+        "attack_type": "invoice_ach",
+        "difficulty": "medium",
+        "title": "Vendor bank-change request (Harbor Catering Co.)",
+        "finding": null,
+        "reasons": [],
+        "explanation": [
+          {
+            "feature": "invoice",
+            "weight": -0.08
+          },
+          {
+            "feature": "overdue",
+            "weight": -0.059
+          },
+          {
+            "feature": "this",
+            "weight": -0.059
+          },
+          {
+            "feature": "hello",
+            "weight": -0.05
+          },
+          {
+            "feature": "new",
+            "weight": -0.049
+          }
+        ]
+      },
+      {
+        "id": "eml-phishing-073",
+        "label": "phishing",
+        "predicted": "legit",
+        "risk_score": 57.4,
+        "input_kind": "eml",
+        "attack_type": "campus_credential",
+        "difficulty": "easy",
+        "title": "University login lure from meridian-edu.com",
+        "finding": null,
+        "reasons": [],
+        "explanation": [
+          {
+            "feature": "in to",
+            "weight": -0.051
+          },
+          {
+            "feature": "it",
+            "weight": -0.048
+          },
+          {
+            "feature": "not",
+            "weight": -0.048
+          },
+          {
+            "feature": "edu",
+            "weight": -0.047
+          },
+          {
+            "feature": "com login",
+            "weight": -0.042
+          }
+        ]
+      },
+      {
+        "id": "plain_text-phishing-001",
+        "label": "phishing",
+        "predicted": "legit",
+        "risk_score": 39.8,
+        "input_kind": "plain_text",
+        "attack_type": "campus_credential",
+        "difficulty": "easy",
+        "title": "University login lure from carr1ckstate.edu",
+        "finding": null,
+        "reasons": [],
+        "explanation": [
+          {
+            "feature": "in to",
+            "weight": -0.088
+          },
+          {
+            "feature": "edu",
+            "weight": -0.052
+          },
+          {
+            "feature": "portal",
+            "weight": -0.052
+          },
+          {
+            "feature": "view",
+            "weight": -0.045
+          },
+          {
+            "feature": "signin",
+            "weight": 0.042
+          }
+        ]
+      },
+      {
+        "id": "plain_text-phishing-005",
+        "label": "phishing",
+        "predicted": "legit",
+        "risk_score": 52.3,
+        "input_kind": "plain_text",
+        "attack_type": "invoice_ach",
+        "difficulty": "medium",
+        "title": "Vendor bank-change request (Harbor Catering Co.)",
+        "finding": null,
+        "reasons": [],
+        "explanation": [
+          {
+            "feature": "invoice",
+            "weight": -0.066
+          },
+          {
+            "feature": "the",
+            "weight": 0.052
+          },
+          {
+            "feature": "hello",
+            "weight": -0.051
+          },
+          {
+            "feature": "overdue",
+            "weight": -0.049
+          },
+          {
+            "feature": "to the",
+            "weight": -0.045
+          }
+        ]
+      }
+    ]
+  },
+  "ml_global_features": {
+    "text": {
+      "phishing": [
+        "verify",
+        "please",
+        "are you",
+        "account",
+        "office",
+        "need",
+        "open the",
+        "today",
+        "of",
+        "dear"
+      ],
+      "legit": [
+        "week",
+        "if",
+        "this",
+        "from",
+        "password",
+        "edu",
+        "hey",
+        "no",
+        "if this",
+        "is"
+      ]
+    },
+    "url": {
+      "phishing": [
+        "re",
+        "e-",
+        "u.",
+        "edu.",
+        "du.",
+        "de",
+        "ni",
+        "are",
+        "ve",
+        "nt-"
+      ],
+      "legit": [
+        "ww",
+        "www.",
+        "www",
+        "ww.",
+        "://ww",
+        "w.",
+        "/www",
+        "//ww",
+        "//www",
+        "/www."
+      ]
+    }
+  },
+  "notes": [
+    "The 8 hand-written demo emails (app/sample_emails.py) are excluded: the rules were tuned on them.",
+    "Each item is judged independently (campaign memory writes are disabled during evaluation).",
+    "Trusted domains come from the built-in list (Redis disabled) so results don't depend on a local server.",
+    "ml_baseline shares scenario templates between dev and test, so it can memorise template wording; ml_unseen_types tests it on attack types it never saw and is the fairer ML number.",
+    "Gemini systems were skipped because no API key was configured. Set GEMINI_API_KEY and re-run."
+  ]
+}

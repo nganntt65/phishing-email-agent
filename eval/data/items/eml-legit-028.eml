@@ -1,0 +1,37 @@
+From: Google <noreply@accounts.google.com>
+To: wei.sutanto@meridian.ac.id
+Return-Path: <noreply@accounts.google.com>
+Subject: [Google] New sign-in to your account
+Date: Tue, 03 Nov 2026 07:38:00 +0000
+Message-ID: <ca0a0d67d38e@accounts.google.com>
+Authentication-Results: mx.meridian.ac.id; spf=pass
+ smtp.mailfrom=accounts.google.com; dkim=pass header.d=accounts.google.com;
+ dmarc=pass header.from=accounts.google.com
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=accounts.google.com; s=s1; b=a5b5cdc2a181c85e
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield1055ab946d0=="
+
+--==ScamShield1055ab946d0==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+A new sign-in to your account was detected from a new device.
+
+Review activity: https://accounts.google.com/security
+
+If this was you, no action is needed. If not, review your security settings.
+
+--==ScamShield1055ab946d0==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hi,</p><p>A new sign-in to your account was detected from a ne=
+w device.</p><p><a href=3D"https://accounts.google.com/security">Review activ=
+ity</a></p><p>If this was you, no action is needed. If not, review your secur=
+ity settings.</p></body></html>
+
+--==ScamShield1055ab946d0==--

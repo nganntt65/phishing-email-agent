@@ -1,0 +1,38 @@
+From: Microsoft Security <security@rnicrosoft-support.com>
+To: arjun.alvarez@westbrook.edu
+Return-Path: <security@rnicrosoft-support.com>
+Subject: Microsoft: confirm your identity
+Date: Wed, 28 Oct 2026 05:28:00 +0000
+Message-ID: <6c0023e2fcb4@rnicrosoft-support.com>
+Authentication-Results: mx.westbrook.edu; spf=softfail
+ smtp.mailfrom=rnicrosoft-support.com; dkim=none
+ header.d=rnicrosoft-support.com; dmarc=fail
+ header.from=rnicrosoft-support.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield472ef912760=="
+
+--==ScamShield472ef912760==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Dear Valued User,
+
+We detected an unauthorized login attempt on your Microsoft account.
+
+Verify your identity immediately to restore access.
+
+https://www.microsoft.com/signin: https://rnicrosoft-support.com/signin
+
+Microsoft Trust & Safety
+
+--==ScamShield472ef912760==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Dear Valued User,</p><p>We detected an unauthorized login atte=
+mpt on your Microsoft account.</p><p>Verify your identity immediately to rest=
+ore access.</p><p><a href=3D"https://rnicrosoft-support.com/signin">https://w=
+ww.microsoft.com/signin</a></p><p>Microsoft Trust & Safety</p></body></html>
+
+--==ScamShield472ef912760==--

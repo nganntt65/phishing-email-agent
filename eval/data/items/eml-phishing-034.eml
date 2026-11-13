@@ -1,0 +1,32 @@
+From: Jonas Rahman <jonas.rahman.uni@gmail.com>
+To: arjun.brennan@meridian.ac.id
+Return-Path: <jonas.rahman.uni@gmail.com>
+Subject: Are you on campus?
+Date: Fri, 30 Oct 2026 06:44:00 +0000
+Message-ID: <db5205000bc6@gmail.com>
+Authentication-Results: mx.meridian.ac.id; spf=pass smtp.mailfrom=gmail.com;
+ dkim=pass header.d=gmail.com; dmarc=pass header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; d=gmail.com; s=s1; b=c3fe0183e172b725
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield619360715f0=="
+
+--==ScamShield619360715f0==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi,
+
+I need your help with something small for the department. Reply when you see =
+this.
+
+Jonas
+
+--==ScamShield619360715f0==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hi,</p><p>I need your help with something small for the depart=
+ment. Reply when you see this.</p><p>Jonas</p></body></html>
+
+--==ScamShield619360715f0==--

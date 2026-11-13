@@ -1,0 +1,39 @@
+From: Harrowgate IT Services <no-reply@harrowgate.ac.uk>
+To: elif.haddad@harrowgate.ac.uk
+Return-Path: <no-reply@harrowgate.ac.uk>
+Subject: Password reset requested
+Date: Tue, 13 Oct 2026 21:50:00 +0000
+Message-ID: <3c9a238d6f44@harrowgate.ac.uk>
+Authentication-Results: mx.harrowgate.ac.uk; spf=pass
+ smtp.mailfrom=harrowgate.ac.uk; dkim=pass header.d=harrowgate.ac.uk;
+ dmarc=pass header.from=harrowgate.ac.uk
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=harrowgate.ac.uk; s=s1; b=7e7838c9ca55e38b
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield5c06ba8cd30=="
+
+--==ScamShield5c06ba8cd30==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+We received a request to reset your password. The link expires within 24 hour=
+s.
+
+Reset password: https://portal.harrowgate.ac.uk/password/reset?token=3Dfc1f11=
+9c0f
+
+If you did not request this, you can ignore this message.
+
+--==ScamShield5c06ba8cd30==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello,</p><p>We received a request to reset your password. The=
+ link expires within 24 hours.</p><p><a href=3D"https://portal.harrowgate.ac.=
+uk/password/reset?token=3Dfc1f119c0f">Reset password</a></p><p>If you did not=
+ request this, you can ignore this message.</p></body></html>
+
+--==ScamShield5c06ba8cd30==--

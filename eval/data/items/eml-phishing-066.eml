@@ -1,0 +1,37 @@
+From: "Prof. Rizky Okafor" <prof.okafor2@mailbox-free.com>
+To: amara.lindqvist@meridian.ac.id
+Return-Path: <prof.okafor2@mailbox-free.com>
+Subject: Request
+Date: Thu, 15 Oct 2026 03:38:00 +0000
+Message-ID: <5a31cd4b69a9@mailbox-free.com>
+Authentication-Results: mx.meridian.ac.id; spf=pass
+ smtp.mailfrom=mailbox-free.com; dkim=pass header.d=mailbox-free.com;
+ dmarc=none header.from=mailbox-free.com
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=mailbox-free.com; s=s1; b=a2f963a33810ae66
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield9e30ac7d7b0=="
+
+--==ScamShield9e30ac7d7b0==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi,
+
+I'm stuck in a meeting. Please purchase gift cards for the department prize a=
+nd send me the codes.
+
+Let me know as soon as possible.
+
+Prof. Okafor
+
+--==ScamShield9e30ac7d7b0==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hi,</p><p>I'm stuck in a meeting. Please purchase gift cards f=
+or the department prize and send me the codes.</p><p>Let me know as soon as p=
+ossible.</p><p>Prof. Okafor</p></body></html>
+
+--==ScamShield9e30ac7d7b0==--

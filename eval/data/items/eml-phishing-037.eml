@@ -1,0 +1,40 @@
+From: Student Accounts Office <registrar@meridian.ac.id-verify.com>
+To: kenji.lindqvist@meridian.ac.id
+Return-Path: <registrar@meridian.ac.id-verify.com>
+Subject: Important: enrollment verification
+Date: Sat, 24 Oct 2026 17:20:00 +0000
+Message-ID: <c2df56666f9f@meridian.ac.id-verify.com>
+Authentication-Results: mx.meridian.ac.id; spf=fail
+ smtp.mailfrom=meridian.ac.id-verify.com; dkim=fail
+ header.d=meridian.ac.id-verify.com; dmarc=none
+ header.from=meridian.ac.id-verify.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield61e13016170=="
+
+--==ScamShield61e13016170==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Meridian student,
+
+Please sign in to confirm your enrollment for next term before Friday.
+
+Failure to verify will result in your account being terminated.
+
+Sign in to the student portal: https://meridian.ac.id-verify.com/login?id=3D6=
+1645
+
+Office of the Registrar
+
+--==ScamShield61e13016170==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Dear Meridian student,</p><p>Please sign in to confirm your en=
+rollment for next term before Friday.</p><p>Failure to verify will result in =
+your account being terminated.</p><p><a href=3D"https://meridian.ac.id-verify=
+.com/login?id=3D61645">Sign in to the student portal</a></p><p>Office of the =
+Registrar</p></body></html>
+
+--==ScamShield61e13016170==--

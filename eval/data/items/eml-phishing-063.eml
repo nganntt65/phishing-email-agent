@@ -1,0 +1,38 @@
+From: Email Quota Team <admin@webmail-upgrade-center.com>
+To: kenji.nakamura@carrickstate.edu
+Return-Path: <admin@webmail-upgrade-center.com>
+Subject: Your mailbox is 98% full
+Date: Tue, 03 Nov 2026 11:15:00 +0000
+Message-ID: <e9af7f671eec@webmail-upgrade-center.com>
+Authentication-Results: mx.carrickstate.edu; spf=none
+ smtp.mailfrom=webmail-upgrade-center.com; dkim=none
+ header.d=webmail-upgrade-center.com; dmarc=none
+ header.from=webmail-upgrade-center.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield249549c9310=="
+
+--==ScamShield249549c9310==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Dear user,
+
+Your email storage is almost full. You will stop receiving messages soon.
+
+Click here to upgrade your storage for free.
+
+Upgrade storage: https://webmail-upgrade-center.top/upgrade
+
+Mail Administrator
+
+--==ScamShield249549c9310==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Dear user,</p><p>Your email storage is almost full. You will s=
+top receiving messages soon.</p><p>Click here to upgrade your storage for fre=
+e.</p><p><a href=3D"https://webmail-upgrade-center.top/upgrade">Upgrade stora=
+ge</a></p><p>Mail Administrator</p></body></html>
+
+--==ScamShield249549c9310==--

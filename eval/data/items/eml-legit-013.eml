@@ -1,0 +1,35 @@
+From: Meridian News <news@meridian.ac.id>
+To: putri.rahman@meridian.ac.id
+Return-Path: <news@meridian.ac.id>
+Subject: New shuttle schedule
+Date: Fri, 23 Oct 2026 00:17:00 +0000
+Message-ID: <c143372f871a@meridian.ac.id>
+Authentication-Results: mx.meridian.ac.id; spf=pass
+ smtp.mailfrom=meridian.ac.id; dkim=pass header.d=meridian.ac.id; dmarc=pass
+ header.from=meridian.ac.id
+DKIM-Signature: v=1; a=rsa-sha256; d=meridian.ac.id; s=s1; b=1d2324e6832920b7
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield6e585d3f860=="
+
+--==ScamShield6e585d3f860==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello Meridian,
+
+New shuttle schedule. Details are on the university website.
+
+Read more: https://www.meridian.ac.id/transport/shuttle
+
+Have a good week.
+
+--==ScamShield6e585d3f860==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello Meridian,</p><p>New shuttle schedule. Details are on the=
+ university website.</p><p><a href=3D"https://www.meridian.ac.id/transport/sh=
+uttle">Read more</a></p><p>Have a good week.</p></body></html>
+
+--==ScamShield6e585d3f860==--

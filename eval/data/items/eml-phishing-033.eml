@@ -1,0 +1,43 @@
+From: Research Placement Team <hello@research-assistant-jobs.org>
+To: jonas.hartono@harrowgate.ac.uk
+Return-Path: <hello@research-assistant-jobs.org>
+Subject: You have been shortlisted
+Date: Tue, 03 Nov 2026 22:09:00 +0000
+Message-ID: <36c5b4d7e28e@research-assistant-jobs.org>
+Authentication-Results: mx.harrowgate.ac.uk; spf=pass
+ smtp.mailfrom=research-assistant-jobs.org; dkim=pass
+ header.d=research-assistant-jobs.org; dmarc=pass
+ header.from=research-assistant-jobs.org
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=research-assistant-jobs.org; s=s1; b=6a34c85410714d51
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield5468586eba0=="
+
+--==ScamShield5468586eba0==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi there,
+
+Congratulations, you have been shortlisted for a paid research assistant posi=
+tion this term.
+
+Please complete the short form with your student ID and direct deposit detail=
+s so we can set up payroll.
+
+Open the form: https://research-assistant-jobs.org/form
+
+Warm regards,
+
+--==ScamShield5468586eba0==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hi there,</p><p>Congratulations, you have been shortlisted for=
+ a paid research assistant position this term.</p><p>Please complete the shor=
+t form with your student ID and direct deposit details so we can set up payro=
+ll.</p><p><a href=3D"https://research-assistant-jobs.org/form">Open the form<=
+/a></p><p>Warm regards,</p></body></html>
+
+--==ScamShield5468586eba0==--

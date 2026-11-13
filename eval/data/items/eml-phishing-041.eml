@@ -1,0 +1,37 @@
+From: Brightline Supplies Accounts <billing@brightline-supply.co>
+To: procurement@carrickstate.edu
+Reply-To: ap-desk@brightline-payments.net
+Return-Path: <billing@brightline-supply.co>
+Subject: Updated banking details for invoice payment
+Date: Mon, 02 Nov 2026 13:23:00 +0000
+Message-ID: <818611a72609@brightline-supply.co>
+Authentication-Results: mx.carrickstate.edu; spf=softfail
+ smtp.mailfrom=brightline-supply.co; dkim=none header.d=brightline-supply.co;
+ dmarc=none header.from=brightline-supply.co
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield57a5c5650c0=="
+
+--==ScamShield57a5c5650c0==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello Accounts Payable,
+
+We have changed our bank account details. Please update your records before p=
+aying the overdue invoice.
+
+Reply to this email and we will send the new routing number.
+
+Brightline Supplies Billing
+
+--==ScamShield57a5c5650c0==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello Accounts Payable,</p><p>We have changed our bank account=
+ details. Please update your records before paying the overdue invoice.</p><p=
+>Reply to this email and we will send the new routing number.</p><p>Brightlin=
+e Supplies Billing</p></body></html>
+
+--==ScamShield57a5c5650c0==--

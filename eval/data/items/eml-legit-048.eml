@@ -1,0 +1,31 @@
+From: Tomas Hartono <tomas31@gmail.com>
+To: daniel.sutanto@harrowgate.ac.uk
+Return-Path: <tomas31@gmail.com>
+Subject: study group tomorrow?
+Date: Tue, 20 Oct 2026 08:34:00 +0000
+Message-ID: <d04256ab087a@gmail.com>
+Authentication-Results: mx.harrowgate.ac.uk; spf=pass smtp.mailfrom=gmail.com;
+ dkim=pass header.d=gmail.com; dmarc=pass header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; d=gmail.com; s=s1; b=2cd2a404a48e40f1
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShieldc7d49405f00=="
+
+--==ScamShieldc7d49405f00==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hey!
+
+Are we still meeting at the library at 3?
+
+- Tomas
+
+--==ScamShieldc7d49405f00==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hey!</p><p>Are we still meeting at the library at 3?</p><p>- T=
+omas</p></body></html>
+
+--==ScamShieldc7d49405f00==--

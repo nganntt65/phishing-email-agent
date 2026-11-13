@@ -1,0 +1,40 @@
+From: "Dr. Grace Castillo" <grace.castillo@carrickstate.edu>
+To: jonas.moreau@carrickstate.edu
+Return-Path: <grace.castillo@carrickstate.edu>
+Subject: Reminder - PSYC 110 quiz closes at midnight
+Date: Thu, 15 Oct 2026 15:29:00 +0000
+Message-ID: <44791f5d988f@carrickstate.edu>
+Authentication-Results: mx.carrickstate.edu; spf=pass
+ smtp.mailfrom=carrickstate.edu; dkim=pass header.d=carrickstate.edu;
+ dmarc=pass header.from=carrickstate.edu
+DKIM-Signature:
+ v=1; a=rsa-sha256; d=carrickstate.edu; s=s1; b=3f779cae7318b96d
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield1824108e9a0=="
+
+--==ScamShield1824108e9a0==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi all,
+
+This is a reminder that the assignment is due tonight. Submit immediately if =
+you have not yet.
+
+Late work will lose points.
+
+Course page: https://learn.carrickstate.edu/courses/psyc110
+
+Dr. Castillo
+
+--==ScamShield1824108e9a0==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hi all,</p><p>This is a reminder that the assignment is due to=
+night. Submit immediately if you have not yet.</p><p>Late work will lose poin=
+ts.</p><p><a href=3D"https://learn.carrickstate.edu/courses/psyc110">Course p=
+age</a></p><p>Dr. Castillo</p></body></html>
+
+--==ScamShield1824108e9a0==--

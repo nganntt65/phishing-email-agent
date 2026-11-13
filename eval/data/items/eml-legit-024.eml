@@ -1,0 +1,31 @@
+From: Rizky Kowalski <rizky8@gmail.com>
+To: tomas.hartono@carrickstate.edu
+Return-Path: <rizky8@gmail.com>
+Subject: notes from today
+Date: Sat, 24 Oct 2026 14:02:00 +0000
+Message-ID: <5e650e9058b6@gmail.com>
+Authentication-Results: mx.carrickstate.edu; spf=pass smtp.mailfrom=gmail.com;
+ dkim=pass header.d=gmail.com; dmarc=pass header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; d=gmail.com; s=s1; b=497de16dd4ea120a
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShielda513a4a4920=="
+
+--==ScamShielda513a4a4920==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hey!
+
+I uploaded my notes to our shared folder.
+
+- Rizky
+
+--==ScamShielda513a4a4920==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hey!</p><p>I uploaded my notes to our shared folder.</p><p>- R=
+izky</p></body></html>
+
+--==ScamShielda513a4a4920==--

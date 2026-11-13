@@ -1,0 +1,45 @@
+From: Housing Services <office@student-forms.top>
+To: aisha.haddad@lakesidetech.edu
+Return-Path: <office@student-forms.top>
+Subject: Your award letter
+Date: Mon, 26 Oct 2026 23:58:00 +0000
+Message-ID: <deda1b3dbd5c@student-forms.top>
+Authentication-Results: mx.lakesidetech.edu; spf=fail
+ smtp.mailfrom=student-forms.top; dkim=fail header.d=student-forms.top;
+ dmarc=fail header.from=student-forms.top
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="==ScamShield4ca013ac6e0=="
+
+--==ScamShield4ca013ac6e0==
+Content-Type: multipart/alternative; boundary="==ScamShielda3d777a4771=="
+
+--==ScamShielda3d777a4771==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+Please open the attached document and complete it today.
+
+Thank you.
+
+--==ScamShielda3d777a4771==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello,</p><p>Please open the attached document and complete it=
+ today.</p><p>Thank you.</p></body></html>
+
+--==ScamShielda3d777a4771==--
+
+--==ScamShield4ca013ac6e0==
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="Housing_Contract.docx.exe"
+MIME-Version: 1.0
+
+TVqPiUO/lW3llWZcOP//I4J+F8EM3BwnoCjKrmyYEGJhmP93h0D4jdzxAq64Ha7iicBExKRXHEtv
+KHQA9LjguEP4
+
+--==ScamShield4ca013ac6e0==--

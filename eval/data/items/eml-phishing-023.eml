@@ -1,0 +1,39 @@
+From: Grant Disbursement Office <grants@education-award-office.org>
+To: lucia.haddad@harrowgate.ac.uk
+Return-Path: <grants@education-award-office.org>
+Subject: Congratulations: Excellence Grant awarded
+Date: Thu, 29 Oct 2026 05:56:00 +0000
+Message-ID: <6808dfed2c43@education-award-office.org>
+Authentication-Results: mx.harrowgate.ac.uk; spf=none
+ smtp.mailfrom=education-award-office.org; dkim=none
+ header.d=education-award-office.org; dmarc=none
+ header.from=education-award-office.org
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield9ef94d62040=="
+
+--==ScamShield9ef94d62040==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear awardee,
+
+You were selected for a $4,000 Excellence Grant.
+
+A processing fee of $45 is required to release the funds. Pay the fee within =
+48 hours.
+
+Pay processing fee: https://education-award-office.org/pay
+
+Grant Disbursement Office
+
+--==ScamShield9ef94d62040==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Dear awardee,</p><p>You were selected for a $4,000 Excellence =
+Grant.</p><p>A processing fee of $45 is required to release the funds. Pay th=
+e fee within 48 hours.</p><p><a href=3D"https://education-award-office.org/pa=
+y">Pay processing fee</a></p><p>Grant Disbursement Office</p></body></html>
+
+--==ScamShield9ef94d62040==--

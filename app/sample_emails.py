@@ -121,7 +121,7 @@ The GitHub Team
     },
     "university_grant_high_risk": {
         "id": "university_grant_high_risk",
-        "title": "5. [HIGH RISK] University IT Helpdesk MFA Reset Lure (Display Spoof + Credential Path)",
+        "title": "5. University IT Helpdesk MFA Reset Lure (Display Spoof + Credential Path)",
         "category": "High Risk — Institutional Credential Lure",
         "raw_eml": """From: "University IT Support Desk" <helpdesk-ticket@campus-sso-portal.org>
 To: researcher@acme-corp.internal
@@ -145,7 +145,7 @@ Content-Type: text/html; charset="UTF-8"
     },
     "vendor_bank_update_high_risk": {
         "id": "vendor_bank_update_high_risk",
-        "title": "6. [HIGH RISK] Vendor ACH Banking Update & Overdue Invoice (BEC + Reply-To Mismatch)",
+        "title": "6. Vendor ACH Banking Update & Overdue Invoice (BEC + Reply-To Mismatch)",
         "category": "High Risk — Vendor Invoice BEC",
         "raw_eml": """From: "Accounts Receivable - Apex Lab Supplies" <billing@apex-labs-invoicing.net>
 To: accounts-payable@acme-corp.internal
@@ -171,7 +171,7 @@ Apex Lab Supplies
     },
     "academic_conference_medium_risk": {
         "id": "academic_conference_medium_risk",
-        "title": "7. [MEDIUM RISK] Unverified Academic Symposium Registration Reminder (External + Urgency)",
+        "title": "7. Unverified Academic Symposium Registration Reminder (External + Urgency)",
         "category": "Medium Risk — Unverified External Outreach",
         "raw_eml": """From: "Global AI & Bioinformatics Symposium Committee" <registration@ai-bio-symposium2026.org>
 To: faculty-member@acme-corp.internal
@@ -197,7 +197,7 @@ Organizing Committee
     },
     "hr_survey_medium_risk": {
         "id": "hr_survey_medium_risk",
-        "title": "8. [MEDIUM RISK] Third-Party Benefits Open Enrollment Notice (Unverified SaaS + HTTP Link)",
+        "title": "8. Third-Party Benefits Open Enrollment Notice (Unverified SaaS + HTTP Link)",
         "category": "Medium Risk — Shadow IT / External Survey",
         "raw_eml": """From: "Annual Benefits Administration" <notifications@hr-benefits-enrollment-portal.com>
 To: staff@acme-corp.internal

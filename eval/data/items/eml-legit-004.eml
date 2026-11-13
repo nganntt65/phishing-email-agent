@@ -1,0 +1,36 @@
+From: GitHub <noreply@github.com>
+To: wei.sutanto@harrowgate.ac.uk
+Return-Path: <noreply@github.com>
+Subject: [GitHub] New sign-in to your account
+Date: Mon, 02 Nov 2026 17:16:00 +0000
+Message-ID: <f41e5fd23109@github.com>
+Authentication-Results: mx.harrowgate.ac.uk; spf=pass
+ smtp.mailfrom=github.com; dkim=pass header.d=github.com; dmarc=pass
+ header.from=github.com
+DKIM-Signature: v=1; a=rsa-sha256; d=github.com; s=s1; b=afd380c42713582c
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==ScamShield79ec48bf550=="
+
+--==ScamShield79ec48bf550==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+A new sign-in to your account was detected from a new device.
+
+Review activity: https://github.com/settings/security
+
+If this was you, no action is needed. If not, review your security settings.
+
+--==ScamShield79ec48bf550==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hi,</p><p>A new sign-in to your account was detected from a ne=
+w device.</p><p><a href=3D"https://github.com/settings/security">Review activ=
+ity</a></p><p>If this was you, no action is needed. If not, review your secur=
+ity settings.</p></body></html>
+
+--==ScamShield79ec48bf550==--

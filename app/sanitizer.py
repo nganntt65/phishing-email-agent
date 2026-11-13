@@ -118,6 +118,10 @@ def preprocess_and_sanitize_eml(raw_eml: str, request_id: str | None = None) -> 
     _, return_path_addr = parseaddr(return_path_raw)
     return_path_addr = return_path_addr.lower().strip()
 
+    authentication_results = str(msg.get("Authentication-Results", "")).strip()
+    received_spf = str(msg.get("Received-SPF", "")).strip()
+    dkim_signature_present = bool(msg.get("DKIM-Signature"))
+
     headers = SanitizedHeaders(
         from_raw=from_raw,
         from_display_name=from_name.strip(),
@@ -134,9 +138,10 @@ def preprocess_and_sanitize_eml(raw_eml: str, request_id: str | None = None) -> 
         subject=str(msg.get("Subject", "")).strip(),
         date=str(msg.get("Date", "")).strip(),
         message_id=str(msg.get("Message-ID", "")).strip(),
-        authentication_results=str(msg.get("Authentication-Results", "")).strip(),
-        received_spf=str(msg.get("Received-SPF", "")).strip(),
-        dkim_signature_present=bool(msg.get("DKIM-Signature")),
+        authentication_results=authentication_results,
+        received_spf=received_spf,
+        dkim_signature_present=dkim_signature_present,
+        auth_headers_present=bool(authentication_results or received_spf or dkim_signature_present),
     )
 
     plain_parts: List[str] = []

