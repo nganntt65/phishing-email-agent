@@ -17,8 +17,8 @@ The app reads the key from a file called `.env` in the project folder. There is 
 Windows (PowerShell):
 
 ```powershell
-git clone https://github.com/yardannaufal/Campus-Guard-AI.git
-cd Campus-Guard-AI
+git clone https://github.com/nganntt65/phishing-email-agent.git
+cd phishing-email-agent
 python -m venv .venv
 .venv\Scripts\python.exe -m pip install -r requirements.txt
 ```
@@ -26,8 +26,8 @@ python -m venv .venv
 macOS / Linux:
 
 ```bash
-git clone https://github.com/yardannaufal/Campus-Guard-AI.git
-cd Campus-Guard-AI
+git clone https://github.com/nganntt65/phishing-email-agent.git
+cd phishing-email-agent
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
 ```

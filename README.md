@@ -17,8 +17,8 @@ Every result says **what we found, why it matters and what to do next**, plus *H
 ## Run it (Windows, PowerShell)
 
 ```powershell
-git clone https://github.com/yardannaufal/Campus-Guard-AI.git
-cd Campus-Guard-AI
+git clone https://github.com/nganntt65/phishing-email-agent.git
+cd phishing-email-agent
 python -m venv .venv
 .venv\Scripts\python.exe -m pip install -r requirements.txt
 .venv\Scripts\python.exe -m uvicorn app.main:app --reload --port 8000
